@@ -1,0 +1,132 @@
+\hypertarget{classcm_key_manager}{\section{cm\-Key\-Manager Class Reference}
+\label{classcm_key_manager}\index{cm\-Key\-Manager@{cm\-Key\-Manager}}
+}
+
+
+{\ttfamily \#include $<$Keyboard.\-hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcm_key_manager_a79ae9754c7fe3ea67f6c8184adf90691}{cm\-Key\-Manager} ()
+\item 
+\hyperlink{classcm_key_manager_a0c96493d3fd7fa83e74dae732cc18df3}{$\sim$cm\-Key\-Manager} ()
+\item 
+void \hyperlink{classcm_key_manager_abb23711c55b58fed5a85d4ab59b1a8ff}{set\-\_\-mapping} (unsigned char key, \hyperlink{_keyboard_8hpp_ad4a278e59ed8d2af129f9b88eaa342ae}{E\-\_\-\-B\-U\-T\-T\-O\-N} keytype)
+\item 
+void \hyperlink{classcm_key_manager_aa70f8c04d16bcd19f99dd0117d3b5cd0}{set\-\_\-special\-\_\-mapping} (int key, \hyperlink{_keyboard_8hpp_ad4a278e59ed8d2af129f9b88eaa342ae}{E\-\_\-\-B\-U\-T\-T\-O\-N} keytype)
+\item 
+void \hyperlink{classcm_key_manager_a62fe4906c92806bafc66f37a5dcd63f1}{press\-\_\-key} (unsigned char key)
+\item 
+void \hyperlink{classcm_key_manager_ae8f67f69903df93356cf0a36be42f8c2}{press\-\_\-special\-\_\-key} (int key)
+\item 
+void \hyperlink{classcm_key_manager_a3c3daabf86791170d0db86491dda289c}{release\-\_\-key} (unsigned char key)
+\item 
+void \hyperlink{classcm_key_manager_ae8f80f4a5ff0a6e11ad0a06fc855a960}{release\-\_\-special\-\_\-key} (int key)
+\item 
+void \hyperlink{classcm_key_manager_a4a346eef64306328b72f5ce245bf8788}{reset\-\_\-counts} ()
+\item 
+int \hyperlink{classcm_key_manager_a5fa0ab83e8f36c9a721794c17fb13cb1}{times\-\_\-pressed} (\hyperlink{_keyboard_8hpp_ad4a278e59ed8d2af129f9b88eaa342ae}{E\-\_\-\-B\-U\-T\-T\-O\-N} button) const 
+\item 
+int \hyperlink{classcm_key_manager_af5d00cb2ad3b1c6350b5486cb2ec27ee}{times\-\_\-released} (\hyperlink{_keyboard_8hpp_ad4a278e59ed8d2af129f9b88eaa342ae}{E\-\_\-\-B\-U\-T\-T\-O\-N} button) const 
+\item 
+bool \hyperlink{classcm_key_manager_af97cb352de7f7e88efb2beb56a2c68d2}{is\-\_\-pressed} (\hyperlink{_keyboard_8hpp_ad4a278e59ed8d2af129f9b88eaa342ae}{E\-\_\-\-B\-U\-T\-T\-O\-N} button) const 
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classcm_key_manager_a79ae9754c7fe3ea67f6c8184adf90691}{\index{cm\-Key\-Manager@{cm\-Key\-Manager}!cm\-Key\-Manager@{cm\-Key\-Manager}}
+\index{cm\-Key\-Manager@{cm\-Key\-Manager}!cmKeyManager@{cm\-Key\-Manager}}
+\subsubsection[{cm\-Key\-Manager}]{\setlength{\rightskip}{0pt plus 5cm}cm\-Key\-Manager\-::cm\-Key\-Manager (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcm_key_manager_a79ae9754c7fe3ea67f6c8184adf90691}
+\hypertarget{classcm_key_manager_a0c96493d3fd7fa83e74dae732cc18df3}{\index{cm\-Key\-Manager@{cm\-Key\-Manager}!$\sim$cm\-Key\-Manager@{$\sim$cm\-Key\-Manager}}
+\index{$\sim$cm\-Key\-Manager@{$\sim$cm\-Key\-Manager}!cmKeyManager@{cm\-Key\-Manager}}
+\subsubsection[{$\sim$cm\-Key\-Manager}]{\setlength{\rightskip}{0pt plus 5cm}cm\-Key\-Manager\-::$\sim$cm\-Key\-Manager (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcm_key_manager_a0c96493d3fd7fa83e74dae732cc18df3}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classcm_key_manager_af97cb352de7f7e88efb2beb56a2c68d2}{\index{cm\-Key\-Manager@{cm\-Key\-Manager}!is\-\_\-pressed@{is\-\_\-pressed}}
+\index{is\-\_\-pressed@{is\-\_\-pressed}!cmKeyManager@{cm\-Key\-Manager}}
+\subsubsection[{is\-\_\-pressed}]{\setlength{\rightskip}{0pt plus 5cm}bool cm\-Key\-Manager\-::is\-\_\-pressed (
+\begin{DoxyParamCaption}
+\item[{{\bf E\-\_\-\-B\-U\-T\-T\-O\-N}}]{button}
+\end{DoxyParamCaption}
+) const}}\label{classcm_key_manager_af97cb352de7f7e88efb2beb56a2c68d2}
+\hypertarget{classcm_key_manager_a62fe4906c92806bafc66f37a5dcd63f1}{\index{cm\-Key\-Manager@{cm\-Key\-Manager}!press\-\_\-key@{press\-\_\-key}}
+\index{press\-\_\-key@{press\-\_\-key}!cmKeyManager@{cm\-Key\-Manager}}
+\subsubsection[{press\-\_\-key}]{\setlength{\rightskip}{0pt plus 5cm}void cm\-Key\-Manager\-::press\-\_\-key (
+\begin{DoxyParamCaption}
+\item[{unsigned char}]{key}
+\end{DoxyParamCaption}
+)}}\label{classcm_key_manager_a62fe4906c92806bafc66f37a5dcd63f1}
+\hypertarget{classcm_key_manager_ae8f67f69903df93356cf0a36be42f8c2}{\index{cm\-Key\-Manager@{cm\-Key\-Manager}!press\-\_\-special\-\_\-key@{press\-\_\-special\-\_\-key}}
+\index{press\-\_\-special\-\_\-key@{press\-\_\-special\-\_\-key}!cmKeyManager@{cm\-Key\-Manager}}
+\subsubsection[{press\-\_\-special\-\_\-key}]{\setlength{\rightskip}{0pt plus 5cm}void cm\-Key\-Manager\-::press\-\_\-special\-\_\-key (
+\begin{DoxyParamCaption}
+\item[{int}]{key}
+\end{DoxyParamCaption}
+)}}\label{classcm_key_manager_ae8f67f69903df93356cf0a36be42f8c2}
+\hypertarget{classcm_key_manager_a3c3daabf86791170d0db86491dda289c}{\index{cm\-Key\-Manager@{cm\-Key\-Manager}!release\-\_\-key@{release\-\_\-key}}
+\index{release\-\_\-key@{release\-\_\-key}!cmKeyManager@{cm\-Key\-Manager}}
+\subsubsection[{release\-\_\-key}]{\setlength{\rightskip}{0pt plus 5cm}void cm\-Key\-Manager\-::release\-\_\-key (
+\begin{DoxyParamCaption}
+\item[{unsigned char}]{key}
+\end{DoxyParamCaption}
+)}}\label{classcm_key_manager_a3c3daabf86791170d0db86491dda289c}
+\hypertarget{classcm_key_manager_ae8f80f4a5ff0a6e11ad0a06fc855a960}{\index{cm\-Key\-Manager@{cm\-Key\-Manager}!release\-\_\-special\-\_\-key@{release\-\_\-special\-\_\-key}}
+\index{release\-\_\-special\-\_\-key@{release\-\_\-special\-\_\-key}!cmKeyManager@{cm\-Key\-Manager}}
+\subsubsection[{release\-\_\-special\-\_\-key}]{\setlength{\rightskip}{0pt plus 5cm}void cm\-Key\-Manager\-::release\-\_\-special\-\_\-key (
+\begin{DoxyParamCaption}
+\item[{int}]{key}
+\end{DoxyParamCaption}
+)}}\label{classcm_key_manager_ae8f80f4a5ff0a6e11ad0a06fc855a960}
+\hypertarget{classcm_key_manager_a4a346eef64306328b72f5ce245bf8788}{\index{cm\-Key\-Manager@{cm\-Key\-Manager}!reset\-\_\-counts@{reset\-\_\-counts}}
+\index{reset\-\_\-counts@{reset\-\_\-counts}!cmKeyManager@{cm\-Key\-Manager}}
+\subsubsection[{reset\-\_\-counts}]{\setlength{\rightskip}{0pt plus 5cm}void cm\-Key\-Manager\-::reset\-\_\-counts (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcm_key_manager_a4a346eef64306328b72f5ce245bf8788}
+\hypertarget{classcm_key_manager_abb23711c55b58fed5a85d4ab59b1a8ff}{\index{cm\-Key\-Manager@{cm\-Key\-Manager}!set\-\_\-mapping@{set\-\_\-mapping}}
+\index{set\-\_\-mapping@{set\-\_\-mapping}!cmKeyManager@{cm\-Key\-Manager}}
+\subsubsection[{set\-\_\-mapping}]{\setlength{\rightskip}{0pt plus 5cm}void cm\-Key\-Manager\-::set\-\_\-mapping (
+\begin{DoxyParamCaption}
+\item[{unsigned char}]{key, }
+\item[{{\bf E\-\_\-\-B\-U\-T\-T\-O\-N}}]{keytype}
+\end{DoxyParamCaption}
+)}}\label{classcm_key_manager_abb23711c55b58fed5a85d4ab59b1a8ff}
+\hypertarget{classcm_key_manager_aa70f8c04d16bcd19f99dd0117d3b5cd0}{\index{cm\-Key\-Manager@{cm\-Key\-Manager}!set\-\_\-special\-\_\-mapping@{set\-\_\-special\-\_\-mapping}}
+\index{set\-\_\-special\-\_\-mapping@{set\-\_\-special\-\_\-mapping}!cmKeyManager@{cm\-Key\-Manager}}
+\subsubsection[{set\-\_\-special\-\_\-mapping}]{\setlength{\rightskip}{0pt plus 5cm}void cm\-Key\-Manager\-::set\-\_\-special\-\_\-mapping (
+\begin{DoxyParamCaption}
+\item[{int}]{key, }
+\item[{{\bf E\-\_\-\-B\-U\-T\-T\-O\-N}}]{keytype}
+\end{DoxyParamCaption}
+)}}\label{classcm_key_manager_aa70f8c04d16bcd19f99dd0117d3b5cd0}
+\hypertarget{classcm_key_manager_a5fa0ab83e8f36c9a721794c17fb13cb1}{\index{cm\-Key\-Manager@{cm\-Key\-Manager}!times\-\_\-pressed@{times\-\_\-pressed}}
+\index{times\-\_\-pressed@{times\-\_\-pressed}!cmKeyManager@{cm\-Key\-Manager}}
+\subsubsection[{times\-\_\-pressed}]{\setlength{\rightskip}{0pt plus 5cm}int cm\-Key\-Manager\-::times\-\_\-pressed (
+\begin{DoxyParamCaption}
+\item[{{\bf E\-\_\-\-B\-U\-T\-T\-O\-N}}]{button}
+\end{DoxyParamCaption}
+) const}}\label{classcm_key_manager_a5fa0ab83e8f36c9a721794c17fb13cb1}
+\hypertarget{classcm_key_manager_af5d00cb2ad3b1c6350b5486cb2ec27ee}{\index{cm\-Key\-Manager@{cm\-Key\-Manager}!times\-\_\-released@{times\-\_\-released}}
+\index{times\-\_\-released@{times\-\_\-released}!cmKeyManager@{cm\-Key\-Manager}}
+\subsubsection[{times\-\_\-released}]{\setlength{\rightskip}{0pt plus 5cm}int cm\-Key\-Manager\-::times\-\_\-released (
+\begin{DoxyParamCaption}
+\item[{{\bf E\-\_\-\-B\-U\-T\-T\-O\-N}}]{button}
+\end{DoxyParamCaption}
+) const}}\label{classcm_key_manager_af5d00cb2ad3b1c6350b5486cb2ec27ee}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/\-Owner/\-My Programming/\-Personal Projects/\-Video\-Games/\-Optimist Racing/src/\hyperlink{_keyboard_8hpp}{Keyboard.\-hpp}\item 
+C\-:/\-Users/\-Owner/\-My Programming/\-Personal Projects/\-Video\-Games/\-Optimist Racing/src/\hyperlink{_keyboard_8cpp}{Keyboard.\-cpp}\end{DoxyCompactItemize}

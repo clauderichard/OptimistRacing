@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\Algebra.hpp" />
+    <ClInclude Include="src\AlgebraStruct.hpp" />
+    <ClInclude Include="src\Audio.hpp" />
+    <ClInclude Include="src\Bezier.hpp" />
+    <ClInclude Include="src\Camera.hpp" />
+    <ClInclude Include="src\Data.hpp" />
+    <ClInclude Include="src\DataTracker.hpp" />
+    <ClInclude Include="src\DocumentationExample.hpp" />
+    <ClInclude Include="src\ElectricColour.hpp" />
+    <ClInclude Include="src\Event.hpp" />
+    <ClInclude Include="src\FileLocator.hpp" />
+    <ClInclude Include="src\Globals.hpp" />
+    <ClInclude Include="src\Image.hpp" />
+    <ClInclude Include="src\IntensityTracker.hpp" />
+    <ClInclude Include="src\LuaGame.hpp" />
+    <ClInclude Include="src\LuaGeneral.hpp" />
+    <ClInclude Include="src\Menu.hpp" />
+    <ClInclude Include="src\SolidObject.hpp" />
+    <ClInclude Include="src\SpatialAlgebra.hpp" />
+    <ClInclude Include="src\StoryMenu.hpp" />
+    <ClInclude Include="src\WorldEngine.hpp" />
+    <ClInclude Include="src\GameFlow.hpp" />
+    <ClInclude Include="src\Grid.hpp" />
+    <ClInclude Include="src\InputTracker.hpp" />
+    <ClInclude Include="src\Primitive.hpp" />
+    <ClInclude Include="src\Lagrange.hpp" />
+    <ClInclude Include="src\Collision.hpp" />
+    <ClInclude Include="src\Material.hpp" />
+    <ClInclude Include="src\World.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\Algebra.cpp" />
+    <ClCompile Include="src\Audio.cpp" />
+    <ClCompile Include="src\Bezier.cpp" />
+    <ClCompile Include="src\Camera.cpp" />
+    <ClCompile Include="src\Data.cpp" />
+    <ClCompile Include="src\DataTracker.cpp" />
+    <ClCompile Include="src\ElectricColour.cpp" />
+    <ClCompile Include="src\ElectricColourTest.cpp" />
+    <ClCompile Include="src\Event.cpp" />
+    <ClCompile Include="src\FileLocator.cpp" />
+    <ClCompile Include="src\Globals.cpp" />
+    <ClCompile Include="src\Image.cpp" />
+    <ClCompile Include="src\IntensityTracker.cpp" />
+    <ClCompile Include="src\LuaGame.cpp" />
+    <ClCompile Include="src\Menu.cpp" />
+    <ClCompile Include="src\StoryMenu.cpp" />
+    <ClCompile Include="src\WorldEngine.cpp" />
+    <ClCompile Include="src\GameFlow.cpp" />
+    <ClCompile Include="src\InputTracker.cpp" />
+    <ClCompile Include="src\Main.cpp" />
+    <ClCompile Include="src\Primitive.cpp" />
+    <ClCompile Include="src\Lagrange.cpp" />
+    <ClCompile Include="src\Collision.cpp" />
+    <ClCompile Include="src\Material.cpp" />
+    <ClCompile Include="src\World.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\Metal.png" />
+    <None Include="images\Mothership.png" />
+    <None Include="images\SkyBox-Clouds-Few-Dawn.png" />
+    <None Include="images\SkyBox-Clouds-Heavy-Early.png" />
+    <None Include="images\SteelVault.png" />
+    <None Include="images\watertex.png" />
+    <None Include="goal.txt" />
+    <None Include="world\desert.lua" />
+    <None Include="world\forest.lua" />
+    <None Include="world\ocean-1.lua" />
+    <None Include="world\ocean-2.lua" />
+    <None Include="world\ocean-3.lua" />
+    <None Include="world\ocean.lua" />
+    <None Include="world\universe.lua" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{546AC943-D5DD-44E5-81F2-3F4325166F84}</ProjectGuid>
+    <RootNamespace>CMan</RootNamespace>
+    <ProjectName>Optimist Racing</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(ProjectDir)bin\$(Configuration)\</OutDir>
+    <IntDir>bin\$(Configuration)\</IntDir>
+    <LibraryPath>C:\Users\Owner\Downloads\boost_1_51_0\boost_1_51_0\stage\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>C:\Users\Owner\Downloads\boost_1_51_0\boost_1_51_0;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(ProjectDir)bin\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IntDir>bin\$(Configuration)\</IntDir>
+    <IncludePath>C:\Users\Owner\Downloads\boost_1_51_0\boost_1_51_0;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Users\Owner\Downloads\boost_1_51_0\boost_1_51_0\stage\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>C:\Users\Owner\My Programming\Open-Source Projects\Bullet Physics;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>__DEBUG;D_SCL_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>allegro-5.0.5-monolith-mt-debug.lib;%(AdditionalDependencies);libpng.lib;zdll.lib;lua5.1.lib;freetype234_D.lib;ftgl_D.lib</AdditionalDependencies>
+      <IgnoreSpecificDefaultLibraries>libcmtd.lib</IgnoreSpecificDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>
+      </AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_ITERATOR_DEBUG_LEVEL=0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>allegro-5.0.5-monolith-mt-debug.lib;%(AdditionalDependencies);libpng.lib;zdll.lib;lua5.1.lib</AdditionalDependencies>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

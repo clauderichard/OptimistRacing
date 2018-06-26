@@ -1,0 +1,168 @@
+\hypertarget{class_matrix3x3}{\section{Matrix3x3 Class Reference}
+\label{class_matrix3x3}\index{Matrix3x3@{Matrix3x3}}
+}
+
+
+{\ttfamily \#include $<$Algebra.\-hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_matrix3x3_ac6b901793405c0f36f65d6c4a624d0e7}{Matrix3x3} ()
+\item 
+\hyperlink{class_matrix3x3_abe38083cf46bb1f783ff64917a9e5404}{Matrix3x3} (const \hyperlink{class_matrix3x3}{Matrix3x3} \&other)
+\item 
+\hyperlink{class_matrix3x3_a4830a1913f2aa6f9c38281062aaed303}{Matrix3x3} (const \hyperlink{class_vector3_d}{Vector3\-D} \&row1, const \hyperlink{class_vector3_d}{Vector3\-D} \&row2, const \hyperlink{class_vector3_d}{Vector3\-D} \&row3)
+\item 
+\hyperlink{class_matrix3x3_a77720ea70bf2bb1fae52667aeb3bf419}{Matrix3x3} (const double $\ast$values)
+\item 
+\hyperlink{class_matrix3x3}{Matrix3x3} \& \hyperlink{class_matrix3x3_ab91b7dc85335166bdc20b77b8f9c34e9}{operator=} (const \hyperlink{class_matrix3x3}{Matrix3x3} \&other)
+\item 
+\hyperlink{class_vector3_d}{Vector3\-D} \hyperlink{class_matrix3x3_a04888194a52b970549b5fbe40c5a80b3}{get\-Row} (size\-\_\-t row) const 
+\item 
+double $\ast$ \hyperlink{class_matrix3x3_a9e55dda2c3616c79254429ffbcecc6d4}{get\-Row} (size\-\_\-t row)
+\item 
+\hyperlink{class_vector3_d}{Vector3\-D} \hyperlink{class_matrix3x3_a3243d4730e65222094e8e7589ded5162}{get\-Column} (size\-\_\-t col) const 
+\item 
+\hyperlink{class_vector3_d}{Vector3\-D} \hyperlink{class_matrix3x3_a37f611d52839c3790c1983dced8cbf56}{operator\mbox{[}$\,$\mbox{]}} (size\-\_\-t row) const 
+\item 
+double $\ast$ \hyperlink{class_matrix3x3_a96590caac1fd0d0ba1c344b5cced47eb}{operator\mbox{[}$\,$\mbox{]}} (size\-\_\-t row)
+\item 
+\hyperlink{class_matrix3x3}{Matrix3x3} \hyperlink{class_matrix3x3_a6d2a2b5c4d1876a72aeada3879dc507b}{transpose} () const 
+\item 
+\hyperlink{class_matrix3x3}{Matrix3x3} \hyperlink{class_matrix3x3_ac6c35af02989e2a20a0d661d665cc59d}{invert} () const 
+\item 
+double \hyperlink{class_matrix3x3_a8d069ee838151dfd79fef81a5992bebc}{determinant} () const 
+\item 
+\hyperlink{class_vector3_d}{Vector3\-D} \hyperlink{class_matrix3x3_a9e92abe88ebfa2f898ea1c3a008d7615}{matrix\-Solve} (const \hyperlink{class_vector3_d}{Vector3\-D} \&b) const 
+\item 
+const double $\ast$ \hyperlink{class_matrix3x3_ab6a79b3aca663ddb2362ee0639ffed3a}{begin} () const 
+\item 
+const double $\ast$ \hyperlink{class_matrix3x3_a2a4b6ee9463566d7aed3e1824e08d47e}{end} () const 
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_matrix3x3_ac6b901793405c0f36f65d6c4a624d0e7}{\index{Matrix3x3@{Matrix3x3}!Matrix3x3@{Matrix3x3}}
+\index{Matrix3x3@{Matrix3x3}!Matrix3x3@{Matrix3x3}}
+\subsubsection[{Matrix3x3}]{\setlength{\rightskip}{0pt plus 5cm}Matrix3x3\-::\-Matrix3x3 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_matrix3x3_ac6b901793405c0f36f65d6c4a624d0e7}
+\hypertarget{class_matrix3x3_abe38083cf46bb1f783ff64917a9e5404}{\index{Matrix3x3@{Matrix3x3}!Matrix3x3@{Matrix3x3}}
+\index{Matrix3x3@{Matrix3x3}!Matrix3x3@{Matrix3x3}}
+\subsubsection[{Matrix3x3}]{\setlength{\rightskip}{0pt plus 5cm}Matrix3x3\-::\-Matrix3x3 (
+\begin{DoxyParamCaption}
+\item[{const {\bf Matrix3x3} \&}]{other}
+\end{DoxyParamCaption}
+)}}\label{class_matrix3x3_abe38083cf46bb1f783ff64917a9e5404}
+\hypertarget{class_matrix3x3_a4830a1913f2aa6f9c38281062aaed303}{\index{Matrix3x3@{Matrix3x3}!Matrix3x3@{Matrix3x3}}
+\index{Matrix3x3@{Matrix3x3}!Matrix3x3@{Matrix3x3}}
+\subsubsection[{Matrix3x3}]{\setlength{\rightskip}{0pt plus 5cm}Matrix3x3\-::\-Matrix3x3 (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vector3\-D} \&}]{row1, }
+\item[{const {\bf Vector3\-D} \&}]{row2, }
+\item[{const {\bf Vector3\-D} \&}]{row3}
+\end{DoxyParamCaption}
+)}}\label{class_matrix3x3_a4830a1913f2aa6f9c38281062aaed303}
+\hypertarget{class_matrix3x3_a77720ea70bf2bb1fae52667aeb3bf419}{\index{Matrix3x3@{Matrix3x3}!Matrix3x3@{Matrix3x3}}
+\index{Matrix3x3@{Matrix3x3}!Matrix3x3@{Matrix3x3}}
+\subsubsection[{Matrix3x3}]{\setlength{\rightskip}{0pt plus 5cm}Matrix3x3\-::\-Matrix3x3 (
+\begin{DoxyParamCaption}
+\item[{const double $\ast$}]{values}
+\end{DoxyParamCaption}
+)}}\label{class_matrix3x3_a77720ea70bf2bb1fae52667aeb3bf419}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_matrix3x3_ab6a79b3aca663ddb2362ee0639ffed3a}{\index{Matrix3x3@{Matrix3x3}!begin@{begin}}
+\index{begin@{begin}!Matrix3x3@{Matrix3x3}}
+\subsubsection[{begin}]{\setlength{\rightskip}{0pt plus 5cm}const double $\ast$ Matrix3x3\-::begin (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_matrix3x3_ab6a79b3aca663ddb2362ee0639ffed3a}
+\hypertarget{class_matrix3x3_a8d069ee838151dfd79fef81a5992bebc}{\index{Matrix3x3@{Matrix3x3}!determinant@{determinant}}
+\index{determinant@{determinant}!Matrix3x3@{Matrix3x3}}
+\subsubsection[{determinant}]{\setlength{\rightskip}{0pt plus 5cm}double Matrix3x3\-::determinant (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_matrix3x3_a8d069ee838151dfd79fef81a5992bebc}
+\hypertarget{class_matrix3x3_a2a4b6ee9463566d7aed3e1824e08d47e}{\index{Matrix3x3@{Matrix3x3}!end@{end}}
+\index{end@{end}!Matrix3x3@{Matrix3x3}}
+\subsubsection[{end}]{\setlength{\rightskip}{0pt plus 5cm}const double $\ast$ Matrix3x3\-::end (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_matrix3x3_a2a4b6ee9463566d7aed3e1824e08d47e}
+\hypertarget{class_matrix3x3_a3243d4730e65222094e8e7589ded5162}{\index{Matrix3x3@{Matrix3x3}!get\-Column@{get\-Column}}
+\index{get\-Column@{get\-Column}!Matrix3x3@{Matrix3x3}}
+\subsubsection[{get\-Column}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector3\-D} Matrix3x3\-::get\-Column (
+\begin{DoxyParamCaption}
+\item[{size\-\_\-t}]{col}
+\end{DoxyParamCaption}
+) const}}\label{class_matrix3x3_a3243d4730e65222094e8e7589ded5162}
+\hypertarget{class_matrix3x3_a04888194a52b970549b5fbe40c5a80b3}{\index{Matrix3x3@{Matrix3x3}!get\-Row@{get\-Row}}
+\index{get\-Row@{get\-Row}!Matrix3x3@{Matrix3x3}}
+\subsubsection[{get\-Row}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector3\-D} Matrix3x3\-::get\-Row (
+\begin{DoxyParamCaption}
+\item[{size\-\_\-t}]{row}
+\end{DoxyParamCaption}
+) const}}\label{class_matrix3x3_a04888194a52b970549b5fbe40c5a80b3}
+\hypertarget{class_matrix3x3_a9e55dda2c3616c79254429ffbcecc6d4}{\index{Matrix3x3@{Matrix3x3}!get\-Row@{get\-Row}}
+\index{get\-Row@{get\-Row}!Matrix3x3@{Matrix3x3}}
+\subsubsection[{get\-Row}]{\setlength{\rightskip}{0pt plus 5cm}double $\ast$ Matrix3x3\-::get\-Row (
+\begin{DoxyParamCaption}
+\item[{size\-\_\-t}]{row}
+\end{DoxyParamCaption}
+)}}\label{class_matrix3x3_a9e55dda2c3616c79254429ffbcecc6d4}
+\hypertarget{class_matrix3x3_ac6c35af02989e2a20a0d661d665cc59d}{\index{Matrix3x3@{Matrix3x3}!invert@{invert}}
+\index{invert@{invert}!Matrix3x3@{Matrix3x3}}
+\subsubsection[{invert}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Matrix3x3} Matrix3x3\-::invert (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_matrix3x3_ac6c35af02989e2a20a0d661d665cc59d}
+\hypertarget{class_matrix3x3_a9e92abe88ebfa2f898ea1c3a008d7615}{\index{Matrix3x3@{Matrix3x3}!matrix\-Solve@{matrix\-Solve}}
+\index{matrix\-Solve@{matrix\-Solve}!Matrix3x3@{Matrix3x3}}
+\subsubsection[{matrix\-Solve}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector3\-D} Matrix3x3\-::matrix\-Solve (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vector3\-D} \&}]{b}
+\end{DoxyParamCaption}
+) const}}\label{class_matrix3x3_a9e92abe88ebfa2f898ea1c3a008d7615}
+\hypertarget{class_matrix3x3_ab91b7dc85335166bdc20b77b8f9c34e9}{\index{Matrix3x3@{Matrix3x3}!operator=@{operator=}}
+\index{operator=@{operator=}!Matrix3x3@{Matrix3x3}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Matrix3x3} \& Matrix3x3\-::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Matrix3x3} \&}]{other}
+\end{DoxyParamCaption}
+)}}\label{class_matrix3x3_ab91b7dc85335166bdc20b77b8f9c34e9}
+\hypertarget{class_matrix3x3_a37f611d52839c3790c1983dced8cbf56}{\index{Matrix3x3@{Matrix3x3}!operator\mbox{[}$\,$\mbox{]}@{operator[]}}
+\index{operator\mbox{[}$\,$\mbox{]}@{operator[]}!Matrix3x3@{Matrix3x3}}
+\subsubsection[{operator[]}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector3\-D} Matrix3x3\-::operator\mbox{[}$\,$\mbox{]} (
+\begin{DoxyParamCaption}
+\item[{size\-\_\-t}]{row}
+\end{DoxyParamCaption}
+) const}}\label{class_matrix3x3_a37f611d52839c3790c1983dced8cbf56}
+\hypertarget{class_matrix3x3_a96590caac1fd0d0ba1c344b5cced47eb}{\index{Matrix3x3@{Matrix3x3}!operator\mbox{[}$\,$\mbox{]}@{operator[]}}
+\index{operator\mbox{[}$\,$\mbox{]}@{operator[]}!Matrix3x3@{Matrix3x3}}
+\subsubsection[{operator[]}]{\setlength{\rightskip}{0pt plus 5cm}double $\ast$ Matrix3x3\-::operator\mbox{[}$\,$\mbox{]} (
+\begin{DoxyParamCaption}
+\item[{size\-\_\-t}]{row}
+\end{DoxyParamCaption}
+)}}\label{class_matrix3x3_a96590caac1fd0d0ba1c344b5cced47eb}
+\hypertarget{class_matrix3x3_a6d2a2b5c4d1876a72aeada3879dc507b}{\index{Matrix3x3@{Matrix3x3}!transpose@{transpose}}
+\index{transpose@{transpose}!Matrix3x3@{Matrix3x3}}
+\subsubsection[{transpose}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Matrix3x3} Matrix3x3\-::transpose (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_matrix3x3_a6d2a2b5c4d1876a72aeada3879dc507b}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/\-Owner/\-My Programming/\-Personal Projects/\-Video\-Games/\-Optimist Racing/src/\hyperlink{_algebra_8hpp}{Algebra.\-hpp}\item 
+C\-:/\-Users/\-Owner/\-My Programming/\-Personal Projects/\-Video\-Games/\-Optimist Racing/src/\hyperlink{_algebra_8cpp}{Algebra.\-cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,77 @@
+\hypertarget{cm_utils_8hpp}{\section{C\-:/\-Users/\-Owner/\-My Programming/\-Personal Projects/\-Video\-Games/\-Optimist Racing/src/cm\-Utils.hpp File Reference}
+\label{cm_utils_8hpp}\index{C\-:/\-Users/\-Owner/\-My Programming/\-Personal Projects/\-Video\-Games/\-Optimist Racing/src/cm\-Utils.\-hpp@{C\-:/\-Users/\-Owner/\-My Programming/\-Personal Projects/\-Video\-Games/\-Optimist Racing/src/cm\-Utils.\-hpp}}
+}
+{\ttfamily \#include $<$allegro5\textbackslash{}allegro.\-h$>$}\\*
+{\ttfamily \#include $<$allegro5\textbackslash{}allegro\-\_\-image.\-h$>$}\\*
+{\ttfamily \#include $<$math.\-h$>$}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structcm_pair}{cm\-Pair$<$ A, B $>$}
+\item 
+struct \hyperlink{structcm_triple}{cm\-Triple$<$ A, B, C $>$}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{cm_utils_8hpp_a002b2f4894492820fe708b1b7e7c5e70}{E\-P\-S\-I\-L\-O\-N}~0.\-00000001
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{cm_utils_8hpp_a28644899f40a817d6d98ec8786779279}{u\-\_\-set\-\_\-component} (double xdir, double ydir, double value, double \&curx, double \&cury)
+\item 
+double \hyperlink{cm_utils_8hpp_a4d53bf44639df04895b9479ed5d15d63}{u\-\_\-get\-\_\-component} (double xdir, double ydir, double curx, double cury)
+\item 
+double \hyperlink{cm_utils_8hpp_ac9b8a524998d84ec4f617d9ef33ea738}{u\-\_\-smallest\-\_\-positive\-\_\-quadratic\-\_\-solution} (double a, double b, double c)
+\item 
+void \hyperlink{cm_utils_8hpp_a757cc82d00695ed7b19bb310ee2008d5}{u\-\_\-draw\-\_\-tiles} (A\-L\-L\-E\-G\-R\-O\-\_\-\-B\-I\-T\-M\-A\-P $\ast$b, int x, int y)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{cm_utils_8hpp_a002b2f4894492820fe708b1b7e7c5e70}{\index{cm\-Utils.\-hpp@{cm\-Utils.\-hpp}!E\-P\-S\-I\-L\-O\-N@{E\-P\-S\-I\-L\-O\-N}}
+\index{E\-P\-S\-I\-L\-O\-N@{E\-P\-S\-I\-L\-O\-N}!cmUtils.hpp@{cm\-Utils.\-hpp}}
+\subsubsection[{E\-P\-S\-I\-L\-O\-N}]{\setlength{\rightskip}{0pt plus 5cm}\#define E\-P\-S\-I\-L\-O\-N~0.\-00000001}}\label{cm_utils_8hpp_a002b2f4894492820fe708b1b7e7c5e70}
+
+
+\subsection{Function Documentation}
+\hypertarget{cm_utils_8hpp_a757cc82d00695ed7b19bb310ee2008d5}{\index{cm\-Utils.\-hpp@{cm\-Utils.\-hpp}!u\-\_\-draw\-\_\-tiles@{u\-\_\-draw\-\_\-tiles}}
+\index{u\-\_\-draw\-\_\-tiles@{u\-\_\-draw\-\_\-tiles}!cmUtils.hpp@{cm\-Utils.\-hpp}}
+\subsubsection[{u\-\_\-draw\-\_\-tiles}]{\setlength{\rightskip}{0pt plus 5cm}void u\-\_\-draw\-\_\-tiles (
+\begin{DoxyParamCaption}
+\item[{A\-L\-L\-E\-G\-R\-O\-\_\-\-B\-I\-T\-M\-A\-P $\ast$}]{b, }
+\item[{int}]{x, }
+\item[{int}]{y}
+\end{DoxyParamCaption}
+)}}\label{cm_utils_8hpp_a757cc82d00695ed7b19bb310ee2008d5}
+\hypertarget{cm_utils_8hpp_a4d53bf44639df04895b9479ed5d15d63}{\index{cm\-Utils.\-hpp@{cm\-Utils.\-hpp}!u\-\_\-get\-\_\-component@{u\-\_\-get\-\_\-component}}
+\index{u\-\_\-get\-\_\-component@{u\-\_\-get\-\_\-component}!cmUtils.hpp@{cm\-Utils.\-hpp}}
+\subsubsection[{u\-\_\-get\-\_\-component}]{\setlength{\rightskip}{0pt plus 5cm}double u\-\_\-get\-\_\-component (
+\begin{DoxyParamCaption}
+\item[{double}]{xdir, }
+\item[{double}]{ydir, }
+\item[{double}]{curx, }
+\item[{double}]{cury}
+\end{DoxyParamCaption}
+)}}\label{cm_utils_8hpp_a4d53bf44639df04895b9479ed5d15d63}
+\hypertarget{cm_utils_8hpp_a28644899f40a817d6d98ec8786779279}{\index{cm\-Utils.\-hpp@{cm\-Utils.\-hpp}!u\-\_\-set\-\_\-component@{u\-\_\-set\-\_\-component}}
+\index{u\-\_\-set\-\_\-component@{u\-\_\-set\-\_\-component}!cmUtils.hpp@{cm\-Utils.\-hpp}}
+\subsubsection[{u\-\_\-set\-\_\-component}]{\setlength{\rightskip}{0pt plus 5cm}void u\-\_\-set\-\_\-component (
+\begin{DoxyParamCaption}
+\item[{double}]{xdir, }
+\item[{double}]{ydir, }
+\item[{double}]{value, }
+\item[{double \&}]{curx, }
+\item[{double \&}]{cury}
+\end{DoxyParamCaption}
+)}}\label{cm_utils_8hpp_a28644899f40a817d6d98ec8786779279}
+\hypertarget{cm_utils_8hpp_ac9b8a524998d84ec4f617d9ef33ea738}{\index{cm\-Utils.\-hpp@{cm\-Utils.\-hpp}!u\-\_\-smallest\-\_\-positive\-\_\-quadratic\-\_\-solution@{u\-\_\-smallest\-\_\-positive\-\_\-quadratic\-\_\-solution}}
+\index{u\-\_\-smallest\-\_\-positive\-\_\-quadratic\-\_\-solution@{u\-\_\-smallest\-\_\-positive\-\_\-quadratic\-\_\-solution}!cmUtils.hpp@{cm\-Utils.\-hpp}}
+\subsubsection[{u\-\_\-smallest\-\_\-positive\-\_\-quadratic\-\_\-solution}]{\setlength{\rightskip}{0pt plus 5cm}double u\-\_\-smallest\-\_\-positive\-\_\-quadratic\-\_\-solution (
+\begin{DoxyParamCaption}
+\item[{double}]{a, }
+\item[{double}]{b, }
+\item[{double}]{c}
+\end{DoxyParamCaption}
+)}}\label{cm_utils_8hpp_ac9b8a524998d84ec4f617d9ef33ea738}

@@ -1,0 +1,111 @@
+\hypertarget{class_bezier_patch_grid}{\section{Bezier\-Patch\-Grid Class Reference}
+\label{class_bezier_patch_grid}\index{Bezier\-Patch\-Grid@{Bezier\-Patch\-Grid}}
+}
+
+
+{\ttfamily \#include $<$Bezier.\-hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_bezier_patch_grid_a554a55115356412abc18baec436188be}{Bezier\-Patch\-Grid} (const \hyperlink{class_bernstein_polynomial}{Bernstein\-Polynomial} $\ast$B\-P, double grid\-Hx, double grid\-Hy, unsigned int num\-Cells\-X, unsigned int num\-Cells\-Y, \hyperlink{class_matrix_mx_n}{Matrix\-Mx\-N} $\ast$$\ast$corners)
+\item 
+\hyperlink{class_bezier_patch_grid_a2d05668c85a89cc22ecec7527dc61fb6}{$\sim$\-Bezier\-Patch\-Grid} ()
+\item 
+double \hyperlink{class_bezier_patch_grid_a097dc86c745cf672dae184ba638a575f}{get\-Grid\-H\-X} () const 
+\item 
+double \hyperlink{class_bezier_patch_grid_a415ab4140e78d397cf102ec7a349c858}{get\-Grid\-H\-Y} () const 
+\item 
+unsigned int \hyperlink{class_bezier_patch_grid_a68d5e67e34eb2290e3dc66aad978003a}{get\-Num\-Cells\-X} () const 
+\item 
+unsigned int \hyperlink{class_bezier_patch_grid_a527f5f89d884c8c496b87cd733bd5e57}{get\-Num\-Cells\-Y} () const 
+\item 
+const \hyperlink{class_bezier_patch}{Bezier\-Patch} \& \hyperlink{class_bezier_patch_grid_a9e9c8bbdad683ca8a9afba393c105223}{get\-Patch} (unsigned int x, unsigned int y) const 
+\item 
+\hyperlink{class_matrix_mx_n}{Matrix\-Mx\-N} \hyperlink{class_bezier_patch_grid_a255a33e2613464997d2afee32bc549ab}{compute} (double x, double y) const 
+\item 
+double \hyperlink{class_bezier_patch_grid_afa4d08b2c4e00e9e9a068b5bff86951f}{compute\-F\-Only} (double x, double y) const 
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_bezier_patch_grid_a554a55115356412abc18baec436188be}{\index{Bezier\-Patch\-Grid@{Bezier\-Patch\-Grid}!Bezier\-Patch\-Grid@{Bezier\-Patch\-Grid}}
+\index{Bezier\-Patch\-Grid@{Bezier\-Patch\-Grid}!BezierPatchGrid@{Bezier\-Patch\-Grid}}
+\subsubsection[{Bezier\-Patch\-Grid}]{\setlength{\rightskip}{0pt plus 5cm}Bezier\-Patch\-Grid\-::\-Bezier\-Patch\-Grid (
+\begin{DoxyParamCaption}
+\item[{const {\bf Bernstein\-Polynomial} $\ast$}]{B\-P, }
+\item[{double}]{grid\-Hx, }
+\item[{double}]{grid\-Hy, }
+\item[{unsigned int}]{num\-Cells\-X, }
+\item[{unsigned int}]{num\-Cells\-Y, }
+\item[{{\bf Matrix\-Mx\-N} $\ast$$\ast$}]{corners}
+\end{DoxyParamCaption}
+)}}\label{class_bezier_patch_grid_a554a55115356412abc18baec436188be}
+\hypertarget{class_bezier_patch_grid_a2d05668c85a89cc22ecec7527dc61fb6}{\index{Bezier\-Patch\-Grid@{Bezier\-Patch\-Grid}!$\sim$\-Bezier\-Patch\-Grid@{$\sim$\-Bezier\-Patch\-Grid}}
+\index{$\sim$\-Bezier\-Patch\-Grid@{$\sim$\-Bezier\-Patch\-Grid}!BezierPatchGrid@{Bezier\-Patch\-Grid}}
+\subsubsection[{$\sim$\-Bezier\-Patch\-Grid}]{\setlength{\rightskip}{0pt plus 5cm}Bezier\-Patch\-Grid\-::$\sim$\-Bezier\-Patch\-Grid (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_bezier_patch_grid_a2d05668c85a89cc22ecec7527dc61fb6}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_bezier_patch_grid_a255a33e2613464997d2afee32bc549ab}{\index{Bezier\-Patch\-Grid@{Bezier\-Patch\-Grid}!compute@{compute}}
+\index{compute@{compute}!BezierPatchGrid@{Bezier\-Patch\-Grid}}
+\subsubsection[{compute}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Matrix\-Mx\-N} Bezier\-Patch\-Grid\-::compute (
+\begin{DoxyParamCaption}
+\item[{double}]{x, }
+\item[{double}]{y}
+\end{DoxyParamCaption}
+) const}}\label{class_bezier_patch_grid_a255a33e2613464997d2afee32bc549ab}
+\hypertarget{class_bezier_patch_grid_afa4d08b2c4e00e9e9a068b5bff86951f}{\index{Bezier\-Patch\-Grid@{Bezier\-Patch\-Grid}!compute\-F\-Only@{compute\-F\-Only}}
+\index{compute\-F\-Only@{compute\-F\-Only}!BezierPatchGrid@{Bezier\-Patch\-Grid}}
+\subsubsection[{compute\-F\-Only}]{\setlength{\rightskip}{0pt plus 5cm}double Bezier\-Patch\-Grid\-::compute\-F\-Only (
+\begin{DoxyParamCaption}
+\item[{double}]{x, }
+\item[{double}]{y}
+\end{DoxyParamCaption}
+) const}}\label{class_bezier_patch_grid_afa4d08b2c4e00e9e9a068b5bff86951f}
+\hypertarget{class_bezier_patch_grid_a097dc86c745cf672dae184ba638a575f}{\index{Bezier\-Patch\-Grid@{Bezier\-Patch\-Grid}!get\-Grid\-H\-X@{get\-Grid\-H\-X}}
+\index{get\-Grid\-H\-X@{get\-Grid\-H\-X}!BezierPatchGrid@{Bezier\-Patch\-Grid}}
+\subsubsection[{get\-Grid\-H\-X}]{\setlength{\rightskip}{0pt plus 5cm}double Bezier\-Patch\-Grid\-::get\-Grid\-H\-X (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_bezier_patch_grid_a097dc86c745cf672dae184ba638a575f}
+\hypertarget{class_bezier_patch_grid_a415ab4140e78d397cf102ec7a349c858}{\index{Bezier\-Patch\-Grid@{Bezier\-Patch\-Grid}!get\-Grid\-H\-Y@{get\-Grid\-H\-Y}}
+\index{get\-Grid\-H\-Y@{get\-Grid\-H\-Y}!BezierPatchGrid@{Bezier\-Patch\-Grid}}
+\subsubsection[{get\-Grid\-H\-Y}]{\setlength{\rightskip}{0pt plus 5cm}double Bezier\-Patch\-Grid\-::get\-Grid\-H\-Y (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_bezier_patch_grid_a415ab4140e78d397cf102ec7a349c858}
+\hypertarget{class_bezier_patch_grid_a68d5e67e34eb2290e3dc66aad978003a}{\index{Bezier\-Patch\-Grid@{Bezier\-Patch\-Grid}!get\-Num\-Cells\-X@{get\-Num\-Cells\-X}}
+\index{get\-Num\-Cells\-X@{get\-Num\-Cells\-X}!BezierPatchGrid@{Bezier\-Patch\-Grid}}
+\subsubsection[{get\-Num\-Cells\-X}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int Bezier\-Patch\-Grid\-::get\-Num\-Cells\-X (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_bezier_patch_grid_a68d5e67e34eb2290e3dc66aad978003a}
+\hypertarget{class_bezier_patch_grid_a527f5f89d884c8c496b87cd733bd5e57}{\index{Bezier\-Patch\-Grid@{Bezier\-Patch\-Grid}!get\-Num\-Cells\-Y@{get\-Num\-Cells\-Y}}
+\index{get\-Num\-Cells\-Y@{get\-Num\-Cells\-Y}!BezierPatchGrid@{Bezier\-Patch\-Grid}}
+\subsubsection[{get\-Num\-Cells\-Y}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int Bezier\-Patch\-Grid\-::get\-Num\-Cells\-Y (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_bezier_patch_grid_a527f5f89d884c8c496b87cd733bd5e57}
+\hypertarget{class_bezier_patch_grid_a9e9c8bbdad683ca8a9afba393c105223}{\index{Bezier\-Patch\-Grid@{Bezier\-Patch\-Grid}!get\-Patch@{get\-Patch}}
+\index{get\-Patch@{get\-Patch}!BezierPatchGrid@{Bezier\-Patch\-Grid}}
+\subsubsection[{get\-Patch}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Bezier\-Patch} \& Bezier\-Patch\-Grid\-::get\-Patch (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{x, }
+\item[{unsigned int}]{y}
+\end{DoxyParamCaption}
+) const}}\label{class_bezier_patch_grid_a9e9c8bbdad683ca8a9afba393c105223}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/\-Owner/\-My Programming/\-Personal Projects/\-Video\-Games/\-Optimist Racing/src/\hyperlink{_bezier_8hpp}{Bezier.\-hpp}\item 
+C\-:/\-Users/\-Owner/\-My Programming/\-Personal Projects/\-Video\-Games/\-Optimist Racing/src/\hyperlink{_bezier_8cpp}{Bezier.\-cpp}\end{DoxyCompactItemize}

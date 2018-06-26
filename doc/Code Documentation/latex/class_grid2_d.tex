@@ -1,0 +1,243 @@
+\hypertarget{class_grid2_d}{\section{Grid2\-D$<$ T $>$ Class Template Reference}
+\label{class_grid2_d}\index{Grid2\-D$<$ T $>$@{Grid2\-D$<$ T $>$}}
+}
+
+
+A 2d grid where each cell has a value.  
+
+
+
+
+{\ttfamily \#include $<$Grid.\-hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_grid2_d_a2d0de43afc44cfa9b1f85e2a89407987}{Grid2\-D} (double origin\-X, double origin\-Y, int num\-Cells\-X, int num\-Cells\-Y, double grid\-H\-X, double grid\-H\-Y, T $\ast$values)
+\begin{DoxyCompactList}\small\item\em Basic constructor. \end{DoxyCompactList}\item 
+\hyperlink{class_grid2_d_a882eef0c27a9c0dc379254633f6b4632}{$\sim$\-Grid2\-D} ()
+\begin{DoxyCompactList}\small\item\em The destructor. \end{DoxyCompactList}\item 
+double \hyperlink{class_grid2_d_a297945ebee6053b879eb2302fb997257}{get\-Origin\-X} () const 
+\begin{DoxyCompactList}\small\item\em Returns the x-\/value of the origin of the grid (bottom-\/left corner). \end{DoxyCompactList}\item 
+double \hyperlink{class_grid2_d_ae84fe7442dccef0d49eedc65fe96b06a}{get\-Origin\-Y} () const 
+\begin{DoxyCompactList}\small\item\em Returns the y-\/value of the origin of the grid (bottom-\/left corner). \end{DoxyCompactList}\item 
+double \hyperlink{class_grid2_d_a93655a3d92f6f98eeb6ec5826cd89249}{get\-Grid\-H\-X} () const 
+\begin{DoxyCompactList}\small\item\em Returns the x-\/spacing of the grid (the width of each cell). \end{DoxyCompactList}\item 
+double \hyperlink{class_grid2_d_a23b8af0f8e33c530bd1afbc5c77c50e2}{get\-Grid\-H\-Y} () const 
+\begin{DoxyCompactList}\small\item\em Returns the y-\/spacing of the grid (the height of each cell). \end{DoxyCompactList}\item 
+int \hyperlink{class_grid2_d_a2b6c57bd0364ec5ec86ac5adf84bcbc5}{get\-Num\-Cells\-X} () const 
+\begin{DoxyCompactList}\small\item\em Returns the number of cells across the x-\/direction. \end{DoxyCompactList}\item 
+int \hyperlink{class_grid2_d_aaa3fd3dbe8e175ae01bf51af3dac72bc}{get\-Num\-Cells\-Y} () const 
+\begin{DoxyCompactList}\small\item\em Returns the number of cells across the y-\/direction. \end{DoxyCompactList}\item 
+T \hyperlink{class_grid2_d_a35171b27de35bf8ea47437e35a06ada7}{get\-Value} (int i, int j, T default\-Value) const 
+\begin{DoxyCompactList}\small\item\em Returns the value at the cell number \mbox{[}i,j\mbox{]}. \end{DoxyCompactList}\item 
+T \hyperlink{class_grid2_d_aa40e58a8322d1abf80f7479cc86f7dda}{get\-Value} (double x, double y, T default\-Value) const 
+\begin{DoxyCompactList}\small\item\em Returns the value at the point (x,y) (takes into account grid spacing). \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename T$>$class Grid2\-D$<$ T $>$}
+
+A 2d grid where each cell has a value. 
+
+Represents a 2d grid with constant spacing (may be different for x and y) where each cell has a value. \begin{DoxyAuthor}{Author}
+Claude Richard 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2012 
+\end{DoxyDate}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_grid2_d_a2d0de43afc44cfa9b1f85e2a89407987}{\index{Grid2\-D@{Grid2\-D}!Grid2\-D@{Grid2\-D}}
+\index{Grid2\-D@{Grid2\-D}!Grid2D@{Grid2\-D}}
+\subsubsection[{Grid2\-D}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ {\bf Grid2\-D}$<$ T $>$\-::{\bf Grid2\-D} (
+\begin{DoxyParamCaption}
+\item[{double}]{origin\-X, }
+\item[{double}]{origin\-Y, }
+\item[{int}]{num\-Cells\-X, }
+\item[{int}]{num\-Cells\-Y, }
+\item[{double}]{grid\-H\-X, }
+\item[{double}]{grid\-H\-Y, }
+\item[{T $\ast$}]{values}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_grid2_d_a2d0de43afc44cfa9b1f85e2a89407987}
+
+
+Basic constructor. 
+
+In this constructor, everything about the grid is specified in the arguments. \begin{DoxyPrecond}{Precondition}
+The values in the {\itshape values} array must be ordered as follows\-: (x1,y1), (x2,y1), (x3,y1), ... , (xm,yn). 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+This object will represent a 2d grid, with origin (origin\-X,origin\-Y), x-\/spacing grid\-H\-X, y-\/spacing grid\-H\-Y, with num\-Cells\-X cells along the x-\/axis and num\-Cells\-Y cells along the y-\/axis. The origin is the bottom-\/left corner of the grid. This object will not hold a pointer to {\itshape values}; it simply copies the array. 
+\end{DoxyPostcond}
+
+\begin{DoxyParams}{Parameters}
+{\em origin\-X} & The origin's x-\/value, which is the smallest x-\/value on the grid. \\
+\hline
+{\em origin\-Y} & The origin's y-\/value, which is the smallest y-\/value on the grid. \\
+\hline
+{\em num\-Cells\-X} & The number of cells counting along the x-\/axis. \\
+\hline
+{\em num\-Cells\-Y} & The number of cells counting along the y-\/axis. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em An} & error if {\itshape values} has length smaller than {\itshape num\-Cells\-X} $\ast$ {\itshape num\-Cells\-Y}. An error if any of grid\-H\-X, grid\-H\-Y, num\-Cells\-X, or num\-Cells\-Y is $<$= 0. \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{class_grid2_d_a882eef0c27a9c0dc379254633f6b4632}{\index{Grid2\-D@{Grid2\-D}!$\sim$\-Grid2\-D@{$\sim$\-Grid2\-D}}
+\index{$\sim$\-Grid2\-D@{$\sim$\-Grid2\-D}!Grid2D@{Grid2\-D}}
+\subsubsection[{$\sim$\-Grid2\-D}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ {\bf Grid2\-D}$<$ T $>$\-::$\sim${\bf Grid2\-D} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_grid2_d_a882eef0c27a9c0dc379254633f6b4632}
+
+
+The destructor. 
+
+This destructor simply deletes its copy of the values array. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_grid2_d_a93655a3d92f6f98eeb6ec5826cd89249}{\index{Grid2\-D@{Grid2\-D}!get\-Grid\-H\-X@{get\-Grid\-H\-X}}
+\index{get\-Grid\-H\-X@{get\-Grid\-H\-X}!Grid2D@{Grid2\-D}}
+\subsubsection[{get\-Grid\-H\-X}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ double {\bf Grid2\-D}$<$ T $>$\-::get\-Grid\-H\-X (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_grid2_d_a93655a3d92f6f98eeb6ec5826cd89249}
+
+
+Returns the x-\/spacing of the grid (the width of each cell). 
+
+\begin{DoxyReturn}{Returns}
+The x-\/spacing of the grid (the width of each cell). 
+\end{DoxyReturn}
+\hypertarget{class_grid2_d_a23b8af0f8e33c530bd1afbc5c77c50e2}{\index{Grid2\-D@{Grid2\-D}!get\-Grid\-H\-Y@{get\-Grid\-H\-Y}}
+\index{get\-Grid\-H\-Y@{get\-Grid\-H\-Y}!Grid2D@{Grid2\-D}}
+\subsubsection[{get\-Grid\-H\-Y}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ double {\bf Grid2\-D}$<$ T $>$\-::get\-Grid\-H\-Y (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_grid2_d_a23b8af0f8e33c530bd1afbc5c77c50e2}
+
+
+Returns the y-\/spacing of the grid (the height of each cell). 
+
+\begin{DoxyReturn}{Returns}
+The y-\/spacing of the grid (the height of each cell). 
+\end{DoxyReturn}
+\hypertarget{class_grid2_d_a2b6c57bd0364ec5ec86ac5adf84bcbc5}{\index{Grid2\-D@{Grid2\-D}!get\-Num\-Cells\-X@{get\-Num\-Cells\-X}}
+\index{get\-Num\-Cells\-X@{get\-Num\-Cells\-X}!Grid2D@{Grid2\-D}}
+\subsubsection[{get\-Num\-Cells\-X}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ int {\bf Grid2\-D}$<$ T $>$\-::get\-Num\-Cells\-X (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_grid2_d_a2b6c57bd0364ec5ec86ac5adf84bcbc5}
+
+
+Returns the number of cells across the x-\/direction. 
+
+\begin{DoxyReturn}{Returns}
+The number of cells across the x-\/direction. 
+\end{DoxyReturn}
+\hypertarget{class_grid2_d_aaa3fd3dbe8e175ae01bf51af3dac72bc}{\index{Grid2\-D@{Grid2\-D}!get\-Num\-Cells\-Y@{get\-Num\-Cells\-Y}}
+\index{get\-Num\-Cells\-Y@{get\-Num\-Cells\-Y}!Grid2D@{Grid2\-D}}
+\subsubsection[{get\-Num\-Cells\-Y}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ int {\bf Grid2\-D}$<$ T $>$\-::get\-Num\-Cells\-Y (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_grid2_d_aaa3fd3dbe8e175ae01bf51af3dac72bc}
+
+
+Returns the number of cells across the y-\/direction. 
+
+\begin{DoxyReturn}{Returns}
+The number of cells across the y-\/direction. 
+\end{DoxyReturn}
+\hypertarget{class_grid2_d_a297945ebee6053b879eb2302fb997257}{\index{Grid2\-D@{Grid2\-D}!get\-Origin\-X@{get\-Origin\-X}}
+\index{get\-Origin\-X@{get\-Origin\-X}!Grid2D@{Grid2\-D}}
+\subsubsection[{get\-Origin\-X}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ double {\bf Grid2\-D}$<$ T $>$\-::get\-Origin\-X (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_grid2_d_a297945ebee6053b879eb2302fb997257}
+
+
+Returns the x-\/value of the origin of the grid (bottom-\/left corner). 
+
+\begin{DoxyReturn}{Returns}
+The x-\/value of the origin of the grid (bottom-\/left corner). 
+\end{DoxyReturn}
+\hypertarget{class_grid2_d_ae84fe7442dccef0d49eedc65fe96b06a}{\index{Grid2\-D@{Grid2\-D}!get\-Origin\-Y@{get\-Origin\-Y}}
+\index{get\-Origin\-Y@{get\-Origin\-Y}!Grid2D@{Grid2\-D}}
+\subsubsection[{get\-Origin\-Y}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ double {\bf Grid2\-D}$<$ T $>$\-::get\-Origin\-Y (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_grid2_d_ae84fe7442dccef0d49eedc65fe96b06a}
+
+
+Returns the y-\/value of the origin of the grid (bottom-\/left corner). 
+
+\begin{DoxyReturn}{Returns}
+The y-\/value of the origin of the grid (bottom-\/left corner). 
+\end{DoxyReturn}
+\hypertarget{class_grid2_d_a35171b27de35bf8ea47437e35a06ada7}{\index{Grid2\-D@{Grid2\-D}!get\-Value@{get\-Value}}
+\index{get\-Value@{get\-Value}!Grid2D@{Grid2\-D}}
+\subsubsection[{get\-Value}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ T {\bf Grid2\-D}$<$ T $>$\-::get\-Value (
+\begin{DoxyParamCaption}
+\item[{int}]{i, }
+\item[{int}]{j, }
+\item[{T}]{default\-Value}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_grid2_d_a35171b27de35bf8ea47437e35a06ada7}
+
+
+Returns the value at the cell number \mbox{[}i,j\mbox{]}. 
+
+If i or j is off the grid, then returns the value of the closest cell. 
+\begin{DoxyParams}{Parameters}
+{\em i} & The x-\/index of the cell (counting cells, not the x-\/value in the coordinate system). \\
+\hline
+{\em j} & The y-\/index of the cell (counting cells, not the y-\/value in the coordinate system). \\
+\hline
+{\em default\-Value} & The value to be returned if the cell-\/index \mbox{[}i,j\mbox{]} is outside the grid. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The value at the cell number \mbox{[}i,j\mbox{]}. If i or j is off the grid, then returns {\itshape default\-Value}. 
+\end{DoxyReturn}
+\hypertarget{class_grid2_d_aa40e58a8322d1abf80f7479cc86f7dda}{\index{Grid2\-D@{Grid2\-D}!get\-Value@{get\-Value}}
+\index{get\-Value@{get\-Value}!Grid2D@{Grid2\-D}}
+\subsubsection[{get\-Value}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ T {\bf Grid2\-D}$<$ T $>$\-::get\-Value (
+\begin{DoxyParamCaption}
+\item[{double}]{x, }
+\item[{double}]{y, }
+\item[{T}]{default\-Value}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_grid2_d_aa40e58a8322d1abf80f7479cc86f7dda}
+
+
+Returns the value at the point (x,y) (takes into account grid spacing). 
+
+If (x,y) is off the grid, then returns {\itshape default\-Value}. 
+\begin{DoxyParams}{Parameters}
+{\em x} & The x-\/value of the point in the coordinate system. \\
+\hline
+{\em y} & The y-\/value of the point in the coordinate system. \\
+\hline
+{\em default\-Value} & The value to be returned if (x,y) is outside the grid. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The value of the cell at (x,y). If (x,y) is off the grid, then returns {\itshape default\-Value}. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/\-Owner/\-My Programming/\-Personal Projects/\-Video\-Games/\-Optimist Racing/src/\hyperlink{_grid_8hpp}{Grid.\-hpp}\end{DoxyCompactItemize}

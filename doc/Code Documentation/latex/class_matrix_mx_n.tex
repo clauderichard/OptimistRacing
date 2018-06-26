@@ -1,0 +1,310 @@
+\hypertarget{class_matrix_mx_n}{\section{Matrix\-Mx\-N Class Reference}
+\label{class_matrix_mx_n}\index{Matrix\-Mx\-N@{Matrix\-Mx\-N}}
+}
+
+
+{\ttfamily \#include $<$Algebra.\-hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_matrix_mx_n_aa26c1f54476e80bd693e1539b8927453}{Matrix\-Mx\-N} (int m, int n)
+\item 
+\hyperlink{class_matrix_mx_n_a51772c3c29de4b2de1cfe0b8127343a9}{Matrix\-Mx\-N} (const \hyperlink{class_matrix_mx_n}{Matrix\-Mx\-N} \&other)
+\item 
+\hyperlink{class_matrix_mx_n_a10eae021475aec1f150f76bd902971f6}{Matrix\-Mx\-N} (const \hyperlink{class_matrix_mx_n}{Matrix\-Mx\-N} \&A, const \hyperlink{class_matrix_mx_n}{Matrix\-Mx\-N} \&B, const \hyperlink{class_matrix_mx_n}{Matrix\-Mx\-N} \&C, const \hyperlink{class_matrix_mx_n}{Matrix\-Mx\-N} \&D)
+\item 
+\hyperlink{class_matrix_mx_n_a2043e4fe83a99250f8cf9558a2fa2494}{Matrix\-Mx\-N} (int m, int n, const double $\ast$values)
+\item 
+\hyperlink{class_matrix_mx_n_a7ca69d25d1b478744e051ed1610ba6a6}{$\sim$\-Matrix\-Mx\-N} ()
+\item 
+\hyperlink{class_matrix_mx_n}{Matrix\-Mx\-N} \& \hyperlink{class_matrix_mx_n_aed6d9329b641e215fdb2ef9941ba7f43}{operator=} (const \hyperlink{class_matrix_mx_n}{Matrix\-Mx\-N} \&other)
+\item 
+int \hyperlink{class_matrix_mx_n_a1042a2d48ffa37b7d002ec84857b8cb0}{get\-Num\-Rows} () const 
+\item 
+int \hyperlink{class_matrix_mx_n_a32a4754dc06976e18968deabdf3848b7}{get\-Num\-Cols} () const 
+\item 
+\hyperlink{class_vector_n_d}{Vector\-N\-D} \hyperlink{class_matrix_mx_n_aa87ad967e022efc94f045b15ecf97c59}{get\-Row} (size\-\_\-t row) const 
+\item 
+double $\ast$ \hyperlink{class_matrix_mx_n_ad629ff9103c428eeb7193a2c09c04d58}{get\-Row} (size\-\_\-t row)
+\item 
+\hyperlink{class_vector_n_d}{Vector\-N\-D} \hyperlink{class_matrix_mx_n_a1bdc3f79ffb1b5e65a0010fe50ff0168}{get\-Column} (size\-\_\-t col) const 
+\item 
+\hyperlink{class_vector_n_d}{Vector\-N\-D} \hyperlink{class_matrix_mx_n_a80906a3f7cdea0f2eb8e710f77cb485b}{operator\mbox{[}$\,$\mbox{]}} (size\-\_\-t row) const 
+\item 
+double $\ast$ \hyperlink{class_matrix_mx_n_ab98762a2138106995493c1eadaa741ca}{operator\mbox{[}$\,$\mbox{]}} (size\-\_\-t row)
+\item 
+\hyperlink{class_matrix_mx_n}{Matrix\-Mx\-N} \hyperlink{class_matrix_mx_n_a3fe71291bbb368925ab43a344dccfb70}{get\-Piece} (int rowstart, int rowend, int colstart, int colend) const 
+\item 
+\hyperlink{class_matrix_mx_n}{Matrix\-Mx\-N} \hyperlink{class_matrix_mx_n_aa300812401ad6cd3e9a5d02889857516}{transpose} () const 
+\item 
+\hyperlink{class_matrix_mx_n}{Matrix\-Mx\-N} \hyperlink{class_matrix_mx_n_a32b89585c0ad3eb558663b9cd5378c74}{invert} () const 
+\item 
+\hyperlink{class_matrix_mx_n}{Matrix\-Mx\-N} \hyperlink{class_matrix_mx_n_aeb9e6a36563b05a274d690256a1925a4}{switch\-Vertical} () const 
+\item 
+\hyperlink{class_matrix_mx_n}{Matrix\-Mx\-N} \hyperlink{class_matrix_mx_n_af253a4e2644ea88bbb6e8f806b7d0623}{switch\-Horizontal} () const 
+\item 
+\hyperlink{class_matrix_mx_n}{Matrix\-Mx\-N} \hyperlink{class_matrix_mx_n_aaac7eaac505c7e7e973fea07496a1b4e}{invert\-Upper\-Right} () const 
+\item 
+\hyperlink{class_matrix_mx_n}{Matrix\-Mx\-N} \hyperlink{class_matrix_mx_n_a25c588065de24cdf0c49a5fe1bb2936a}{invert\-Lower\-Right} () const 
+\item 
+\hyperlink{class_matrix_mx_n}{Matrix\-Mx\-N} \hyperlink{class_matrix_mx_n_a2c3230d1fbbe473c36a41f55e3f1efd9}{invert\-Upper\-Left} () const 
+\item 
+\hyperlink{class_matrix_mx_n}{Matrix\-Mx\-N} \hyperlink{class_matrix_mx_n_a4647ec26ffd72fceb10a3003dcf6201e}{invert\-Lower\-Left} () const 
+\item 
+\hyperlink{class_matrix_mx_n}{Matrix\-Mx\-N} \hyperlink{class_matrix_mx_n_a2e49e8ec8b34081eaceeac96d10db260}{operator+} (const \hyperlink{class_matrix_mx_n}{Matrix\-Mx\-N} \&other) const 
+\item 
+\hyperlink{class_matrix_mx_n}{Matrix\-Mx\-N} \hyperlink{class_matrix_mx_n_a399e59a5b73699465b67b0d296e440ef}{operator-\/} (const \hyperlink{class_matrix_mx_n}{Matrix\-Mx\-N} \&other) const 
+\item 
+\hyperlink{class_matrix_mx_n}{Matrix\-Mx\-N} \hyperlink{class_matrix_mx_n_aaa446aa7a21bec7aa7f6f83bde0780d4}{operator$\ast$} (const \hyperlink{class_matrix_mx_n}{Matrix\-Mx\-N} \&other) const 
+\item 
+\hyperlink{class_matrix_mx_n}{Matrix\-Mx\-N} \hyperlink{class_matrix_mx_n_a9d58289b85a96d65048916e8ac6dc1f7}{multiply\-Scalar} (double s) const 
+\item 
+\hyperlink{class_matrix_mx_n}{Matrix\-Mx\-N} \hyperlink{class_matrix_mx_n_ac4c1fc26a79339f7a583006f7dd99a09}{transpose\-And\-Multiply} (const \hyperlink{class_matrix_mx_n}{Matrix\-Mx\-N} \&other) const 
+\item 
+\hyperlink{class_matrix_mx_n}{Matrix\-Mx\-N} \hyperlink{class_matrix_mx_n_a32bc6e3104d7c7b44f6a306729c1b94b}{pointwise\-Multiply} (const \hyperlink{class_matrix_mx_n}{Matrix\-Mx\-N} \&other) const 
+\item 
+double \hyperlink{class_matrix_mx_n_ab064a168f8c979d5eae78ee40f5e6ff4}{dot} (const \hyperlink{class_matrix_mx_n}{Matrix\-Mx\-N} \&other) const 
+\item 
+const double $\ast$ \hyperlink{class_matrix_mx_n_a3f0cde8fee9f9cb556779cfc9061e7df}{begin} () const 
+\item 
+const double $\ast$ \hyperlink{class_matrix_mx_n_a4b843b525493e7e6ab90c3532ac3ce0e}{end} () const 
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_matrix_mx_n_aa26c1f54476e80bd693e1539b8927453}{\index{Matrix\-Mx\-N@{Matrix\-Mx\-N}!Matrix\-Mx\-N@{Matrix\-Mx\-N}}
+\index{Matrix\-Mx\-N@{Matrix\-Mx\-N}!MatrixMxN@{Matrix\-Mx\-N}}
+\subsubsection[{Matrix\-Mx\-N}]{\setlength{\rightskip}{0pt plus 5cm}Matrix\-Mx\-N\-::\-Matrix\-Mx\-N (
+\begin{DoxyParamCaption}
+\item[{int}]{m, }
+\item[{int}]{n}
+\end{DoxyParamCaption}
+)}}\label{class_matrix_mx_n_aa26c1f54476e80bd693e1539b8927453}
+\hypertarget{class_matrix_mx_n_a51772c3c29de4b2de1cfe0b8127343a9}{\index{Matrix\-Mx\-N@{Matrix\-Mx\-N}!Matrix\-Mx\-N@{Matrix\-Mx\-N}}
+\index{Matrix\-Mx\-N@{Matrix\-Mx\-N}!MatrixMxN@{Matrix\-Mx\-N}}
+\subsubsection[{Matrix\-Mx\-N}]{\setlength{\rightskip}{0pt plus 5cm}Matrix\-Mx\-N\-::\-Matrix\-Mx\-N (
+\begin{DoxyParamCaption}
+\item[{const {\bf Matrix\-Mx\-N} \&}]{other}
+\end{DoxyParamCaption}
+)}}\label{class_matrix_mx_n_a51772c3c29de4b2de1cfe0b8127343a9}
+\hypertarget{class_matrix_mx_n_a10eae021475aec1f150f76bd902971f6}{\index{Matrix\-Mx\-N@{Matrix\-Mx\-N}!Matrix\-Mx\-N@{Matrix\-Mx\-N}}
+\index{Matrix\-Mx\-N@{Matrix\-Mx\-N}!MatrixMxN@{Matrix\-Mx\-N}}
+\subsubsection[{Matrix\-Mx\-N}]{\setlength{\rightskip}{0pt plus 5cm}Matrix\-Mx\-N\-::\-Matrix\-Mx\-N (
+\begin{DoxyParamCaption}
+\item[{const {\bf Matrix\-Mx\-N} \&}]{A, }
+\item[{const {\bf Matrix\-Mx\-N} \&}]{B, }
+\item[{const {\bf Matrix\-Mx\-N} \&}]{C, }
+\item[{const {\bf Matrix\-Mx\-N} \&}]{D}
+\end{DoxyParamCaption}
+)}}\label{class_matrix_mx_n_a10eae021475aec1f150f76bd902971f6}
+\hypertarget{class_matrix_mx_n_a2043e4fe83a99250f8cf9558a2fa2494}{\index{Matrix\-Mx\-N@{Matrix\-Mx\-N}!Matrix\-Mx\-N@{Matrix\-Mx\-N}}
+\index{Matrix\-Mx\-N@{Matrix\-Mx\-N}!MatrixMxN@{Matrix\-Mx\-N}}
+\subsubsection[{Matrix\-Mx\-N}]{\setlength{\rightskip}{0pt plus 5cm}Matrix\-Mx\-N\-::\-Matrix\-Mx\-N (
+\begin{DoxyParamCaption}
+\item[{int}]{m, }
+\item[{int}]{n, }
+\item[{const double $\ast$}]{values}
+\end{DoxyParamCaption}
+)}}\label{class_matrix_mx_n_a2043e4fe83a99250f8cf9558a2fa2494}
+\hypertarget{class_matrix_mx_n_a7ca69d25d1b478744e051ed1610ba6a6}{\index{Matrix\-Mx\-N@{Matrix\-Mx\-N}!$\sim$\-Matrix\-Mx\-N@{$\sim$\-Matrix\-Mx\-N}}
+\index{$\sim$\-Matrix\-Mx\-N@{$\sim$\-Matrix\-Mx\-N}!MatrixMxN@{Matrix\-Mx\-N}}
+\subsubsection[{$\sim$\-Matrix\-Mx\-N}]{\setlength{\rightskip}{0pt plus 5cm}Matrix\-Mx\-N\-::$\sim$\-Matrix\-Mx\-N (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_matrix_mx_n_a7ca69d25d1b478744e051ed1610ba6a6}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_matrix_mx_n_a3f0cde8fee9f9cb556779cfc9061e7df}{\index{Matrix\-Mx\-N@{Matrix\-Mx\-N}!begin@{begin}}
+\index{begin@{begin}!MatrixMxN@{Matrix\-Mx\-N}}
+\subsubsection[{begin}]{\setlength{\rightskip}{0pt plus 5cm}const double $\ast$ Matrix\-Mx\-N\-::begin (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_matrix_mx_n_a3f0cde8fee9f9cb556779cfc9061e7df}
+\hypertarget{class_matrix_mx_n_ab064a168f8c979d5eae78ee40f5e6ff4}{\index{Matrix\-Mx\-N@{Matrix\-Mx\-N}!dot@{dot}}
+\index{dot@{dot}!MatrixMxN@{Matrix\-Mx\-N}}
+\subsubsection[{dot}]{\setlength{\rightskip}{0pt plus 5cm}double Matrix\-Mx\-N\-::dot (
+\begin{DoxyParamCaption}
+\item[{const {\bf Matrix\-Mx\-N} \&}]{other}
+\end{DoxyParamCaption}
+) const}}\label{class_matrix_mx_n_ab064a168f8c979d5eae78ee40f5e6ff4}
+\hypertarget{class_matrix_mx_n_a4b843b525493e7e6ab90c3532ac3ce0e}{\index{Matrix\-Mx\-N@{Matrix\-Mx\-N}!end@{end}}
+\index{end@{end}!MatrixMxN@{Matrix\-Mx\-N}}
+\subsubsection[{end}]{\setlength{\rightskip}{0pt plus 5cm}const double $\ast$ Matrix\-Mx\-N\-::end (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_matrix_mx_n_a4b843b525493e7e6ab90c3532ac3ce0e}
+\hypertarget{class_matrix_mx_n_a1bdc3f79ffb1b5e65a0010fe50ff0168}{\index{Matrix\-Mx\-N@{Matrix\-Mx\-N}!get\-Column@{get\-Column}}
+\index{get\-Column@{get\-Column}!MatrixMxN@{Matrix\-Mx\-N}}
+\subsubsection[{get\-Column}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector\-N\-D} Matrix\-Mx\-N\-::get\-Column (
+\begin{DoxyParamCaption}
+\item[{size\-\_\-t}]{col}
+\end{DoxyParamCaption}
+) const}}\label{class_matrix_mx_n_a1bdc3f79ffb1b5e65a0010fe50ff0168}
+\hypertarget{class_matrix_mx_n_a32a4754dc06976e18968deabdf3848b7}{\index{Matrix\-Mx\-N@{Matrix\-Mx\-N}!get\-Num\-Cols@{get\-Num\-Cols}}
+\index{get\-Num\-Cols@{get\-Num\-Cols}!MatrixMxN@{Matrix\-Mx\-N}}
+\subsubsection[{get\-Num\-Cols}]{\setlength{\rightskip}{0pt plus 5cm}int Matrix\-Mx\-N\-::get\-Num\-Cols (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_matrix_mx_n_a32a4754dc06976e18968deabdf3848b7}
+\hypertarget{class_matrix_mx_n_a1042a2d48ffa37b7d002ec84857b8cb0}{\index{Matrix\-Mx\-N@{Matrix\-Mx\-N}!get\-Num\-Rows@{get\-Num\-Rows}}
+\index{get\-Num\-Rows@{get\-Num\-Rows}!MatrixMxN@{Matrix\-Mx\-N}}
+\subsubsection[{get\-Num\-Rows}]{\setlength{\rightskip}{0pt plus 5cm}int Matrix\-Mx\-N\-::get\-Num\-Rows (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_matrix_mx_n_a1042a2d48ffa37b7d002ec84857b8cb0}
+\hypertarget{class_matrix_mx_n_a3fe71291bbb368925ab43a344dccfb70}{\index{Matrix\-Mx\-N@{Matrix\-Mx\-N}!get\-Piece@{get\-Piece}}
+\index{get\-Piece@{get\-Piece}!MatrixMxN@{Matrix\-Mx\-N}}
+\subsubsection[{get\-Piece}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Matrix\-Mx\-N} Matrix\-Mx\-N\-::get\-Piece (
+\begin{DoxyParamCaption}
+\item[{int}]{rowstart, }
+\item[{int}]{rowend, }
+\item[{int}]{colstart, }
+\item[{int}]{colend}
+\end{DoxyParamCaption}
+) const}}\label{class_matrix_mx_n_a3fe71291bbb368925ab43a344dccfb70}
+rowend and colend are immediately A\-F\-T\-E\-R the last row and column of the returned matrix. \hypertarget{class_matrix_mx_n_aa87ad967e022efc94f045b15ecf97c59}{\index{Matrix\-Mx\-N@{Matrix\-Mx\-N}!get\-Row@{get\-Row}}
+\index{get\-Row@{get\-Row}!MatrixMxN@{Matrix\-Mx\-N}}
+\subsubsection[{get\-Row}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector\-N\-D} Matrix\-Mx\-N\-::get\-Row (
+\begin{DoxyParamCaption}
+\item[{size\-\_\-t}]{row}
+\end{DoxyParamCaption}
+) const}}\label{class_matrix_mx_n_aa87ad967e022efc94f045b15ecf97c59}
+\hypertarget{class_matrix_mx_n_ad629ff9103c428eeb7193a2c09c04d58}{\index{Matrix\-Mx\-N@{Matrix\-Mx\-N}!get\-Row@{get\-Row}}
+\index{get\-Row@{get\-Row}!MatrixMxN@{Matrix\-Mx\-N}}
+\subsubsection[{get\-Row}]{\setlength{\rightskip}{0pt plus 5cm}double $\ast$ Matrix\-Mx\-N\-::get\-Row (
+\begin{DoxyParamCaption}
+\item[{size\-\_\-t}]{row}
+\end{DoxyParamCaption}
+)}}\label{class_matrix_mx_n_ad629ff9103c428eeb7193a2c09c04d58}
+\hypertarget{class_matrix_mx_n_a32b89585c0ad3eb558663b9cd5378c74}{\index{Matrix\-Mx\-N@{Matrix\-Mx\-N}!invert@{invert}}
+\index{invert@{invert}!MatrixMxN@{Matrix\-Mx\-N}}
+\subsubsection[{invert}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Matrix\-Mx\-N} Matrix\-Mx\-N\-::invert (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_matrix_mx_n_a32b89585c0ad3eb558663b9cd5378c74}
+\hypertarget{class_matrix_mx_n_a4647ec26ffd72fceb10a3003dcf6201e}{\index{Matrix\-Mx\-N@{Matrix\-Mx\-N}!invert\-Lower\-Left@{invert\-Lower\-Left}}
+\index{invert\-Lower\-Left@{invert\-Lower\-Left}!MatrixMxN@{Matrix\-Mx\-N}}
+\subsubsection[{invert\-Lower\-Left}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Matrix\-Mx\-N} Matrix\-Mx\-N\-::invert\-Lower\-Left (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_matrix_mx_n_a4647ec26ffd72fceb10a3003dcf6201e}
+\hypertarget{class_matrix_mx_n_a25c588065de24cdf0c49a5fe1bb2936a}{\index{Matrix\-Mx\-N@{Matrix\-Mx\-N}!invert\-Lower\-Right@{invert\-Lower\-Right}}
+\index{invert\-Lower\-Right@{invert\-Lower\-Right}!MatrixMxN@{Matrix\-Mx\-N}}
+\subsubsection[{invert\-Lower\-Right}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Matrix\-Mx\-N} Matrix\-Mx\-N\-::invert\-Lower\-Right (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_matrix_mx_n_a25c588065de24cdf0c49a5fe1bb2936a}
+\hypertarget{class_matrix_mx_n_a2c3230d1fbbe473c36a41f55e3f1efd9}{\index{Matrix\-Mx\-N@{Matrix\-Mx\-N}!invert\-Upper\-Left@{invert\-Upper\-Left}}
+\index{invert\-Upper\-Left@{invert\-Upper\-Left}!MatrixMxN@{Matrix\-Mx\-N}}
+\subsubsection[{invert\-Upper\-Left}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Matrix\-Mx\-N} Matrix\-Mx\-N\-::invert\-Upper\-Left (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_matrix_mx_n_a2c3230d1fbbe473c36a41f55e3f1efd9}
+\hypertarget{class_matrix_mx_n_aaac7eaac505c7e7e973fea07496a1b4e}{\index{Matrix\-Mx\-N@{Matrix\-Mx\-N}!invert\-Upper\-Right@{invert\-Upper\-Right}}
+\index{invert\-Upper\-Right@{invert\-Upper\-Right}!MatrixMxN@{Matrix\-Mx\-N}}
+\subsubsection[{invert\-Upper\-Right}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Matrix\-Mx\-N} Matrix\-Mx\-N\-::invert\-Upper\-Right (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_matrix_mx_n_aaac7eaac505c7e7e973fea07496a1b4e}
+\hypertarget{class_matrix_mx_n_a9d58289b85a96d65048916e8ac6dc1f7}{\index{Matrix\-Mx\-N@{Matrix\-Mx\-N}!multiply\-Scalar@{multiply\-Scalar}}
+\index{multiply\-Scalar@{multiply\-Scalar}!MatrixMxN@{Matrix\-Mx\-N}}
+\subsubsection[{multiply\-Scalar}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Matrix\-Mx\-N} Matrix\-Mx\-N\-::multiply\-Scalar (
+\begin{DoxyParamCaption}
+\item[{double}]{s}
+\end{DoxyParamCaption}
+) const}}\label{class_matrix_mx_n_a9d58289b85a96d65048916e8ac6dc1f7}
+\hypertarget{class_matrix_mx_n_aaa446aa7a21bec7aa7f6f83bde0780d4}{\index{Matrix\-Mx\-N@{Matrix\-Mx\-N}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!MatrixMxN@{Matrix\-Mx\-N}}
+\subsubsection[{operator$\ast$}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Matrix\-Mx\-N} Matrix\-Mx\-N\-::operator$\ast$ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Matrix\-Mx\-N} \&}]{other}
+\end{DoxyParamCaption}
+) const}}\label{class_matrix_mx_n_aaa446aa7a21bec7aa7f6f83bde0780d4}
+\hypertarget{class_matrix_mx_n_a2e49e8ec8b34081eaceeac96d10db260}{\index{Matrix\-Mx\-N@{Matrix\-Mx\-N}!operator+@{operator+}}
+\index{operator+@{operator+}!MatrixMxN@{Matrix\-Mx\-N}}
+\subsubsection[{operator+}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Matrix\-Mx\-N} Matrix\-Mx\-N\-::operator+ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Matrix\-Mx\-N} \&}]{other}
+\end{DoxyParamCaption}
+) const}}\label{class_matrix_mx_n_a2e49e8ec8b34081eaceeac96d10db260}
+\hypertarget{class_matrix_mx_n_a399e59a5b73699465b67b0d296e440ef}{\index{Matrix\-Mx\-N@{Matrix\-Mx\-N}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!MatrixMxN@{Matrix\-Mx\-N}}
+\subsubsection[{operator-\/}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Matrix\-Mx\-N} Matrix\-Mx\-N\-::operator-\/ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Matrix\-Mx\-N} \&}]{other}
+\end{DoxyParamCaption}
+) const}}\label{class_matrix_mx_n_a399e59a5b73699465b67b0d296e440ef}
+\hypertarget{class_matrix_mx_n_aed6d9329b641e215fdb2ef9941ba7f43}{\index{Matrix\-Mx\-N@{Matrix\-Mx\-N}!operator=@{operator=}}
+\index{operator=@{operator=}!MatrixMxN@{Matrix\-Mx\-N}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Matrix\-Mx\-N} \& Matrix\-Mx\-N\-::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Matrix\-Mx\-N} \&}]{other}
+\end{DoxyParamCaption}
+)}}\label{class_matrix_mx_n_aed6d9329b641e215fdb2ef9941ba7f43}
+\hypertarget{class_matrix_mx_n_a80906a3f7cdea0f2eb8e710f77cb485b}{\index{Matrix\-Mx\-N@{Matrix\-Mx\-N}!operator\mbox{[}$\,$\mbox{]}@{operator[]}}
+\index{operator\mbox{[}$\,$\mbox{]}@{operator[]}!MatrixMxN@{Matrix\-Mx\-N}}
+\subsubsection[{operator[]}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector\-N\-D} Matrix\-Mx\-N\-::operator\mbox{[}$\,$\mbox{]} (
+\begin{DoxyParamCaption}
+\item[{size\-\_\-t}]{row}
+\end{DoxyParamCaption}
+) const}}\label{class_matrix_mx_n_a80906a3f7cdea0f2eb8e710f77cb485b}
+\hypertarget{class_matrix_mx_n_ab98762a2138106995493c1eadaa741ca}{\index{Matrix\-Mx\-N@{Matrix\-Mx\-N}!operator\mbox{[}$\,$\mbox{]}@{operator[]}}
+\index{operator\mbox{[}$\,$\mbox{]}@{operator[]}!MatrixMxN@{Matrix\-Mx\-N}}
+\subsubsection[{operator[]}]{\setlength{\rightskip}{0pt plus 5cm}double $\ast$ Matrix\-Mx\-N\-::operator\mbox{[}$\,$\mbox{]} (
+\begin{DoxyParamCaption}
+\item[{size\-\_\-t}]{row}
+\end{DoxyParamCaption}
+)}}\label{class_matrix_mx_n_ab98762a2138106995493c1eadaa741ca}
+\hypertarget{class_matrix_mx_n_a32bc6e3104d7c7b44f6a306729c1b94b}{\index{Matrix\-Mx\-N@{Matrix\-Mx\-N}!pointwise\-Multiply@{pointwise\-Multiply}}
+\index{pointwise\-Multiply@{pointwise\-Multiply}!MatrixMxN@{Matrix\-Mx\-N}}
+\subsubsection[{pointwise\-Multiply}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Matrix\-Mx\-N} Matrix\-Mx\-N\-::pointwise\-Multiply (
+\begin{DoxyParamCaption}
+\item[{const {\bf Matrix\-Mx\-N} \&}]{other}
+\end{DoxyParamCaption}
+) const}}\label{class_matrix_mx_n_a32bc6e3104d7c7b44f6a306729c1b94b}
+\hypertarget{class_matrix_mx_n_af253a4e2644ea88bbb6e8f806b7d0623}{\index{Matrix\-Mx\-N@{Matrix\-Mx\-N}!switch\-Horizontal@{switch\-Horizontal}}
+\index{switch\-Horizontal@{switch\-Horizontal}!MatrixMxN@{Matrix\-Mx\-N}}
+\subsubsection[{switch\-Horizontal}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Matrix\-Mx\-N} Matrix\-Mx\-N\-::switch\-Horizontal (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_matrix_mx_n_af253a4e2644ea88bbb6e8f806b7d0623}
+\hypertarget{class_matrix_mx_n_aeb9e6a36563b05a274d690256a1925a4}{\index{Matrix\-Mx\-N@{Matrix\-Mx\-N}!switch\-Vertical@{switch\-Vertical}}
+\index{switch\-Vertical@{switch\-Vertical}!MatrixMxN@{Matrix\-Mx\-N}}
+\subsubsection[{switch\-Vertical}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Matrix\-Mx\-N} Matrix\-Mx\-N\-::switch\-Vertical (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_matrix_mx_n_aeb9e6a36563b05a274d690256a1925a4}
+\hypertarget{class_matrix_mx_n_aa300812401ad6cd3e9a5d02889857516}{\index{Matrix\-Mx\-N@{Matrix\-Mx\-N}!transpose@{transpose}}
+\index{transpose@{transpose}!MatrixMxN@{Matrix\-Mx\-N}}
+\subsubsection[{transpose}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Matrix\-Mx\-N} Matrix\-Mx\-N\-::transpose (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_matrix_mx_n_aa300812401ad6cd3e9a5d02889857516}
+\hypertarget{class_matrix_mx_n_ac4c1fc26a79339f7a583006f7dd99a09}{\index{Matrix\-Mx\-N@{Matrix\-Mx\-N}!transpose\-And\-Multiply@{transpose\-And\-Multiply}}
+\index{transpose\-And\-Multiply@{transpose\-And\-Multiply}!MatrixMxN@{Matrix\-Mx\-N}}
+\subsubsection[{transpose\-And\-Multiply}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Matrix\-Mx\-N} Matrix\-Mx\-N\-::transpose\-And\-Multiply (
+\begin{DoxyParamCaption}
+\item[{const {\bf Matrix\-Mx\-N} \&}]{other}
+\end{DoxyParamCaption}
+) const}}\label{class_matrix_mx_n_ac4c1fc26a79339f7a583006f7dd99a09}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/\-Owner/\-My Programming/\-Personal Projects/\-Video\-Games/\-Optimist Racing/src/\hyperlink{_algebra_8hpp}{Algebra.\-hpp}\item 
+C\-:/\-Users/\-Owner/\-My Programming/\-Personal Projects/\-Video\-Games/\-Optimist Racing/src/\hyperlink{_algebra_8cpp}{Algebra.\-cpp}\end{DoxyCompactItemize}

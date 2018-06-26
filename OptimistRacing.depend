@@ -1,0 +1,404 @@
+# depslib dependency file v1.0
+1355524196 source:c:\claude\code\restoring\optimistracing\src\algebra.cpp
+	"Algebra.hpp"
+
+1432698354 c:\claude\code\restoring\optimistracing\src\algebra.hpp
+	<algorithm>
+	<cmath>
+
+1355947682 source:c:\claude\code\restoring\optimistracing\src\audio.cpp
+	"Audio.hpp"
+	<allegro5\allegro_acodec.h>
+
+1355947651 c:\claude\code\restoring\optimistracing\src\audio.hpp
+	<string>
+	<allegro5\allegro.h>
+	<allegro5\allegro_audio.h>
+
+1372689862 c:\claude\code\restoring\optimistracing\allegro5\include\allegro5\allegro.h
+	"allegro5/base.h"
+	"allegro5/altime.h"
+	"allegro5/bitmap.h"
+	"allegro5/bitmap_draw.h"
+	"allegro5/bitmap_io.h"
+	"allegro5/bitmap_lock.h"
+	"allegro5/blender.h"
+	"allegro5/color.h"
+	"allegro5/config.h"
+	"allegro5/debug.h"
+	"allegro5/display.h"
+	"allegro5/drawing.h"
+	"allegro5/error.h"
+	"allegro5/events.h"
+	"allegro5/file.h"
+	"allegro5/fixed.h"
+	"allegro5/fmaths.h"
+	"allegro5/fshook.h"
+	"allegro5/fullscreen_mode.h"
+	"allegro5/haptic.h"
+	"allegro5/joystick.h"
+	"allegro5/keyboard.h"
+	"allegro5/memory.h"
+	"allegro5/monitor.h"
+	"allegro5/mouse.h"
+	"allegro5/mouse_cursor.h"
+	"allegro5/path.h"
+	"allegro5/render_state.h"
+	"allegro5/shader.h"
+	"allegro5/system.h"
+	"allegro5/threads.h"
+	"allegro5/timer.h"
+	"allegro5/tls.h"
+	"allegro5/touch_input.h"
+	"allegro5/transformations.h"
+	"allegro5/utf8.h"
+	"allegro5/alcompat.h"
+
+1430888882 c:\claude\code\restoring\optimistracing\allegro5\include\allegro5\base.h
+	<errno.h>
+	<limits.h>
+	<limits.h>
+	<stdarg.h>
+	<stddef.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	<sys/types.h>
+	<fortify/fortify.h>
+	<dmalloc.h>
+	"allegro5/internal/alconfig.h"
+
+1405884230 c:\claude\code\restoring\optimistracing\allegro5\include\allegro5\internal\alconfig.h
+	"allegro5/platform/alplatf.h"
+	"allegro5/platform/alwatcom.h"
+	"allegro5/platform/almngw32.h"
+	"allegro5/platform/albcc32.h"
+	"allegro5/platform/almsvc.h"
+	"allegro5/platform/aliphonecfg.h"
+	"allegro5/platform/alosxcfg.h"
+	"allegro5/platform/alandroidcfg.h"
+	"allegro5/platform/alraspberrypicfg.h"
+	"allegro5/platform/alucfg.h"
+	"allegro5/platform/allegro_sdl_config.h"
+	"allegro5/platform/astdint.h"
+	"allegro5/platform/astdbool.h"
+
+1430972603 c:\claude\code\restoring\optimistracing\allegro5\include\allegro5\platform\alplatf.h
+
+1365822194 c:\claude\code\restoring\optimistracing\allegro5\include\allegro5\platform\alwatcom.h
+	<io.h>
+	<i86.h>
+	<conio.h>
+	<fcntl.h>
+	<direct.h>
+	<malloc.h>
+
+1365822868 c:\claude\code\restoring\optimistracing\allegro5\include\allegro5\platform\almngw32.h
+	<io.h>
+	<fcntl.h>
+	<direct.h>
+	<malloc.h>
+	"allegro5/platform/alplatf.h"
+
+1365822868 c:\claude\code\restoring\optimistracing\allegro5\include\allegro5\platform\albcc32.h
+	<io.h>
+	<fcntl.h>
+	<direct.h>
+	<malloc.h>
+
+1365822868 c:\claude\code\restoring\optimistracing\allegro5\include\allegro5\platform\almsvc.h
+	<io.h>
+	<fcntl.h>
+	<direct.h>
+	<malloc.h>
+	"allegro5/platform/alplatf.h"
+
+1354194640 c:\claude\code\restoring\optimistracing\allegro5\include\allegro5\platform\aliphonecfg.h
+	<fcntl.h>
+	<unistd.h>
+
+1365822868 c:\claude\code\restoring\optimistracing\allegro5\include\allegro5\platform\alosxcfg.h
+	"allegro5/platform/alplatf.h"
+
+1324193452 c:\claude\code\restoring\optimistracing\allegro5\include\allegro5\platform\alandroidcfg.h
+
+1354194640 c:\claude\code\restoring\optimistracing\allegro5\include\allegro5\platform\alraspberrypicfg.h
+	<fcntl.h>
+	<unistd.h>
+	<sys/types.h>
+
+1365822194 c:\claude\code\restoring\optimistracing\allegro5\include\allegro5\platform\alucfg.h
+	<fcntl.h>
+	<unistd.h>
+	"alunix.h"
+	"allegro5/platform/alplatf.h"
+
+1266928920 c:\claude\code\restoring\optimistracing\allegro5\include\allegro5\platform\alunix.h
+
+1405884230 c:\claude\code\restoring\optimistracing\allegro5\include\allegro5\platform\allegro_sdl_config.h
+	<fcntl.h>
+	<unistd.h>
+
+1281015646 c:\claude\code\restoring\optimistracing\allegro5\include\allegro5\platform\astdint.h
+	<inttypes.h>
+	<stdint.h>
+
+1281015646 c:\claude\code\restoring\optimistracing\allegro5\include\allegro5\platform\astdbool.h
+	<stdbool.h>
+
+1285080582 c:\claude\code\restoring\optimistracing\allegro5\include\allegro5\altime.h
+	"allegro5/base.h"
+
+1385467368 c:\claude\code\restoring\optimistracing\allegro5\include\allegro5\bitmap.h
+	"allegro5/color.h"
+
+1419560002 c:\claude\code\restoring\optimistracing\allegro5\include\allegro5\color.h
+	"allegro5/base.h"
+
+1354624034 c:\claude\code\restoring\optimistracing\allegro5\include\allegro5\bitmap_draw.h
+	"allegro5/bitmap.h"
+
+1313812652 c:\claude\code\restoring\optimistracing\allegro5\include\allegro5\bitmap_io.h
+	"allegro5/bitmap.h"
+	"allegro5/file.h"
+
+1419214822 c:\claude\code\restoring\optimistracing\allegro5\include\allegro5\file.h
+	"allegro5/base.h"
+	"allegro5/path.h"
+	"allegro5/utf8.h"
+
+1337496594 c:\claude\code\restoring\optimistracing\allegro5\include\allegro5\path.h
+	"allegro5/base.h"
+
+1337172890 c:\claude\code\restoring\optimistracing\allegro5\include\allegro5\utf8.h
+	"allegro5/base.h"
+
+1418627216 c:\claude\code\restoring\optimistracing\allegro5\include\allegro5\bitmap_lock.h
+	"allegro5/bitmap.h"
+
+1368931486 c:\claude\code\restoring\optimistracing\allegro5\include\allegro5\blender.h
+
+1351459758 c:\claude\code\restoring\optimistracing\allegro5\include\allegro5\config.h
+	"allegro5/file.h"
+
+1351641790 c:\claude\code\restoring\optimistracing\allegro5\include\allegro5\debug.h
+	<assert.h>
+	"allegro5/base.h"
+
+1386840322 c:\claude\code\restoring\optimistracing\allegro5\include\allegro5\display.h
+	"allegro5/bitmap.h"
+	"allegro5/color.h"
+	"allegro5/events.h"
+
+1354624034 c:\claude\code\restoring\optimistracing\allegro5\include\allegro5\events.h
+	"allegro5/altime.h"
+
+1354624034 c:\claude\code\restoring\optimistracing\allegro5\include\allegro5\drawing.h
+	"allegro5/color.h"
+
+1281015646 c:\claude\code\restoring\optimistracing\allegro5\include\allegro5\error.h
+	"allegro5/base.h"
+
+1281015646 c:\claude\code\restoring\optimistracing\allegro5\include\allegro5\fixed.h
+	"allegro5/base.h"
+
+1281015646 c:\claude\code\restoring\optimistracing\allegro5\include\allegro5\fmaths.h
+	"allegro5/base.h"
+	"allegro5/fixed.h"
+	"allegro5/inline/fmaths.inl"
+
+1365819842 c:\claude\code\restoring\optimistracing\allegro5\include\allegro5\inline\fmaths.inl
+	"allegro5/error.h"
+
+1406021838 c:\claude\code\restoring\optimistracing\allegro5\include\allegro5\fshook.h
+	"allegro5/base.h"
+	"allegro5/file.h"
+	"allegro5/path.h"
+	<sys/types.h>
+
+1354540160 c:\claude\code\restoring\optimistracing\allegro5\include\allegro5\fullscreen_mode.h
+
+1407778798 c:\claude\code\restoring\optimistracing\allegro5\include\allegro5\haptic.h
+	"allegro5/base.h"
+	"allegro5/display.h"
+	"allegro5/events.h"
+	"allegro5/joystick.h"
+	"allegro5/keyboard.h"
+	"allegro5/mouse.h"
+	"allegro5/touch_input.h"
+
+1354624034 c:\claude\code\restoring\optimistracing\allegro5\include\allegro5\joystick.h
+	"allegro5/base.h"
+	"allegro5/events.h"
+
+1354624034 c:\claude\code\restoring\optimistracing\allegro5\include\allegro5\keyboard.h
+	"allegro5/base.h"
+	"allegro5/events.h"
+	"allegro5/keycodes.h"
+
+1374896202 c:\claude\code\restoring\optimistracing\allegro5\include\allegro5\keycodes.h
+
+1423033932 c:\claude\code\restoring\optimistracing\allegro5\include\allegro5\mouse.h
+	"allegro5/base.h"
+	"allegro5/events.h"
+
+1354624034 c:\claude\code\restoring\optimistracing\allegro5\include\allegro5\touch_input.h
+	"allegro5/base.h"
+	"allegro5/events.h"
+
+1286717132 c:\claude\code\restoring\optimistracing\allegro5\include\allegro5\memory.h
+
+1354540936 c:\claude\code\restoring\optimistracing\allegro5\include\allegro5\monitor.h
+
+1354624034 c:\claude\code\restoring\optimistracing\allegro5\include\allegro5\mouse_cursor.h
+	"allegro5/base.h"
+
+1337488228 c:\claude\code\restoring\optimistracing\allegro5\include\allegro5\render_state.h
+
+1363131182 c:\claude\code\restoring\optimistracing\allegro5\include\allegro5\shader.h
+	"allegro5/base.h"
+	"allegro5/transformations.h"
+
+1427947664 c:\claude\code\restoring\optimistracing\allegro5\include\allegro5\transformations.h
+	"allegro5/display.h"
+
+1333151678 c:\claude\code\restoring\optimistracing\allegro5\include\allegro5\system.h
+	"allegro5/config.h"
+	"allegro5/path.h"
+
+1289090810 c:\claude\code\restoring\optimistracing\allegro5\include\allegro5\threads.h
+	"allegro5/altime.h"
+
+1283958392 c:\claude\code\restoring\optimistracing\allegro5\include\allegro5\timer.h
+	"allegro5/base.h"
+
+1427947664 c:\claude\code\restoring\optimistracing\allegro5\include\allegro5\tls.h
+	"allegro5/base.h"
+
+1368871006 c:\claude\code\restoring\optimistracing\allegro5\include\allegro5\alcompat.h
+
+1386256610 c:\claude\code\restoring\optimistracing\allegro5\include\allegro5\allegro_audio.h
+	"allegro5/allegro.h"
+
+1281015646 c:\claude\code\restoring\optimistracing\allegro5\include\allegro5\allegro_acodec.h
+	"allegro5/allegro.h"
+	"allegro5/allegro_audio.h"
+
+1355524196 source:c:\claude\code\restoring\optimistracing\src\bezier.cpp
+	"Bezier.hpp"
+
+1355524196 c:\claude\code\restoring\optimistracing\src\bezier.hpp
+	"Algebra.hpp"
+
+1355524196 source:c:\claude\code\restoring\optimistracing\src\camera.cpp
+	"Camera.hpp"
+	<GL\glew.h>
+	<GL\freeglut.h>
+
+1355524196 c:\claude\code\restoring\optimistracing\src\camera.hpp
+	"Algebra.hpp"
+	"Lagrange.hpp"
+
+1355850605 c:\claude\code\restoring\optimistracing\src\lagrange.hpp
+	"Algebra.hpp"
+	"Bezier.hpp"
+
+1422335893 c:\claude\code\restoring\optimistracing\glew-1.12.0\include\gl\glew.h
+	<stddef.h>
+	<inttypes.h>
+	<stdint.h>
+	<inttypes.h>
+	<Availability.h>
+	<OpenGL/glu.h>
+	<GL/glu.h>
+
+1426367728 c:\claude\code\restoring\optimistracing\freeglut\include\gl\freeglut.h
+	"freeglut_std.h"
+	"freeglut_ext.h"
+
+1426367728 c:\claude\code\restoring\optimistracing\freeglut\include\gl\freeglut_std.h
+	<windows.h>
+	<EGL/egl.h>
+	<GLES/gl.h>
+	<GLES2/gl2.h>
+	<OpenGL/gl.h>
+	<OpenGL/glu.h>
+	<GL/gl.h>
+	<GL/glu.h>
+	<stdlib.h>
+
+1426367728 c:\claude\code\restoring\optimistracing\freeglut\include\gl\freeglut_ext.h
+	<stdarg.h>
+
+1355524196 source:c:\claude\code\restoring\optimistracing\src\collision.cpp
+	"Collision.hpp"
+
+1355524196 c:\claude\code\restoring\optimistracing\src\collision.hpp
+	"Algebra.hpp"
+
+1432698718 source:c:\claude\code\restoring\optimistracing\src\data.cpp
+	"Data.hpp"
+	<fstream>
+	<iostream>
+	<direct.h>
+	"FileLocator.hpp"
+
+1355524197 c:\claude\code\restoring\optimistracing\src\data.hpp
+	<iostream>
+	<string>
+	<list>
+	<vector>
+	"Algebra.hpp"
+	"ElectricColour.hpp"
+	"Material.hpp"
+
+1355524197 c:\claude\code\restoring\optimistracing\src\electriccolour.hpp
+	<iostream>
+
+1355524197 c:\claude\code\restoring\optimistracing\src\material.hpp
+	<GL\glew.h>
+	<GL\freeglut.h>
+	"Image.hpp"
+
+1355524196 c:\claude\code\restoring\optimistracing\src\image.hpp
+	<string>
+
+1355524197 c:\claude\code\restoring\optimistracing\src\filelocator.hpp
+	<string>
+	"LuaGame.hpp"
+	"Data.hpp"
+
+1354831027 c:\claude\code\restoring\optimistracing\src\luagame.hpp
+	<string>
+	"Data.hpp"
+
+1355844114 source:c:\claude\code\restoring\optimistracing\src\datatracker.cpp
+	"DataTracker.hpp"
+	<sstream>
+
+1355524197 c:\claude\code\restoring\optimistracing\src\datatracker.hpp
+	<string>
+	"LuaGame.hpp"
+	"Data.hpp"
+
+1355524197 source:c:\claude\code\restoring\optimistracing\src\electriccolour.cpp
+	"ElectricColour.hpp"
+
+1355524195 source:c:\claude\code\restoring\optimistracing\src\electriccolourtest.cpp
+
+1356309443 source:c:\claude\code\restoring\optimistracing\src\event.cpp
+	"Event.hpp"
+
+1356309170 c:\claude\code\restoring\optimistracing\src\event.hpp
+	<string>
+	<map>
+	<list>
+
+1355524197 source:c:\claude\code\restoring\optimistracing\src\filelocator.cpp
+	"FileLocator.hpp"
+
+1355524196 source:c:\claude\code\restoring\optimistracing\src\gameflow.cpp
+
+1355526707 source:c:\claude\code\restoring\optimistracing\src\globals.cpp
+	"Audio.hpp"
+

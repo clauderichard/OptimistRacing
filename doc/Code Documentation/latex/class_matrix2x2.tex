@@ -1,0 +1,167 @@
+\hypertarget{class_matrix2x2}{\section{Matrix2x2 Class Reference}
+\label{class_matrix2x2}\index{Matrix2x2@{Matrix2x2}}
+}
+
+
+{\ttfamily \#include $<$Algebra.\-hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_matrix2x2_aca3f61a3a1bce86fd10f3e8b70f70e81}{Matrix2x2} ()
+\item 
+\hyperlink{class_matrix2x2_ace1cda72cf042dd31876c0d059c9e9bf}{Matrix2x2} (const \hyperlink{class_matrix2x2}{Matrix2x2} \&other)
+\item 
+\hyperlink{class_matrix2x2_a001283eaf70db2e8f935ef103b3fe98e}{Matrix2x2} (const \hyperlink{class_vector2_d}{Vector2\-D} \&row1, const \hyperlink{class_vector2_d}{Vector2\-D} \&row2)
+\item 
+\hyperlink{class_matrix2x2_af05682ae3b80edd3b14ac43db5ef0c08}{Matrix2x2} (const double $\ast$values)
+\item 
+\hyperlink{class_matrix2x2}{Matrix2x2} \& \hyperlink{class_matrix2x2_af1e1812c8ecd1f5fe0de70780e996b53}{operator=} (const \hyperlink{class_matrix2x2}{Matrix2x2} \&other)
+\item 
+\hyperlink{class_vector2_d}{Vector2\-D} \hyperlink{class_matrix2x2_a3a03aae0dde8aaf2579bbead6e58c25a}{get\-Row} (size\-\_\-t row) const 
+\item 
+double $\ast$ \hyperlink{class_matrix2x2_a72cd1d0d3fc8876b6a17632079c45227}{get\-Row} (size\-\_\-t row)
+\item 
+\hyperlink{class_vector2_d}{Vector2\-D} \hyperlink{class_matrix2x2_a299ddc8aba2c00d3e61071ac8261b17a}{get\-Column} (size\-\_\-t col) const 
+\item 
+\hyperlink{class_vector2_d}{Vector2\-D} \hyperlink{class_matrix2x2_a83296205a183d5ab07aa6b4947c16bf2}{operator\mbox{[}$\,$\mbox{]}} (size\-\_\-t row) const 
+\item 
+double $\ast$ \hyperlink{class_matrix2x2_a6e607183b40dd89bb123971a09f99f91}{operator\mbox{[}$\,$\mbox{]}} (size\-\_\-t row)
+\item 
+\hyperlink{class_matrix2x2}{Matrix2x2} \hyperlink{class_matrix2x2_a7630ef26f2a09c33137b680a468a114b}{transpose} () const 
+\item 
+\hyperlink{class_matrix2x2}{Matrix2x2} \hyperlink{class_matrix2x2_a5c4d3f6f5ba43791cad0fd210886c0d6}{invert} () const 
+\item 
+double \hyperlink{class_matrix2x2_a4498d52afa9436548e98105ac39f995a}{determinant} () const 
+\item 
+\hyperlink{class_vector2_d}{Vector2\-D} \hyperlink{class_matrix2x2_aa0c530a9fe1db1065a39af880ddbaca9}{matrix\-Solve} (const \hyperlink{class_vector2_d}{Vector2\-D} \&b) const 
+\item 
+const double $\ast$ \hyperlink{class_matrix2x2_a7bdbb1745aae6fa25060c9db113f0fea}{begin} () const 
+\item 
+const double $\ast$ \hyperlink{class_matrix2x2_a763a2edfa907e05301e46f8864921bfe}{end} () const 
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_matrix2x2_aca3f61a3a1bce86fd10f3e8b70f70e81}{\index{Matrix2x2@{Matrix2x2}!Matrix2x2@{Matrix2x2}}
+\index{Matrix2x2@{Matrix2x2}!Matrix2x2@{Matrix2x2}}
+\subsubsection[{Matrix2x2}]{\setlength{\rightskip}{0pt plus 5cm}Matrix2x2\-::\-Matrix2x2 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_matrix2x2_aca3f61a3a1bce86fd10f3e8b70f70e81}
+\hypertarget{class_matrix2x2_ace1cda72cf042dd31876c0d059c9e9bf}{\index{Matrix2x2@{Matrix2x2}!Matrix2x2@{Matrix2x2}}
+\index{Matrix2x2@{Matrix2x2}!Matrix2x2@{Matrix2x2}}
+\subsubsection[{Matrix2x2}]{\setlength{\rightskip}{0pt plus 5cm}Matrix2x2\-::\-Matrix2x2 (
+\begin{DoxyParamCaption}
+\item[{const {\bf Matrix2x2} \&}]{other}
+\end{DoxyParamCaption}
+)}}\label{class_matrix2x2_ace1cda72cf042dd31876c0d059c9e9bf}
+\hypertarget{class_matrix2x2_a001283eaf70db2e8f935ef103b3fe98e}{\index{Matrix2x2@{Matrix2x2}!Matrix2x2@{Matrix2x2}}
+\index{Matrix2x2@{Matrix2x2}!Matrix2x2@{Matrix2x2}}
+\subsubsection[{Matrix2x2}]{\setlength{\rightskip}{0pt plus 5cm}Matrix2x2\-::\-Matrix2x2 (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vector2\-D} \&}]{row1, }
+\item[{const {\bf Vector2\-D} \&}]{row2}
+\end{DoxyParamCaption}
+)}}\label{class_matrix2x2_a001283eaf70db2e8f935ef103b3fe98e}
+\hypertarget{class_matrix2x2_af05682ae3b80edd3b14ac43db5ef0c08}{\index{Matrix2x2@{Matrix2x2}!Matrix2x2@{Matrix2x2}}
+\index{Matrix2x2@{Matrix2x2}!Matrix2x2@{Matrix2x2}}
+\subsubsection[{Matrix2x2}]{\setlength{\rightskip}{0pt plus 5cm}Matrix2x2\-::\-Matrix2x2 (
+\begin{DoxyParamCaption}
+\item[{const double $\ast$}]{values}
+\end{DoxyParamCaption}
+)}}\label{class_matrix2x2_af05682ae3b80edd3b14ac43db5ef0c08}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_matrix2x2_a7bdbb1745aae6fa25060c9db113f0fea}{\index{Matrix2x2@{Matrix2x2}!begin@{begin}}
+\index{begin@{begin}!Matrix2x2@{Matrix2x2}}
+\subsubsection[{begin}]{\setlength{\rightskip}{0pt plus 5cm}const double $\ast$ Matrix2x2\-::begin (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_matrix2x2_a7bdbb1745aae6fa25060c9db113f0fea}
+\hypertarget{class_matrix2x2_a4498d52afa9436548e98105ac39f995a}{\index{Matrix2x2@{Matrix2x2}!determinant@{determinant}}
+\index{determinant@{determinant}!Matrix2x2@{Matrix2x2}}
+\subsubsection[{determinant}]{\setlength{\rightskip}{0pt plus 5cm}double Matrix2x2\-::determinant (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_matrix2x2_a4498d52afa9436548e98105ac39f995a}
+\hypertarget{class_matrix2x2_a763a2edfa907e05301e46f8864921bfe}{\index{Matrix2x2@{Matrix2x2}!end@{end}}
+\index{end@{end}!Matrix2x2@{Matrix2x2}}
+\subsubsection[{end}]{\setlength{\rightskip}{0pt plus 5cm}const double $\ast$ Matrix2x2\-::end (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_matrix2x2_a763a2edfa907e05301e46f8864921bfe}
+\hypertarget{class_matrix2x2_a299ddc8aba2c00d3e61071ac8261b17a}{\index{Matrix2x2@{Matrix2x2}!get\-Column@{get\-Column}}
+\index{get\-Column@{get\-Column}!Matrix2x2@{Matrix2x2}}
+\subsubsection[{get\-Column}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector2\-D} Matrix2x2\-::get\-Column (
+\begin{DoxyParamCaption}
+\item[{size\-\_\-t}]{col}
+\end{DoxyParamCaption}
+) const}}\label{class_matrix2x2_a299ddc8aba2c00d3e61071ac8261b17a}
+\hypertarget{class_matrix2x2_a3a03aae0dde8aaf2579bbead6e58c25a}{\index{Matrix2x2@{Matrix2x2}!get\-Row@{get\-Row}}
+\index{get\-Row@{get\-Row}!Matrix2x2@{Matrix2x2}}
+\subsubsection[{get\-Row}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector2\-D} Matrix2x2\-::get\-Row (
+\begin{DoxyParamCaption}
+\item[{size\-\_\-t}]{row}
+\end{DoxyParamCaption}
+) const}}\label{class_matrix2x2_a3a03aae0dde8aaf2579bbead6e58c25a}
+\hypertarget{class_matrix2x2_a72cd1d0d3fc8876b6a17632079c45227}{\index{Matrix2x2@{Matrix2x2}!get\-Row@{get\-Row}}
+\index{get\-Row@{get\-Row}!Matrix2x2@{Matrix2x2}}
+\subsubsection[{get\-Row}]{\setlength{\rightskip}{0pt plus 5cm}double $\ast$ Matrix2x2\-::get\-Row (
+\begin{DoxyParamCaption}
+\item[{size\-\_\-t}]{row}
+\end{DoxyParamCaption}
+)}}\label{class_matrix2x2_a72cd1d0d3fc8876b6a17632079c45227}
+\hypertarget{class_matrix2x2_a5c4d3f6f5ba43791cad0fd210886c0d6}{\index{Matrix2x2@{Matrix2x2}!invert@{invert}}
+\index{invert@{invert}!Matrix2x2@{Matrix2x2}}
+\subsubsection[{invert}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Matrix2x2} Matrix2x2\-::invert (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_matrix2x2_a5c4d3f6f5ba43791cad0fd210886c0d6}
+\hypertarget{class_matrix2x2_aa0c530a9fe1db1065a39af880ddbaca9}{\index{Matrix2x2@{Matrix2x2}!matrix\-Solve@{matrix\-Solve}}
+\index{matrix\-Solve@{matrix\-Solve}!Matrix2x2@{Matrix2x2}}
+\subsubsection[{matrix\-Solve}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector2\-D} Matrix2x2\-::matrix\-Solve (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vector2\-D} \&}]{b}
+\end{DoxyParamCaption}
+) const}}\label{class_matrix2x2_aa0c530a9fe1db1065a39af880ddbaca9}
+\hypertarget{class_matrix2x2_af1e1812c8ecd1f5fe0de70780e996b53}{\index{Matrix2x2@{Matrix2x2}!operator=@{operator=}}
+\index{operator=@{operator=}!Matrix2x2@{Matrix2x2}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Matrix2x2} \& Matrix2x2\-::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Matrix2x2} \&}]{other}
+\end{DoxyParamCaption}
+)}}\label{class_matrix2x2_af1e1812c8ecd1f5fe0de70780e996b53}
+\hypertarget{class_matrix2x2_a83296205a183d5ab07aa6b4947c16bf2}{\index{Matrix2x2@{Matrix2x2}!operator\mbox{[}$\,$\mbox{]}@{operator[]}}
+\index{operator\mbox{[}$\,$\mbox{]}@{operator[]}!Matrix2x2@{Matrix2x2}}
+\subsubsection[{operator[]}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector2\-D} Matrix2x2\-::operator\mbox{[}$\,$\mbox{]} (
+\begin{DoxyParamCaption}
+\item[{size\-\_\-t}]{row}
+\end{DoxyParamCaption}
+) const}}\label{class_matrix2x2_a83296205a183d5ab07aa6b4947c16bf2}
+\hypertarget{class_matrix2x2_a6e607183b40dd89bb123971a09f99f91}{\index{Matrix2x2@{Matrix2x2}!operator\mbox{[}$\,$\mbox{]}@{operator[]}}
+\index{operator\mbox{[}$\,$\mbox{]}@{operator[]}!Matrix2x2@{Matrix2x2}}
+\subsubsection[{operator[]}]{\setlength{\rightskip}{0pt plus 5cm}double $\ast$ Matrix2x2\-::operator\mbox{[}$\,$\mbox{]} (
+\begin{DoxyParamCaption}
+\item[{size\-\_\-t}]{row}
+\end{DoxyParamCaption}
+)}}\label{class_matrix2x2_a6e607183b40dd89bb123971a09f99f91}
+\hypertarget{class_matrix2x2_a7630ef26f2a09c33137b680a468a114b}{\index{Matrix2x2@{Matrix2x2}!transpose@{transpose}}
+\index{transpose@{transpose}!Matrix2x2@{Matrix2x2}}
+\subsubsection[{transpose}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Matrix2x2} Matrix2x2\-::transpose (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_matrix2x2_a7630ef26f2a09c33137b680a468a114b}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/\-Owner/\-My Programming/\-Personal Projects/\-Video\-Games/\-Optimist Racing/src/\hyperlink{_algebra_8hpp}{Algebra.\-hpp}\item 
+C\-:/\-Users/\-Owner/\-My Programming/\-Personal Projects/\-Video\-Games/\-Optimist Racing/src/\hyperlink{_algebra_8cpp}{Algebra.\-cpp}\end{DoxyCompactItemize}

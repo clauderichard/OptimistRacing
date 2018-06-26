@@ -1,0 +1,15 @@
+prefix=C:/dev/allegro_winpkg-master/mingw-w64/release/pkg/mingw-w64-x86_64-allegro/mingw64
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+version=5.1.10
+suffix=-debug
+versuffix=5
+
+Name: allegro_color
+Description: Allegro game programming library, colors addon
+Version: ${version}
+Libs: -L${libdir} -lallegro_color${suffix}
+Libs.private: 
+Requires: allegro${suffix}-${versuffix} >= ${version}
+Cflags: -I${includedir}

@@ -1,0 +1,101 @@
+\hypertarget{class_camera}{\section{Camera Class Reference}
+\label{class_camera}\index{Camera@{Camera}}
+}
+
+
+{\ttfamily \#include $<$Camera.\-hpp$>$}
+
+Inheritance diagram for Camera\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_camera}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_camera_a01f94c3543f56ede7af49dc778f19331}{Camera} ()
+\item 
+\hyperlink{class_camera_ad1897942d0ccf91052386388a497349f}{$\sim$\-Camera} ()
+\item 
+virtual void \hyperlink{class_camera_af3a878a62730b49ab38b33c75325342e}{gl\-Apply} ()=0
+\item 
+void \hyperlink{class_camera_a3ad7b867f72a6279f4e19b7dcfb0b071}{freeze} ()
+\item 
+void \hyperlink{class_camera_a80b6f23356955890272241df1c185379}{unfreeze} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{class_camera_ae2a9a29d6dfb6626c08ecf9b5ed444da}{m\-Freeze}
+\item 
+\hyperlink{class_vector3_d}{Vector3\-D} \hyperlink{class_camera_a893ec886bbdbc025e54a492b54c585ca}{m\-Position}
+\item 
+\hyperlink{class_vector3_d}{Vector3\-D} \hyperlink{class_camera_a5569a68f84f82a1fcf128baac654562a}{m\-Up}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class is meant to store the position of a camera that doesn't interact physically with the world. Can store position while frozen in space. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_camera_a01f94c3543f56ede7af49dc778f19331}{\index{Camera@{Camera}!Camera@{Camera}}
+\index{Camera@{Camera}!Camera@{Camera}}
+\subsubsection[{Camera}]{\setlength{\rightskip}{0pt plus 5cm}Camera\-::\-Camera (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_camera_a01f94c3543f56ede7af49dc778f19331}
+Basic constructor, begins unfrozen, at the origin, with a standard orientation. \hypertarget{class_camera_ad1897942d0ccf91052386388a497349f}{\index{Camera@{Camera}!$\sim$\-Camera@{$\sim$\-Camera}}
+\index{$\sim$\-Camera@{$\sim$\-Camera}!Camera@{Camera}}
+\subsubsection[{$\sim$\-Camera}]{\setlength{\rightskip}{0pt plus 5cm}Camera\-::$\sim$\-Camera (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_camera_ad1897942d0ccf91052386388a497349f}
+Destructor, does not do anything since it doesn't have to. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_camera_a3ad7b867f72a6279f4e19b7dcfb0b071}{\index{Camera@{Camera}!freeze@{freeze}}
+\index{freeze@{freeze}!Camera@{Camera}}
+\subsubsection[{freeze}]{\setlength{\rightskip}{0pt plus 5cm}void Camera\-::freeze (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_camera_a3ad7b867f72a6279f4e19b7dcfb0b071}
+Freezes the position of the camera, but not its orientation, so that if the point of focus moves, the camera doesn't move with it anymore. \hypertarget{class_camera_af3a878a62730b49ab38b33c75325342e}{\index{Camera@{Camera}!gl\-Apply@{gl\-Apply}}
+\index{gl\-Apply@{gl\-Apply}!Camera@{Camera}}
+\subsubsection[{gl\-Apply}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Camera\-::gl\-Apply (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_camera_af3a878a62730b49ab38b33c75325342e}
+Sets up the camera in Open\-G\-L according to the camera's position and orientation. I.\-e. multiplies the transformation matrix in Open\-G\-L by the right translations and rotations. You should usually call this in Model\-View mode before drawing anything. 
+
+Implemented in \hyperlink{class_racer_camera_a5e8a09a6290c7284cfc22ec3a8153dac}{Racer\-Camera}.
+
+\hypertarget{class_camera_a80b6f23356955890272241df1c185379}{\index{Camera@{Camera}!unfreeze@{unfreeze}}
+\index{unfreeze@{unfreeze}!Camera@{Camera}}
+\subsubsection[{unfreeze}]{\setlength{\rightskip}{0pt plus 5cm}void Camera\-::unfreeze (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_camera_a80b6f23356955890272241df1c185379}
+Undoes the effect of the freeze method, so that the camera moves as usual again. 
+
+\subsection{Member Data Documentation}
+\hypertarget{class_camera_ae2a9a29d6dfb6626c08ecf9b5ed444da}{\index{Camera@{Camera}!m\-Freeze@{m\-Freeze}}
+\index{m\-Freeze@{m\-Freeze}!Camera@{Camera}}
+\subsubsection[{m\-Freeze}]{\setlength{\rightskip}{0pt plus 5cm}bool Camera\-::m\-Freeze\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_camera_ae2a9a29d6dfb6626c08ecf9b5ed444da}
+\hypertarget{class_camera_a893ec886bbdbc025e54a492b54c585ca}{\index{Camera@{Camera}!m\-Position@{m\-Position}}
+\index{m\-Position@{m\-Position}!Camera@{Camera}}
+\subsubsection[{m\-Position}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector3\-D} Camera\-::m\-Position\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_camera_a893ec886bbdbc025e54a492b54c585ca}
+\hypertarget{class_camera_a5569a68f84f82a1fcf128baac654562a}{\index{Camera@{Camera}!m\-Up@{m\-Up}}
+\index{m\-Up@{m\-Up}!Camera@{Camera}}
+\subsubsection[{m\-Up}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector3\-D} Camera\-::m\-Up\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_camera_a5569a68f84f82a1fcf128baac654562a}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/\-Owner/\-My Programming/\-Personal Projects/\-Video\-Games/\-Optimist Racing/src/\hyperlink{_camera_8hpp}{Camera.\-hpp}\item 
+C\-:/\-Users/\-Owner/\-My Programming/\-Personal Projects/\-Video\-Games/\-Optimist Racing/src/\hyperlink{_camera_8cpp}{Camera.\-cpp}\end{DoxyCompactItemize}

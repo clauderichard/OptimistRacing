@@ -1,0 +1,103 @@
+\hypertarget{class_bezier_patch}{\section{Bezier\-Patch Class Reference}
+\label{class_bezier_patch}\index{Bezier\-Patch@{Bezier\-Patch}}
+}
+
+
+{\ttfamily \#include $<$Bezier.\-hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_bezier_patch_a50506bb4f40a7a537637a114a77d844e}{Bezier\-Patch} (const \hyperlink{class_bernstein_polynomial}{Bernstein\-Polynomial} $\ast$B\-P)
+\item 
+\hyperlink{class_bezier_patch_ae562d080e4f57c1aef0a8f19adcc4133}{Bezier\-Patch} (const \hyperlink{class_bernstein_polynomial}{Bernstein\-Polynomial} $\ast$B\-P, \hyperlink{class_matrix_mx_n}{Matrix\-Mx\-N} K)
+\item 
+\hyperlink{class_bezier_patch_ab5b226280fc0afba7e6f21b72423dc8c}{Bezier\-Patch} (const \hyperlink{class_bernstein_polynomial}{Bernstein\-Polynomial} $\ast$B\-P, const \hyperlink{class_matrix_mx_n}{Matrix\-Mx\-N} \&B\-Tilda\-Inv0, const \hyperlink{class_matrix_mx_n}{Matrix\-Mx\-N} \&B\-Tilda\-Inv1, const \hyperlink{class_matrix_mx_n}{Matrix\-Mx\-N} \&f00, const \hyperlink{class_matrix_mx_n}{Matrix\-Mx\-N} \&f01, const \hyperlink{class_matrix_mx_n}{Matrix\-Mx\-N} \&f10, const \hyperlink{class_matrix_mx_n}{Matrix\-Mx\-N} \&f11)
+\item 
+\hyperlink{class_bezier_patch_aefc712578c4818d622d8a9f623786746}{$\sim$\-Bezier\-Patch} ()
+\item 
+const \hyperlink{class_matrix_mx_n}{Matrix\-Mx\-N} \& \hyperlink{class_bezier_patch_a32759c1605c0bd966ce87b6cf65bdd8f}{get\-K} () const 
+\item 
+const \hyperlink{class_bernstein_polynomial}{Bernstein\-Polynomial} $\ast$ \hyperlink{class_bezier_patch_ab5ae6752b90f10228c98948d1184a1bb}{get\-B\-P} () const 
+\item 
+\hyperlink{class_matrix_mx_n}{Matrix\-Mx\-N} \hyperlink{class_bezier_patch_a850bc5e09dfc474180f4bda49ddb6141}{compute} (double x, double y) const 
+\item 
+double \hyperlink{class_bezier_patch_af70a22fab5c247edfa5b5b2a762dac4c}{compute\-F\-Only} (double x, double y) const 
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_bezier_patch_a50506bb4f40a7a537637a114a77d844e}{\index{Bezier\-Patch@{Bezier\-Patch}!Bezier\-Patch@{Bezier\-Patch}}
+\index{Bezier\-Patch@{Bezier\-Patch}!BezierPatch@{Bezier\-Patch}}
+\subsubsection[{Bezier\-Patch}]{\setlength{\rightskip}{0pt plus 5cm}Bezier\-Patch\-::\-Bezier\-Patch (
+\begin{DoxyParamCaption}
+\item[{const {\bf Bernstein\-Polynomial} $\ast$}]{B\-P}
+\end{DoxyParamCaption}
+)}}\label{class_bezier_patch_a50506bb4f40a7a537637a114a77d844e}
+\hypertarget{class_bezier_patch_ae562d080e4f57c1aef0a8f19adcc4133}{\index{Bezier\-Patch@{Bezier\-Patch}!Bezier\-Patch@{Bezier\-Patch}}
+\index{Bezier\-Patch@{Bezier\-Patch}!BezierPatch@{Bezier\-Patch}}
+\subsubsection[{Bezier\-Patch}]{\setlength{\rightskip}{0pt plus 5cm}Bezier\-Patch\-::\-Bezier\-Patch (
+\begin{DoxyParamCaption}
+\item[{const {\bf Bernstein\-Polynomial} $\ast$}]{B\-P, }
+\item[{{\bf Matrix\-Mx\-N}}]{K}
+\end{DoxyParamCaption}
+)}}\label{class_bezier_patch_ae562d080e4f57c1aef0a8f19adcc4133}
+\hypertarget{class_bezier_patch_ab5b226280fc0afba7e6f21b72423dc8c}{\index{Bezier\-Patch@{Bezier\-Patch}!Bezier\-Patch@{Bezier\-Patch}}
+\index{Bezier\-Patch@{Bezier\-Patch}!BezierPatch@{Bezier\-Patch}}
+\subsubsection[{Bezier\-Patch}]{\setlength{\rightskip}{0pt plus 5cm}Bezier\-Patch\-::\-Bezier\-Patch (
+\begin{DoxyParamCaption}
+\item[{const {\bf Bernstein\-Polynomial} $\ast$}]{B\-P, }
+\item[{const {\bf Matrix\-Mx\-N} \&}]{B\-Tilda\-Inv0, }
+\item[{const {\bf Matrix\-Mx\-N} \&}]{B\-Tilda\-Inv1, }
+\item[{const {\bf Matrix\-Mx\-N} \&}]{f00, }
+\item[{const {\bf Matrix\-Mx\-N} \&}]{f01, }
+\item[{const {\bf Matrix\-Mx\-N} \&}]{f10, }
+\item[{const {\bf Matrix\-Mx\-N} \&}]{f11}
+\end{DoxyParamCaption}
+)}}\label{class_bezier_patch_ab5b226280fc0afba7e6f21b72423dc8c}
+\hypertarget{class_bezier_patch_aefc712578c4818d622d8a9f623786746}{\index{Bezier\-Patch@{Bezier\-Patch}!$\sim$\-Bezier\-Patch@{$\sim$\-Bezier\-Patch}}
+\index{$\sim$\-Bezier\-Patch@{$\sim$\-Bezier\-Patch}!BezierPatch@{Bezier\-Patch}}
+\subsubsection[{$\sim$\-Bezier\-Patch}]{\setlength{\rightskip}{0pt plus 5cm}Bezier\-Patch\-::$\sim$\-Bezier\-Patch (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_bezier_patch_aefc712578c4818d622d8a9f623786746}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_bezier_patch_a850bc5e09dfc474180f4bda49ddb6141}{\index{Bezier\-Patch@{Bezier\-Patch}!compute@{compute}}
+\index{compute@{compute}!BezierPatch@{Bezier\-Patch}}
+\subsubsection[{compute}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Matrix\-Mx\-N} Bezier\-Patch\-::compute (
+\begin{DoxyParamCaption}
+\item[{double}]{x, }
+\item[{double}]{y}
+\end{DoxyParamCaption}
+) const}}\label{class_bezier_patch_a850bc5e09dfc474180f4bda49ddb6141}
+\hypertarget{class_bezier_patch_af70a22fab5c247edfa5b5b2a762dac4c}{\index{Bezier\-Patch@{Bezier\-Patch}!compute\-F\-Only@{compute\-F\-Only}}
+\index{compute\-F\-Only@{compute\-F\-Only}!BezierPatch@{Bezier\-Patch}}
+\subsubsection[{compute\-F\-Only}]{\setlength{\rightskip}{0pt plus 5cm}double Bezier\-Patch\-::compute\-F\-Only (
+\begin{DoxyParamCaption}
+\item[{double}]{x, }
+\item[{double}]{y}
+\end{DoxyParamCaption}
+) const}}\label{class_bezier_patch_af70a22fab5c247edfa5b5b2a762dac4c}
+\hypertarget{class_bezier_patch_ab5ae6752b90f10228c98948d1184a1bb}{\index{Bezier\-Patch@{Bezier\-Patch}!get\-B\-P@{get\-B\-P}}
+\index{get\-B\-P@{get\-B\-P}!BezierPatch@{Bezier\-Patch}}
+\subsubsection[{get\-B\-P}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Bernstein\-Polynomial} $\ast$ Bezier\-Patch\-::get\-B\-P (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_bezier_patch_ab5ae6752b90f10228c98948d1184a1bb}
+\hypertarget{class_bezier_patch_a32759c1605c0bd966ce87b6cf65bdd8f}{\index{Bezier\-Patch@{Bezier\-Patch}!get\-K@{get\-K}}
+\index{get\-K@{get\-K}!BezierPatch@{Bezier\-Patch}}
+\subsubsection[{get\-K}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Matrix\-Mx\-N} \& Bezier\-Patch\-::get\-K (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_bezier_patch_a32759c1605c0bd966ce87b6cf65bdd8f}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/\-Owner/\-My Programming/\-Personal Projects/\-Video\-Games/\-Optimist Racing/src/\hyperlink{_bezier_8hpp}{Bezier.\-hpp}\item 
+C\-:/\-Users/\-Owner/\-My Programming/\-Personal Projects/\-Video\-Games/\-Optimist Racing/src/\hyperlink{_bezier_8cpp}{Bezier.\-cpp}\end{DoxyCompactItemize}

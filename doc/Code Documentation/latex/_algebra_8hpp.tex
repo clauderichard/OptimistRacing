@@ -1,0 +1,247 @@
+\hypertarget{_algebra_8hpp}{\section{C\-:/\-Users/\-Owner/\-My Programming/\-Personal Projects/\-Video\-Games/\-Optimist Racing/src/\-Algebra.hpp File Reference}
+\label{_algebra_8hpp}\index{C\-:/\-Users/\-Owner/\-My Programming/\-Personal Projects/\-Video\-Games/\-Optimist Racing/src/\-Algebra.\-hpp@{C\-:/\-Users/\-Owner/\-My Programming/\-Personal Projects/\-Video\-Games/\-Optimist Racing/src/\-Algebra.\-hpp}}
+}
+{\ttfamily \#include $<$algorithm$>$}\\*
+{\ttfamily \#include $<$cmath$>$}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_vector2_d}{Vector2\-D}
+\begin{DoxyCompactList}\small\item\em Represents a vector with 2 entries. \end{DoxyCompactList}\item 
+class \hyperlink{class_matrix2x2}{Matrix2x2}
+\item 
+class \hyperlink{class_vector3_d}{Vector3\-D}
+\item 
+class \hyperlink{class_matrix3x3}{Matrix3x3}
+\item 
+class \hyperlink{class_vector_n_d}{Vector\-N\-D}
+\item 
+class \hyperlink{class_matrix_mx_n}{Matrix\-Mx\-N}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{_algebra_8hpp_ae71449b1cc6e6250b91f539153a7a0d3}{M\-\_\-\-P\-I}~3.\-141592653589793
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_vector2_d}{Vector2\-D} \hyperlink{_algebra_8hpp_ab6d6169dc4d79c3e9ab1dcfefa81abd4}{operator$\ast$} (double s, const \hyperlink{class_vector2_d}{Vector2\-D} \&v)
+\item 
+\hyperlink{class_vector2_d}{Vector2\-D} \hyperlink{_algebra_8hpp_aa025c19d4e3859ac5cdcdf7301fb31b0}{operator+} (const \hyperlink{class_vector2_d}{Vector2\-D} \&a, const \hyperlink{class_vector2_d}{Vector2\-D} \&b)
+\item 
+\hyperlink{class_vector2_d}{Vector2\-D} \hyperlink{_algebra_8hpp_ac638052636e6afad1ec34e1bc40610bd}{operator-\/} (const \hyperlink{class_vector2_d}{Vector2\-D} \&a, const \hyperlink{class_vector2_d}{Vector2\-D} \&b)
+\item 
+\hyperlink{class_vector3_d}{Vector3\-D} \hyperlink{_algebra_8hpp_a82bff392cd419d7f246dfaeb5574ea61}{operator$\ast$} (double s, const \hyperlink{class_vector3_d}{Vector3\-D} \&v)
+\item 
+\hyperlink{class_vector3_d}{Vector3\-D} \hyperlink{_algebra_8hpp_a39bfe21a2d1ab6984ded35b5355b202e}{operator+} (const \hyperlink{class_vector3_d}{Vector3\-D} \&a, const \hyperlink{class_vector3_d}{Vector3\-D} \&b)
+\item 
+\hyperlink{class_vector3_d}{Vector3\-D} \hyperlink{_algebra_8hpp_a7ee82807781e470db564c4db6e9de245}{operator-\/} (const \hyperlink{class_vector3_d}{Vector3\-D} \&a, const \hyperlink{class_vector3_d}{Vector3\-D} \&b)
+\item 
+\hyperlink{class_vector_n_d}{Vector\-N\-D} \hyperlink{_algebra_8hpp_a490c25226403a8aa8c62a29504454fd5}{operator$\ast$} (double s, const \hyperlink{class_vector_n_d}{Vector\-N\-D} \&v)
+\item 
+\hyperlink{class_vector_n_d}{Vector\-N\-D} \hyperlink{_algebra_8hpp_a40ee5b96e650d2dd80c30bd8be09238c}{operator+} (const \hyperlink{class_vector_n_d}{Vector\-N\-D} \&a, const \hyperlink{class_vector_n_d}{Vector\-N\-D} \&b)
+\item 
+\hyperlink{class_vector_n_d}{Vector\-N\-D} \hyperlink{_algebra_8hpp_add99f25ed7d4a24a997980bba67ddb1c}{operator-\/} (const \hyperlink{class_vector_n_d}{Vector\-N\-D} \&a, const \hyperlink{class_vector_n_d}{Vector\-N\-D} \&b)
+\item 
+double \hyperlink{_algebra_8hpp_a17091164dc9b9b93b9d2aafef875dce1}{dot} (const \hyperlink{class_vector2_d}{Vector2\-D} \&a, const \hyperlink{class_vector2_d}{Vector2\-D} \&b)
+\item 
+double \hyperlink{_algebra_8hpp_a3a8eedd62effe545cfcb0e98651c45e0}{dot} (const \hyperlink{class_vector3_d}{Vector3\-D} \&a, const \hyperlink{class_vector3_d}{Vector3\-D} \&b)
+\item 
+\hyperlink{class_vector3_d}{Vector3\-D} \hyperlink{_algebra_8hpp_a098c65b80ec865f21eb305b289a9458f}{cross} (const \hyperlink{class_vector3_d}{Vector3\-D} \&a, const \hyperlink{class_vector3_d}{Vector3\-D} \&b)
+\item 
+\hyperlink{class_matrix2x2}{Matrix2x2} \hyperlink{_algebra_8hpp_ac7f5a00cf0b50e36dffeb5946dccc060}{operator$\ast$} (const \hyperlink{class_matrix2x2}{Matrix2x2} \&A, const \hyperlink{class_matrix2x2}{Matrix2x2} \&B)
+\item 
+\hyperlink{class_vector2_d}{Vector2\-D} \hyperlink{_algebra_8hpp_a91e4603c7fef646c55fda731ec600847}{operator$\ast$} (const \hyperlink{class_matrix2x2}{Matrix2x2} \&A, const \hyperlink{class_vector2_d}{Vector2\-D} \&b)
+\item 
+\hyperlink{class_vector2_d}{Vector2\-D} \hyperlink{_algebra_8hpp_abdc8f046e355c6b6803706610963874b}{matrix\-Solve} (const \hyperlink{class_matrix2x2}{Matrix2x2} \&A, const \hyperlink{class_vector2_d}{Vector2\-D} \&b)
+\item 
+\hyperlink{class_matrix3x3}{Matrix3x3} \hyperlink{_algebra_8hpp_ad8655643bc00d88e932ba47abf4b7cbe}{operator$\ast$} (const \hyperlink{class_matrix3x3}{Matrix3x3} \&A, const \hyperlink{class_matrix3x3}{Matrix3x3} \&B)
+\item 
+\hyperlink{class_vector3_d}{Vector3\-D} \hyperlink{_algebra_8hpp_a52370681a2714a1cfd9a849ec121890c}{operator$\ast$} (const \hyperlink{class_matrix3x3}{Matrix3x3} \&A, const \hyperlink{class_vector3_d}{Vector3\-D} \&b)
+\item 
+\hyperlink{class_vector3_d}{Vector3\-D} \hyperlink{_algebra_8hpp_ab3bb244b788a3e6ea44086a6eb93eb18}{matrix\-Solve} (const \hyperlink{class_matrix3x3}{Matrix3x3} \&a, const \hyperlink{class_vector3_d}{Vector3\-D} \&b)
+\item 
+\hyperlink{class_vector_n_d}{Vector\-N\-D} \hyperlink{_algebra_8hpp_a9599c941601b157067c4be94d1e623ef}{operator$\ast$} (const \hyperlink{class_matrix_mx_n}{Matrix\-Mx\-N} \&A, const \hyperlink{class_vector_n_d}{Vector\-N\-D} \&b)
+\item 
+\hyperlink{class_matrix_mx_n}{Matrix\-Mx\-N} \hyperlink{_algebra_8hpp_a09c94e7fa49cf14ab5dbba439be8d9a0}{operator$\ast$} (double s, const \hyperlink{class_matrix_mx_n}{Matrix\-Mx\-N} \&A)
+\item 
+double \hyperlink{_algebra_8hpp_a1cd9cc3823a5dfd883a9be42d1904155}{dot} (const \hyperlink{class_matrix_mx_n}{Matrix\-Mx\-N} \&A, const \hyperlink{class_matrix_mx_n}{Matrix\-Mx\-N} \&B)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{_algebra_8hpp_ae71449b1cc6e6250b91f539153a7a0d3}{\index{Algebra.\-hpp@{Algebra.\-hpp}!M\-\_\-\-P\-I@{M\-\_\-\-P\-I}}
+\index{M\-\_\-\-P\-I@{M\-\_\-\-P\-I}!Algebra.hpp@{Algebra.\-hpp}}
+\subsubsection[{M\-\_\-\-P\-I}]{\setlength{\rightskip}{0pt plus 5cm}\#define M\-\_\-\-P\-I~3.\-141592653589793}}\label{_algebra_8hpp_ae71449b1cc6e6250b91f539153a7a0d3}
+This file contains the code necessary for all sorts of linear algebra, which includes vectors and matrices of varying sizes. 
+
+\subsection{Function Documentation}
+\hypertarget{_algebra_8hpp_a098c65b80ec865f21eb305b289a9458f}{\index{Algebra.\-hpp@{Algebra.\-hpp}!cross@{cross}}
+\index{cross@{cross}!Algebra.hpp@{Algebra.\-hpp}}
+\subsubsection[{cross}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector3\-D} cross (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vector3\-D} \&}]{a, }
+\item[{const {\bf Vector3\-D} \&}]{b}
+\end{DoxyParamCaption}
+)}}\label{_algebra_8hpp_a098c65b80ec865f21eb305b289a9458f}
+\hypertarget{_algebra_8hpp_a17091164dc9b9b93b9d2aafef875dce1}{\index{Algebra.\-hpp@{Algebra.\-hpp}!dot@{dot}}
+\index{dot@{dot}!Algebra.hpp@{Algebra.\-hpp}}
+\subsubsection[{dot}]{\setlength{\rightskip}{0pt plus 5cm}double dot (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vector2\-D} \&}]{a, }
+\item[{const {\bf Vector2\-D} \&}]{b}
+\end{DoxyParamCaption}
+)}}\label{_algebra_8hpp_a17091164dc9b9b93b9d2aafef875dce1}
+\hypertarget{_algebra_8hpp_a3a8eedd62effe545cfcb0e98651c45e0}{\index{Algebra.\-hpp@{Algebra.\-hpp}!dot@{dot}}
+\index{dot@{dot}!Algebra.hpp@{Algebra.\-hpp}}
+\subsubsection[{dot}]{\setlength{\rightskip}{0pt plus 5cm}double dot (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vector3\-D} \&}]{a, }
+\item[{const {\bf Vector3\-D} \&}]{b}
+\end{DoxyParamCaption}
+)}}\label{_algebra_8hpp_a3a8eedd62effe545cfcb0e98651c45e0}
+\hypertarget{_algebra_8hpp_a1cd9cc3823a5dfd883a9be42d1904155}{\index{Algebra.\-hpp@{Algebra.\-hpp}!dot@{dot}}
+\index{dot@{dot}!Algebra.hpp@{Algebra.\-hpp}}
+\subsubsection[{dot}]{\setlength{\rightskip}{0pt plus 5cm}double dot (
+\begin{DoxyParamCaption}
+\item[{const {\bf Matrix\-Mx\-N} \&}]{A, }
+\item[{const {\bf Matrix\-Mx\-N} \&}]{B}
+\end{DoxyParamCaption}
+)}}\label{_algebra_8hpp_a1cd9cc3823a5dfd883a9be42d1904155}
+\hypertarget{_algebra_8hpp_abdc8f046e355c6b6803706610963874b}{\index{Algebra.\-hpp@{Algebra.\-hpp}!matrix\-Solve@{matrix\-Solve}}
+\index{matrix\-Solve@{matrix\-Solve}!Algebra.hpp@{Algebra.\-hpp}}
+\subsubsection[{matrix\-Solve}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector2\-D} matrix\-Solve (
+\begin{DoxyParamCaption}
+\item[{const {\bf Matrix2x2} \&}]{A, }
+\item[{const {\bf Vector2\-D} \&}]{b}
+\end{DoxyParamCaption}
+)}}\label{_algebra_8hpp_abdc8f046e355c6b6803706610963874b}
+\hypertarget{_algebra_8hpp_ab3bb244b788a3e6ea44086a6eb93eb18}{\index{Algebra.\-hpp@{Algebra.\-hpp}!matrix\-Solve@{matrix\-Solve}}
+\index{matrix\-Solve@{matrix\-Solve}!Algebra.hpp@{Algebra.\-hpp}}
+\subsubsection[{matrix\-Solve}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector3\-D} matrix\-Solve (
+\begin{DoxyParamCaption}
+\item[{const {\bf Matrix3x3} \&}]{a, }
+\item[{const {\bf Vector3\-D} \&}]{b}
+\end{DoxyParamCaption}
+)}}\label{_algebra_8hpp_ab3bb244b788a3e6ea44086a6eb93eb18}
+\hypertarget{_algebra_8hpp_ab6d6169dc4d79c3e9ab1dcfefa81abd4}{\index{Algebra.\-hpp@{Algebra.\-hpp}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!Algebra.hpp@{Algebra.\-hpp}}
+\subsubsection[{operator$\ast$}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector2\-D} operator$\ast$ (
+\begin{DoxyParamCaption}
+\item[{double}]{s, }
+\item[{const {\bf Vector2\-D} \&}]{v}
+\end{DoxyParamCaption}
+)}}\label{_algebra_8hpp_ab6d6169dc4d79c3e9ab1dcfefa81abd4}
+\hypertarget{_algebra_8hpp_a82bff392cd419d7f246dfaeb5574ea61}{\index{Algebra.\-hpp@{Algebra.\-hpp}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!Algebra.hpp@{Algebra.\-hpp}}
+\subsubsection[{operator$\ast$}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector3\-D} operator$\ast$ (
+\begin{DoxyParamCaption}
+\item[{double}]{s, }
+\item[{const {\bf Vector3\-D} \&}]{v}
+\end{DoxyParamCaption}
+)}}\label{_algebra_8hpp_a82bff392cd419d7f246dfaeb5574ea61}
+\hypertarget{_algebra_8hpp_a490c25226403a8aa8c62a29504454fd5}{\index{Algebra.\-hpp@{Algebra.\-hpp}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!Algebra.hpp@{Algebra.\-hpp}}
+\subsubsection[{operator$\ast$}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector\-N\-D} operator$\ast$ (
+\begin{DoxyParamCaption}
+\item[{double}]{s, }
+\item[{const {\bf Vector\-N\-D} \&}]{v}
+\end{DoxyParamCaption}
+)}}\label{_algebra_8hpp_a490c25226403a8aa8c62a29504454fd5}
+\hypertarget{_algebra_8hpp_ac7f5a00cf0b50e36dffeb5946dccc060}{\index{Algebra.\-hpp@{Algebra.\-hpp}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!Algebra.hpp@{Algebra.\-hpp}}
+\subsubsection[{operator$\ast$}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Matrix2x2} operator$\ast$ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Matrix2x2} \&}]{A, }
+\item[{const {\bf Matrix2x2} \&}]{B}
+\end{DoxyParamCaption}
+)}}\label{_algebra_8hpp_ac7f5a00cf0b50e36dffeb5946dccc060}
+\hypertarget{_algebra_8hpp_a91e4603c7fef646c55fda731ec600847}{\index{Algebra.\-hpp@{Algebra.\-hpp}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!Algebra.hpp@{Algebra.\-hpp}}
+\subsubsection[{operator$\ast$}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector2\-D} operator$\ast$ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Matrix2x2} \&}]{A, }
+\item[{const {\bf Vector2\-D} \&}]{b}
+\end{DoxyParamCaption}
+)}}\label{_algebra_8hpp_a91e4603c7fef646c55fda731ec600847}
+\hypertarget{_algebra_8hpp_ad8655643bc00d88e932ba47abf4b7cbe}{\index{Algebra.\-hpp@{Algebra.\-hpp}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!Algebra.hpp@{Algebra.\-hpp}}
+\subsubsection[{operator$\ast$}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Matrix3x3} operator$\ast$ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Matrix3x3} \&}]{A, }
+\item[{const {\bf Matrix3x3} \&}]{B}
+\end{DoxyParamCaption}
+)}}\label{_algebra_8hpp_ad8655643bc00d88e932ba47abf4b7cbe}
+\hypertarget{_algebra_8hpp_a52370681a2714a1cfd9a849ec121890c}{\index{Algebra.\-hpp@{Algebra.\-hpp}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!Algebra.hpp@{Algebra.\-hpp}}
+\subsubsection[{operator$\ast$}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector3\-D} operator$\ast$ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Matrix3x3} \&}]{A, }
+\item[{const {\bf Vector3\-D} \&}]{b}
+\end{DoxyParamCaption}
+)}}\label{_algebra_8hpp_a52370681a2714a1cfd9a849ec121890c}
+\hypertarget{_algebra_8hpp_a9599c941601b157067c4be94d1e623ef}{\index{Algebra.\-hpp@{Algebra.\-hpp}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!Algebra.hpp@{Algebra.\-hpp}}
+\subsubsection[{operator$\ast$}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector\-N\-D} operator$\ast$ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Matrix\-Mx\-N} \&}]{A, }
+\item[{const {\bf Vector\-N\-D} \&}]{b}
+\end{DoxyParamCaption}
+)}}\label{_algebra_8hpp_a9599c941601b157067c4be94d1e623ef}
+\hypertarget{_algebra_8hpp_a09c94e7fa49cf14ab5dbba439be8d9a0}{\index{Algebra.\-hpp@{Algebra.\-hpp}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!Algebra.hpp@{Algebra.\-hpp}}
+\subsubsection[{operator$\ast$}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Matrix\-Mx\-N} operator$\ast$ (
+\begin{DoxyParamCaption}
+\item[{double}]{s, }
+\item[{const {\bf Matrix\-Mx\-N} \&}]{A}
+\end{DoxyParamCaption}
+)}}\label{_algebra_8hpp_a09c94e7fa49cf14ab5dbba439be8d9a0}
+\hypertarget{_algebra_8hpp_aa025c19d4e3859ac5cdcdf7301fb31b0}{\index{Algebra.\-hpp@{Algebra.\-hpp}!operator+@{operator+}}
+\index{operator+@{operator+}!Algebra.hpp@{Algebra.\-hpp}}
+\subsubsection[{operator+}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector2\-D} operator+ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vector2\-D} \&}]{a, }
+\item[{const {\bf Vector2\-D} \&}]{b}
+\end{DoxyParamCaption}
+)}}\label{_algebra_8hpp_aa025c19d4e3859ac5cdcdf7301fb31b0}
+\hypertarget{_algebra_8hpp_a39bfe21a2d1ab6984ded35b5355b202e}{\index{Algebra.\-hpp@{Algebra.\-hpp}!operator+@{operator+}}
+\index{operator+@{operator+}!Algebra.hpp@{Algebra.\-hpp}}
+\subsubsection[{operator+}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector3\-D} operator+ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vector3\-D} \&}]{a, }
+\item[{const {\bf Vector3\-D} \&}]{b}
+\end{DoxyParamCaption}
+)}}\label{_algebra_8hpp_a39bfe21a2d1ab6984ded35b5355b202e}
+\hypertarget{_algebra_8hpp_a40ee5b96e650d2dd80c30bd8be09238c}{\index{Algebra.\-hpp@{Algebra.\-hpp}!operator+@{operator+}}
+\index{operator+@{operator+}!Algebra.hpp@{Algebra.\-hpp}}
+\subsubsection[{operator+}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector\-N\-D} operator+ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vector\-N\-D} \&}]{a, }
+\item[{const {\bf Vector\-N\-D} \&}]{b}
+\end{DoxyParamCaption}
+)}}\label{_algebra_8hpp_a40ee5b96e650d2dd80c30bd8be09238c}
+\hypertarget{_algebra_8hpp_ac638052636e6afad1ec34e1bc40610bd}{\index{Algebra.\-hpp@{Algebra.\-hpp}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!Algebra.hpp@{Algebra.\-hpp}}
+\subsubsection[{operator-\/}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector2\-D} operator-\/ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vector2\-D} \&}]{a, }
+\item[{const {\bf Vector2\-D} \&}]{b}
+\end{DoxyParamCaption}
+)}}\label{_algebra_8hpp_ac638052636e6afad1ec34e1bc40610bd}
+\hypertarget{_algebra_8hpp_a7ee82807781e470db564c4db6e9de245}{\index{Algebra.\-hpp@{Algebra.\-hpp}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!Algebra.hpp@{Algebra.\-hpp}}
+\subsubsection[{operator-\/}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector3\-D} operator-\/ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vector3\-D} \&}]{a, }
+\item[{const {\bf Vector3\-D} \&}]{b}
+\end{DoxyParamCaption}
+)}}\label{_algebra_8hpp_a7ee82807781e470db564c4db6e9de245}
+\hypertarget{_algebra_8hpp_add99f25ed7d4a24a997980bba67ddb1c}{\index{Algebra.\-hpp@{Algebra.\-hpp}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!Algebra.hpp@{Algebra.\-hpp}}
+\subsubsection[{operator-\/}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector\-N\-D} operator-\/ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vector\-N\-D} \&}]{a, }
+\item[{const {\bf Vector\-N\-D} \&}]{b}
+\end{DoxyParamCaption}
+)}}\label{_algebra_8hpp_add99f25ed7d4a24a997980bba67ddb1c}

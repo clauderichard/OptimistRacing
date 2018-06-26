@@ -1,0 +1,72 @@
+﻿Build started 24/10/2012 8:03:11 PM.
+     1>Project "C:\Users\Owner\My Programming\Personal Projects\VideoGames\WillToLive Racing\WillToLive Racing.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "bin\Release\Optimist Racing.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D _ITERATOR_DEBUG_LEVEL=0 /D _MBCS /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"bin\Release\\" /Fd"bin\Release\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt src\Main.cpp
+         Main.cpp
+       Link:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Owner\My Programming\Personal Projects\VideoGames\WillToLive Racing\bin\Release\Optimist Racing.exe" /NOLOGO "allegro-5.0.5-monolith-md.lib" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib libpng.lib zdll.lib /MANIFEST /ManifestFile:"bin\Release\Optimist Racing.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\Owner\My Programming\Personal Projects\VideoGames\WillToLive Racing\bin\Release\Optimist Racing.pdb" /SUBSYSTEM:WINDOWS /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Owner\My Programming\Personal Projects\VideoGames\WillToLive Racing\bin\Release\Optimist Racing.lib" /MACHINE:X86 bin\Release\Algebra.obj
+         bin\Release\Bezier.obj
+         bin\Release\Calculus.obj
+         bin\Release\Camera.obj
+         bin\Release\cmAudio.obj
+         bin\Release\cmAudioStream.obj
+         bin\Release\cmBgmData.obj
+         bin\Release\cmCamera.obj
+         bin\Release\cmGenericData.obj
+         bin\Release\cmMaterial.obj
+         bin\Release\cmSkybox.obj
+         bin\Release\cmTexture.obj
+         bin\Release\cmSampleLoader.obj
+         bin\Release\cmBitmapLoader.obj
+         bin\Release\cmFontLoader.obj
+         bin\Release\cmGenericLoader.obj
+         bin\Release\cmGlobals.obj
+         bin\Release\Data.obj
+         bin\Release\ElectricColour.obj
+         bin\Release\WorldEngine.obj
+         bin\Release\GameFlow.obj
+         bin\Release\Keyboard.obj
+         bin\Release\Main.obj
+         bin\Release\cmSampleInstance.obj
+         bin\Release\cmSpriteAnimation.obj
+         bin\Release\cmSpriteSet.obj
+         bin\Release\cmUtils.obj
+         bin\Release\Image.obj
+         bin\Release\Primitive.obj
+         bin\Release\Lagrange.obj
+         bin\Release\Collision.obj
+         bin\Release\Material.obj
+         bin\Release\World.obj
+     1>libpng.lib(pngget.obj) : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/OPT:ICF' specification
+     1>LINK : warning LNK4098: defaultlib 'MSVCRTD' conflicts with use of other libs; use /NODEFAULTLIB:library
+         Generating code
+     1>c:\users\owner\my programming\personal projects\videogames\willtolive racing\src\electriccolour.cpp(20): warning C4715: 'ElectricColour::toint' : not all control paths return a value
+     1>c:\users\owner\my programming\personal projects\videogames\willtolive racing\src\electriccolour.cpp(33): warning C4715: 'operator<<' : not all control paths return a value
+         Finished generating code
+     1>libpng.lib(png.obj) : warning LNK4204: 'C:\Users\Owner\My Programming\Personal Projects\VideoGames\WillToLive Racing\bin\Release\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
+     1>libpng.lib(pngerror.obj) : warning LNK4204: 'C:\Users\Owner\My Programming\Personal Projects\VideoGames\WillToLive Racing\bin\Release\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
+     1>libpng.lib(pngget.obj) : warning LNK4204: 'C:\Users\Owner\My Programming\Personal Projects\VideoGames\WillToLive Racing\bin\Release\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
+     1>libpng.lib(pngmem.obj) : warning LNK4204: 'C:\Users\Owner\My Programming\Personal Projects\VideoGames\WillToLive Racing\bin\Release\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
+     1>libpng.lib(pngread.obj) : warning LNK4204: 'C:\Users\Owner\My Programming\Personal Projects\VideoGames\WillToLive Racing\bin\Release\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
+     1>libpng.lib(pngrio.obj) : warning LNK4204: 'C:\Users\Owner\My Programming\Personal Projects\VideoGames\WillToLive Racing\bin\Release\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
+     1>libpng.lib(pngrtran.obj) : warning LNK4204: 'C:\Users\Owner\My Programming\Personal Projects\VideoGames\WillToLive Racing\bin\Release\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
+     1>libpng.lib(pngrutil.obj) : warning LNK4204: 'C:\Users\Owner\My Programming\Personal Projects\VideoGames\WillToLive Racing\bin\Release\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
+     1>libpng.lib(pngset.obj) : warning LNK4204: 'C:\Users\Owner\My Programming\Personal Projects\VideoGames\WillToLive Racing\bin\Release\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
+     1>libpng.lib(pngtrans.obj) : warning LNK4204: 'C:\Users\Owner\My Programming\Personal Projects\VideoGames\WillToLive Racing\bin\Release\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
+     1>libpng.lib(pngwio.obj) : warning LNK4204: 'C:\Users\Owner\My Programming\Personal Projects\VideoGames\WillToLive Racing\bin\Release\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
+     1>libpng.lib(pngwrite.obj) : warning LNK4204: 'C:\Users\Owner\My Programming\Personal Projects\VideoGames\WillToLive Racing\bin\Release\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
+     1>libpng.lib(pngwtran.obj) : warning LNK4204: 'C:\Users\Owner\My Programming\Personal Projects\VideoGames\WillToLive Racing\bin\Release\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
+     1>libpng.lib(pngwutil.obj) : warning LNK4204: 'C:\Users\Owner\My Programming\Personal Projects\VideoGames\WillToLive Racing\bin\Release\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
+         WillToLive Racing.vcxproj -> C:\Users\Owner\My Programming\Personal Projects\VideoGames\WillToLive Racing\bin\Release\Optimist Racing.exe
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"C:\Users\Owner\My Programming\Personal Projects\VideoGames\WillToLive Racing\bin\Release\Optimist Racing.exe;#1" /manifest "bin\Release\Optimist Racing.exe.intermediate.manifest"
+       FinalizeBuildStatus:
+         Deleting file "bin\Release\Optimist Racing.unsuccessfulbuild".
+         Touching "bin\Release\Optimist Racing.lastbuildstate".
+     1>Done Building Project "C:\Users\Owner\My Programming\Personal Projects\VideoGames\WillToLive Racing\WillToLive Racing.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:31.17

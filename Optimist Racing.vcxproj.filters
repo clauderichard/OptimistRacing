@@ -1,0 +1,245 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="src\Bezier.cpp">
+      <Filter>src\Math and physics</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Main.cpp">
+      <Filter>src\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Primitive.cpp">
+      <Filter>src\Graphics &amp; Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Material.cpp">
+      <Filter>src\Graphics &amp; Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Data.cpp">
+      <Filter>src\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ElectricColour.cpp">
+      <Filter>src\Math and physics</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Camera.cpp">
+      <Filter>src\Graphics &amp; Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Collision.cpp">
+      <Filter>src\Math and physics</Filter>
+    </ClCompile>
+    <ClCompile Include="src\World.cpp">
+      <Filter>src\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Image.cpp">
+      <Filter>src\Graphics &amp; Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GameFlow.cpp">
+      <Filter>src\Not done</Filter>
+    </ClCompile>
+    <ClCompile Include="src\WorldEngine.cpp">
+      <Filter>src\Not done</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ElectricColourTest.cpp">
+      <Filter>Unit tests</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DataTracker.cpp">
+      <Filter>src\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LuaGame.cpp">
+      <Filter>src\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="src\FileLocator.cpp">
+      <Filter>src\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Globals.cpp">
+      <Filter>src\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\InputTracker.cpp">
+      <Filter>src\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Algebra.cpp">
+      <Filter>src\Math and physics</Filter>
+    </ClCompile>
+    <ClCompile Include="src\StoryMenu.cpp">
+      <Filter>src\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\IntensityTracker.cpp">
+      <Filter>src\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Lagrange.cpp">
+      <Filter>src\Math and physics</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Audio.cpp">
+      <Filter>src\Graphics &amp; Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Menu.cpp">
+      <Filter>src\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Event.cpp">
+      <Filter>src\Math and physics</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\Bezier.hpp">
+      <Filter>src\Math and physics</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Primitive.hpp">
+      <Filter>src\Graphics &amp; Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Material.hpp">
+      <Filter>src\Graphics &amp; Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Data.hpp">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ElectricColour.hpp">
+      <Filter>src\Math and physics</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Grid.hpp">
+      <Filter>src\Math and physics</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Camera.hpp">
+      <Filter>src\Graphics &amp; Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Collision.hpp">
+      <Filter>src\Math and physics</Filter>
+    </ClInclude>
+    <ClInclude Include="src\World.hpp">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Image.hpp">
+      <Filter>src\Graphics &amp; Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="src\SpatialAlgebra.hpp">
+      <Filter>src\Not done</Filter>
+    </ClInclude>
+    <ClInclude Include="src\SolidObject.hpp">
+      <Filter>src\Not done</Filter>
+    </ClInclude>
+    <ClInclude Include="src\DocumentationExample.hpp">
+      <Filter>src\Not done</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GameFlow.hpp">
+      <Filter>src\Not done</Filter>
+    </ClInclude>
+    <ClInclude Include="src\WorldEngine.hpp">
+      <Filter>src\Not done</Filter>
+    </ClInclude>
+    <ClInclude Include="src\DataTracker.hpp">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\LuaGeneral.hpp">
+      <Filter>src\Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="src\LuaGame.hpp">
+      <Filter>src\Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="src\FileLocator.hpp">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Globals.hpp">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\InputTracker.hpp">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Algebra.hpp">
+      <Filter>src\Math and physics</Filter>
+    </ClInclude>
+    <ClInclude Include="src\AlgebraStruct.hpp">
+      <Filter>src\Math and physics</Filter>
+    </ClInclude>
+    <ClInclude Include="src\StoryMenu.hpp">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\IntensityTracker.hpp">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Lagrange.hpp">
+      <Filter>src\Math and physics</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Audio.hpp">
+      <Filter>src\Graphics &amp; Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Menu.hpp">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Event.hpp">
+      <Filter>src\Math and physics</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="data">
+      <UniqueIdentifier>{17008cf8-c2a5-4fa5-9895-6a2ad0c457e0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="data\image">
+      <UniqueIdentifier>{89fae6b2-e82a-42d0-b96e-63e9acdc7a84}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="data\world">
+      <UniqueIdentifier>{1bec9ccc-20ef-4ec6-a4a7-c7dedfebf234}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{77578b36-2bc9-4a63-be16-520cdafbf6ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Math and physics">
+      <UniqueIdentifier>{114408eb-5b5d-4891-b503-733aa424ed70}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Game">
+      <UniqueIdentifier>{b1bff5f3-91cc-45e6-a759-c6d784584b35}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Not done">
+      <UniqueIdentifier>{a35fe36a-fedb-4c9b-b2f7-c5e7b88d7f49}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Unit tests">
+      <UniqueIdentifier>{8f76771e-b49a-4ed3-853a-5880225e6d34}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Lua">
+      <UniqueIdentifier>{e09dca35-b5ba-47e3-a229-d6f663e172b9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Graphics &amp; Audio">
+      <UniqueIdentifier>{46380cfc-3eb6-4e52-961a-127fd9b5397b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\Metal.png">
+      <Filter>data\image</Filter>
+    </None>
+    <None Include="images\Mothership.png">
+      <Filter>data\image</Filter>
+    </None>
+    <None Include="images\SkyBox-Clouds-Few-Dawn.png">
+      <Filter>data\image</Filter>
+    </None>
+    <None Include="images\SkyBox-Clouds-Heavy-Early.png">
+      <Filter>data\image</Filter>
+    </None>
+    <None Include="images\SteelVault.png">
+      <Filter>data\image</Filter>
+    </None>
+    <None Include="images\watertex.png">
+      <Filter>data\image</Filter>
+    </None>
+    <None Include="world\universe.lua">
+      <Filter>data\world</Filter>
+    </None>
+    <None Include="world\ocean.lua">
+      <Filter>data\world</Filter>
+    </None>
+    <None Include="world\ocean-1.lua">
+      <Filter>data\world</Filter>
+    </None>
+    <None Include="world\ocean-2.lua">
+      <Filter>data\world</Filter>
+    </None>
+    <None Include="world\ocean-3.lua">
+      <Filter>data\world</Filter>
+    </None>
+    <None Include="world\desert.lua">
+      <Filter>data\world</Filter>
+    </None>
+    <None Include="world\forest.lua">
+      <Filter>data\world</Filter>
+    </None>
+    <None Include="goal.txt">
+      <Filter>data</Filter>
+    </None>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="OptimistRacing" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/OptimistRacing" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="Allegro5/include" />
+					<Add directory="freeglut/include" />
+					<Add directory="glew-1.12.0/include" />
+					<Add directory="lpng1617" />
+				</Compiler>
+				<Linker>
+					<Add library="freeglut\lib\x64\libfreeglut.a" />
+					<Add library="Allegro5\lib\liballegro-static.a" />
+					<Add library="glew-1.12.0\lib\Release\x64\glew32s.lib" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/OptimistRacing" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Unit filename="src/Algebra.cpp" />
+		<Unit filename="src/Algebra.hpp" />
+		<Unit filename="src/AlgebraStruct.hpp" />
+		<Unit filename="src/Audio.cpp" />
+		<Unit filename="src/Audio.hpp" />
+		<Unit filename="src/Bezier.cpp" />
+		<Unit filename="src/Bezier.hpp" />
+		<Unit filename="src/Camera.cpp" />
+		<Unit filename="src/Camera.hpp" />
+		<Unit filename="src/Collision.cpp" />
+		<Unit filename="src/Collision.hpp" />
+		<Unit filename="src/Data.cpp" />
+		<Unit filename="src/Data.hpp" />
+		<Unit filename="src/DataTracker.cpp" />
+		<Unit filename="src/DataTracker.hpp" />
+		<Unit filename="src/DocumentationExample.hpp" />
+		<Unit filename="src/ElectricColour.cpp" />
+		<Unit filename="src/ElectricColour.hpp" />
+		<Unit filename="src/ElectricColourTest.cpp" />
+		<Unit filename="src/Event.cpp" />
+		<Unit filename="src/Event.hpp" />
+		<Unit filename="src/FileLocator.cpp" />
+		<Unit filename="src/FileLocator.hpp" />
+		<Unit filename="src/GameFlow.cpp" />
+		<Unit filename="src/GameFlow.hpp" />
+		<Unit filename="src/Globals.cpp" />
+		<Unit filename="src/Globals.hpp" />
+		<Unit filename="src/Grid.hpp" />
+		<Unit filename="src/Image.cpp" />
+		<Unit filename="src/Image.hpp" />
+		<Unit filename="src/InputTracker.cpp" />
+		<Unit filename="src/InputTracker.hpp" />
+		<Unit filename="src/IntensityTracker.cpp" />
+		<Unit filename="src/IntensityTracker.hpp" />
+		<Unit filename="src/Lagrange.cpp" />
+		<Unit filename="src/Lagrange.hpp" />
+		<Unit filename="src/LuaGame.cpp" />
+		<Unit filename="src/LuaGame.hpp" />
+		<Unit filename="src/LuaGeneral.hpp" />
+		<Unit filename="src/Main.cpp" />
+		<Unit filename="src/Material.cpp" />
+		<Unit filename="src/Material.hpp" />
+		<Unit filename="src/Menu.cpp" />
+		<Unit filename="src/Menu.hpp" />
+		<Unit filename="src/Primitive.cpp" />
+		<Unit filename="src/Primitive.hpp" />
+		<Unit filename="src/SolidObject.hpp" />
+		<Unit filename="src/SpatialAlgebra.hpp" />
+		<Unit filename="src/StoryMenu.cpp" />
+		<Unit filename="src/StoryMenu.hpp" />
+		<Unit filename="src/World.cpp" />
+		<Unit filename="src/World.hpp" />
+		<Unit filename="src/WorldEngine.cpp" />
+		<Unit filename="src/WorldEngine.hpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

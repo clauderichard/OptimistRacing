@@ -1,0 +1,30 @@
+You open up the executable.
+A screen pops up.
+Some text fades in and fades out.
+The main menu fades in.
+
+
+Main menu:
+	Normal Mode
+	Coin Mode
+	Options
+
+Normal mode and Coin mode:
+	Choose the universe (icons),
+	then choose the world (icons),
+	then choose the level (numbers).
+
+Options:
+	Sound volume (bar)
+	Music volume (bar)
+	Difficulty level (1,2,3)
+
+
+When you select a level to play:
+	Show story if first level in world.
+	Then start playing the level.
+
+When you finish a level:
+	go to next level if doesn't change world.
+	else go to next world if doesn't change universe (show story first).
+	else show ending for this universe and then go back to main menu.

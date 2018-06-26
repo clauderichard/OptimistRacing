@@ -1,0 +1,144 @@
+\hypertarget{class_solid_object}{\section{Solid\-Object Class Reference}
+\label{class_solid_object}\index{Solid\-Object@{Solid\-Object}}
+}
+
+
+{\ttfamily \#include $<$Solid\-Object.\-hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_solid_object_a4737808f5d6f84499e2a292cc08ce125}{Solid\-Object} ()
+\item 
+\hyperlink{class_solid_object_adff5837bdc982a7f20c3c0b1c3cef59c}{Solid\-Object} (double mass, const \hyperlink{class_vector3_d}{Vector3\-D} \&center\-Of\-Mass, const \hyperlink{class_matrix3x3}{Matrix3x3} \&moment\-Of\-Inertia\-Tensor)
+\item 
+\hyperlink{class_solid_object_ac828e5525505c81236a9b039d92c6a6b}{Solid\-Object} (int num\-Objects, \hyperlink{class_solid_object}{Solid\-Object} $\ast$objects)
+\item 
+\hyperlink{class_solid_object_a78b7c6dec129da027e767eb5d6303f6e}{$\sim$\-Solid\-Object} ()
+\item 
+double \hyperlink{class_solid_object_a54588eefe4a8034b6fadb4f68f4f5c16}{get\-Mass} ()
+\item 
+void \hyperlink{class_solid_object_a5c9e38e7f660ef708d91b40ce5d81bbd}{set\-Mass} (double mass)
+\item 
+\hyperlink{class_vector3_d}{Vector3\-D} \hyperlink{class_solid_object_a74a30608d1b46f092250ac2ebc37d1cf}{get\-Center\-Of\-Mass} ()
+\item 
+void \hyperlink{class_solid_object_a7e90b855ba306091dc31ccf4c2f8a2d6}{set\-Center\-Of\-Mass} (const \hyperlink{class_vector3_d}{Vector3\-D} \&center\-Of\-Mass)
+\item 
+\hyperlink{class_matrix3x3}{Matrix3x3} \hyperlink{class_solid_object_aad5a818b21478d8990eea0a8a66fd8e2}{get\-Moment\-Of\-Inertia\-Tensor} ()
+\item 
+\hyperlink{class_matrix3x3}{Matrix3x3} \hyperlink{class_solid_object_a5da9fcce2f2bf4348f69afc50e3382a4}{get\-Moment\-Of\-Inertia\-Tensor} (\hyperlink{class_vector3_d}{Vector3\-D} point)
+\item 
+\hyperlink{class_matrix3x3}{Matrix3x3} \hyperlink{class_solid_object_a2b538281c05bea601cc88c83c6f29e61}{get\-Moment\-Of\-Inertia\-Tensor} (\hyperlink{class_vector3_d}{Vector3\-D} point, \hyperlink{class_matrix3x3}{Matrix3x3} frame)
+\item 
+\hyperlink{class_solid_object}{Solid\-Object} \hyperlink{class_solid_object_ae2cc13f1608368edb002e8377e9d51c3}{create\-Full\-Sphere} (double mass, const \hyperlink{class_vector3_d}{Vector3\-D} \&center\-Of\-Mass)
+\item 
+\hyperlink{class_solid_object}{Solid\-Object} \hyperlink{class_solid_object_a6f50848bd5674db8e84bb76c98b0773f}{create\-Hollow\-Sphere} (double mass, const \hyperlink{class_vector3_d}{Vector3\-D} \&center\-Of\-Mass)
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_solid_object_a4737808f5d6f84499e2a292cc08ce125}{\index{Solid\-Object@{Solid\-Object}!Solid\-Object@{Solid\-Object}}
+\index{Solid\-Object@{Solid\-Object}!SolidObject@{Solid\-Object}}
+\subsubsection[{Solid\-Object}]{\setlength{\rightskip}{0pt plus 5cm}Solid\-Object\-::\-Solid\-Object (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_solid_object_a4737808f5d6f84499e2a292cc08ce125}
+\hypertarget{class_solid_object_adff5837bdc982a7f20c3c0b1c3cef59c}{\index{Solid\-Object@{Solid\-Object}!Solid\-Object@{Solid\-Object}}
+\index{Solid\-Object@{Solid\-Object}!SolidObject@{Solid\-Object}}
+\subsubsection[{Solid\-Object}]{\setlength{\rightskip}{0pt plus 5cm}Solid\-Object\-::\-Solid\-Object (
+\begin{DoxyParamCaption}
+\item[{double}]{mass, }
+\item[{const {\bf Vector3\-D} \&}]{center\-Of\-Mass, }
+\item[{const {\bf Matrix3x3} \&}]{moment\-Of\-Inertia\-Tensor}
+\end{DoxyParamCaption}
+)}}\label{class_solid_object_adff5837bdc982a7f20c3c0b1c3cef59c}
+\hypertarget{class_solid_object_ac828e5525505c81236a9b039d92c6a6b}{\index{Solid\-Object@{Solid\-Object}!Solid\-Object@{Solid\-Object}}
+\index{Solid\-Object@{Solid\-Object}!SolidObject@{Solid\-Object}}
+\subsubsection[{Solid\-Object}]{\setlength{\rightskip}{0pt plus 5cm}Solid\-Object\-::\-Solid\-Object (
+\begin{DoxyParamCaption}
+\item[{int}]{num\-Objects, }
+\item[{{\bf Solid\-Object} $\ast$}]{objects}
+\end{DoxyParamCaption}
+)}}\label{class_solid_object_ac828e5525505c81236a9b039d92c6a6b}
+\hypertarget{class_solid_object_a78b7c6dec129da027e767eb5d6303f6e}{\index{Solid\-Object@{Solid\-Object}!$\sim$\-Solid\-Object@{$\sim$\-Solid\-Object}}
+\index{$\sim$\-Solid\-Object@{$\sim$\-Solid\-Object}!SolidObject@{Solid\-Object}}
+\subsubsection[{$\sim$\-Solid\-Object}]{\setlength{\rightskip}{0pt plus 5cm}Solid\-Object\-::$\sim$\-Solid\-Object (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_solid_object_a78b7c6dec129da027e767eb5d6303f6e}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_solid_object_ae2cc13f1608368edb002e8377e9d51c3}{\index{Solid\-Object@{Solid\-Object}!create\-Full\-Sphere@{create\-Full\-Sphere}}
+\index{create\-Full\-Sphere@{create\-Full\-Sphere}!SolidObject@{Solid\-Object}}
+\subsubsection[{create\-Full\-Sphere}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Solid\-Object} Solid\-Object\-::create\-Full\-Sphere (
+\begin{DoxyParamCaption}
+\item[{double}]{mass, }
+\item[{const {\bf Vector3\-D} \&}]{center\-Of\-Mass}
+\end{DoxyParamCaption}
+)}}\label{class_solid_object_ae2cc13f1608368edb002e8377e9d51c3}
+\hypertarget{class_solid_object_a6f50848bd5674db8e84bb76c98b0773f}{\index{Solid\-Object@{Solid\-Object}!create\-Hollow\-Sphere@{create\-Hollow\-Sphere}}
+\index{create\-Hollow\-Sphere@{create\-Hollow\-Sphere}!SolidObject@{Solid\-Object}}
+\subsubsection[{create\-Hollow\-Sphere}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Solid\-Object} Solid\-Object\-::create\-Hollow\-Sphere (
+\begin{DoxyParamCaption}
+\item[{double}]{mass, }
+\item[{const {\bf Vector3\-D} \&}]{center\-Of\-Mass}
+\end{DoxyParamCaption}
+)}}\label{class_solid_object_a6f50848bd5674db8e84bb76c98b0773f}
+\hypertarget{class_solid_object_a74a30608d1b46f092250ac2ebc37d1cf}{\index{Solid\-Object@{Solid\-Object}!get\-Center\-Of\-Mass@{get\-Center\-Of\-Mass}}
+\index{get\-Center\-Of\-Mass@{get\-Center\-Of\-Mass}!SolidObject@{Solid\-Object}}
+\subsubsection[{get\-Center\-Of\-Mass}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector3\-D} Solid\-Object\-::get\-Center\-Of\-Mass (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_solid_object_a74a30608d1b46f092250ac2ebc37d1cf}
+\hypertarget{class_solid_object_a54588eefe4a8034b6fadb4f68f4f5c16}{\index{Solid\-Object@{Solid\-Object}!get\-Mass@{get\-Mass}}
+\index{get\-Mass@{get\-Mass}!SolidObject@{Solid\-Object}}
+\subsubsection[{get\-Mass}]{\setlength{\rightskip}{0pt plus 5cm}double Solid\-Object\-::get\-Mass (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_solid_object_a54588eefe4a8034b6fadb4f68f4f5c16}
+\hypertarget{class_solid_object_aad5a818b21478d8990eea0a8a66fd8e2}{\index{Solid\-Object@{Solid\-Object}!get\-Moment\-Of\-Inertia\-Tensor@{get\-Moment\-Of\-Inertia\-Tensor}}
+\index{get\-Moment\-Of\-Inertia\-Tensor@{get\-Moment\-Of\-Inertia\-Tensor}!SolidObject@{Solid\-Object}}
+\subsubsection[{get\-Moment\-Of\-Inertia\-Tensor}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Matrix3x3} Solid\-Object\-::get\-Moment\-Of\-Inertia\-Tensor (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_solid_object_aad5a818b21478d8990eea0a8a66fd8e2}
+\hypertarget{class_solid_object_a5da9fcce2f2bf4348f69afc50e3382a4}{\index{Solid\-Object@{Solid\-Object}!get\-Moment\-Of\-Inertia\-Tensor@{get\-Moment\-Of\-Inertia\-Tensor}}
+\index{get\-Moment\-Of\-Inertia\-Tensor@{get\-Moment\-Of\-Inertia\-Tensor}!SolidObject@{Solid\-Object}}
+\subsubsection[{get\-Moment\-Of\-Inertia\-Tensor}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Matrix3x3} Solid\-Object\-::get\-Moment\-Of\-Inertia\-Tensor (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector3\-D}}]{point}
+\end{DoxyParamCaption}
+)}}\label{class_solid_object_a5da9fcce2f2bf4348f69afc50e3382a4}
+\hypertarget{class_solid_object_a2b538281c05bea601cc88c83c6f29e61}{\index{Solid\-Object@{Solid\-Object}!get\-Moment\-Of\-Inertia\-Tensor@{get\-Moment\-Of\-Inertia\-Tensor}}
+\index{get\-Moment\-Of\-Inertia\-Tensor@{get\-Moment\-Of\-Inertia\-Tensor}!SolidObject@{Solid\-Object}}
+\subsubsection[{get\-Moment\-Of\-Inertia\-Tensor}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Matrix3x3} Solid\-Object\-::get\-Moment\-Of\-Inertia\-Tensor (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector3\-D}}]{point, }
+\item[{{\bf Matrix3x3}}]{frame}
+\end{DoxyParamCaption}
+)}}\label{class_solid_object_a2b538281c05bea601cc88c83c6f29e61}
+\hypertarget{class_solid_object_a7e90b855ba306091dc31ccf4c2f8a2d6}{\index{Solid\-Object@{Solid\-Object}!set\-Center\-Of\-Mass@{set\-Center\-Of\-Mass}}
+\index{set\-Center\-Of\-Mass@{set\-Center\-Of\-Mass}!SolidObject@{Solid\-Object}}
+\subsubsection[{set\-Center\-Of\-Mass}]{\setlength{\rightskip}{0pt plus 5cm}void Solid\-Object\-::set\-Center\-Of\-Mass (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vector3\-D} \&}]{center\-Of\-Mass}
+\end{DoxyParamCaption}
+)}}\label{class_solid_object_a7e90b855ba306091dc31ccf4c2f8a2d6}
+\hypertarget{class_solid_object_a5c9e38e7f660ef708d91b40ce5d81bbd}{\index{Solid\-Object@{Solid\-Object}!set\-Mass@{set\-Mass}}
+\index{set\-Mass@{set\-Mass}!SolidObject@{Solid\-Object}}
+\subsubsection[{set\-Mass}]{\setlength{\rightskip}{0pt plus 5cm}void Solid\-Object\-::set\-Mass (
+\begin{DoxyParamCaption}
+\item[{double}]{mass}
+\end{DoxyParamCaption}
+)}}\label{class_solid_object_a5c9e38e7f660ef708d91b40ce5d81bbd}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/\-Owner/\-My Programming/\-Personal Projects/\-Video\-Games/\-Optimist Racing/src/\hyperlink{_solid_object_8hpp}{Solid\-Object.\-hpp}\end{DoxyCompactItemize}

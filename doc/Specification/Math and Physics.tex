@@ -1,0 +1,291 @@
+\documentclass{article}
+\usepackage{etoolbox}
+\usepackage{mdwlist}
+\usepackage{mathtools}
+\makeatletter
+\patchcmd{\chapter}{\if@openright\cleardoublepage\else\clearpage\fi}{}{}{}
+\makeatother
+
+\usepackage{thumbpdf}
+\usepackage[pdftex,
+        colorlinks=true,
+        urlcolor=rltblue,       % \href{...}{...} external (URL)
+        filecolor=rltgreen,     % \href{...} local file
+        linkcolor=rltred,       % \ref{...} and \pageref{...}
+        pdftitle={Untitled},
+        pdfauthor={Your Name},
+        pdfsubject={Just a test},
+        pdfkeywords={mathematics},
+        pdfproducer={pdfLaTeX},
+        %pdfadjustspacing=1,
+        pagebackref,
+        pdfpagemode=None,
+        bookmarksopen=true]{hyperref}
+\usepackage{color}
+\definecolor{rltred}{rgb}{0.75,0,0}
+\definecolor{rltgreen}{rgb}{0,0.5,0}
+\definecolor{rltblue}{rgb}{0,0,0.75}
+
+\title{Optimist Racing - Math and Physics}
+\author{Claude Richard}
+\date{\today}
+
+\begin{document}\label{start}
+
+\maketitle
+This document contains all the mathematics used (except the easy math LOL) for the program.
+
+\subsection{Conventions}
+This section describes the notational conventions used throughout this document.
+If \(A\) is a matrix (or vector), then we denote the i\textsuperscript{th} row of A by \(A_i\).
+We also denote the i\textsuperscript{th} column of A by \(A^i\).
+
+\newpage
+
+
+
+\section{Electric Colours}
+There are 3 RGB colours (red, green, blue). There are 8 electric colours.
+The electric colours can be thought of as subsets of \( \{ red, green, blue \} \).
+The electric colours are:
+\begin{basedescript}{\desclabelstyle{\pushlabel}\desclabelwidth{10em}}
+\item [ElectricBlack] \(= \emptyset\)
+\item [ElectricRed] \(= \{ red \}\)
+\item [ElectricGreen] \(= \{ green \}\)
+\item [ElectricBlue] \(= \{ blue \}\)
+\item [ElectricYellow] \(= \{ red, green \}\)
+\item [ElectricMagenta] \(= \{ red, blue \}\)
+\item [ElectricCyan] \(= \{ green, blue \}\)
+\item [ElectricWhite] \(= \{ red, green, blue \}\)
+\end{basedescript}
+In the physics engine, 2 objects of Electric colours X and Y respectively can interact with each other if and only if
+\( X \bigcap Y \neq \emptyset \)
+
+\newpage
+
+
+
+\section{Smooth Floor Grid}
+File: Bezier.hpp
+You can create a floor which is differentiable n times for an arbitrary n.
+Note that the complexity is at least O(n). (I didn't calculate it exactly)
+Specify f, fx, fy, etc. for each vertex in a grid.
+Then the whole grid will be n-times differentiable everywhere.
+
+\newpage
+
+
+
+\section{Lagrangian Mechanics}
+Let \(\overrightarrow{x}\) represent the vector of generalized coordinates, of length \(n\).
+Let \(\overrightarrow{Q}\) represent the vector of generalized forces, also of length \(n\).
+For a given system, let \(T\) be the kinetic energy and \(V\) be the potential energy of the system.
+Express \(L = T - V\) as a function of the generalized coordinates and their derivatives with respect to time.
+\[
+T = T(x_1, \dotsc, x_n, \dot{x_1}, \dotsc, \dot{x_n})
+\]\[
+V= V(x_1, \dotsc, x_n)
+\]\[
+L = L(x_1, \dotsc, x_n, \dot{x_1}, \dotsc, \dot{x_n})
+\]
+Then there are \(n\) Lagrange Equations which together govern the motion of the generalized coordinates.
+\[
+\frac{d}{dt}\frac{\partial L}{\partial \dot{x_i}} - \frac{\partial L}{\partial x_i} = Q_i
+\]
+
+\subsection{Matrix Form}
+You should be able to express \(L\) in matrix form:
+\[
+L = \frac{1}{2} \dot{\overrightarrow{x}}^T A \dot{\overrightarrow{x}} - V
+\]
+Where \(A\) is a symmetric \(n x n\) matrix dependent on the generalized coordinates but not their derivatives wrt time.
+\[
+A = A(x_1, \dotsc, x_n)
+\]\[
+A = A^T
+\]
+We will now derive a vector equation to replace the \(n\) Lagrange equations. We have the following:
+\[
+\frac{\partial L}{\partial x_i} = \frac{1}{2}\dot{\overrightarrow{x}}^T \frac{\partial A}{\partial x_i} \overrightarrow{x} - \frac{\partial V}{\partial x_i}
+\]\[
+\frac{\partial L}{\partial \dot{x_i}} = A_i \dot{\overrightarrow{x}}
+\]\[
+\frac{d}{dt}\frac{\partial L}{\partial \dot{x_i}} = A_i \ddot{\overrightarrow{x}} +
+\sum_{j=1}^{n} \dot{x_j}(\frac{\partial A}{\partial x_j})_i \dot{\overrightarrow{x}}
+\]
+The i\textsuperscript{th} Lagrange equation then becomes:
+\[
+A_i \ddot{\overrightarrow{x}} + \sum_{j=1}^{n} \dot{x_j}(\frac{\partial A}{\partial x_j})_i \dot{\overrightarrow{x}}
+- \frac{1}{2}\dot{\overrightarrow{x}}^T \frac{\partial A}{\partial x_i} \overrightarrow{x} + \frac{\partial V}{\partial x_i}
+= Q_{x_i}
+\]
+Now for each \(i\), let \(M_i\) be a matrix such that \( (M_i)_j = (\frac{\partial A}{\partial x_j})_i\).
+All equations combined become the following vector equation:
+\[
+A \ddot{\overrightarrow{x}} + \sum_{j=1}^{n} \dot{x_j}(\frac{\partial A}{\partial x_j} - \frac{1}{2}M_j) \dot{\overrightarrow{x}}  + \nabla V = \overrightarrow{Q}
+\]
+
+\subsection{Kinetic energy relating to the center-of-mass}
+Let the system be composed of one object of mass \(m\), which does not rotate, and whose position as a function of the generalized coordinates is:
+\[
+position = \begin{bmatrix}
+  f(\overrightarrow{x}) \\
+  g(\overrightarrow{x}) \\
+  h(\overrightarrow{x})
+ \end{bmatrix}
+\]
+We will now derive the kinetic energy as a function of \(\overrightarrow{x}\), \(\dot{\overrightarrow{x}}\), and the three functions \(f\), \(g\), and \(h\).
+The velocity of the object is:
+\[
+velocity = \begin{bmatrix}
+  (\nabla f)^T \dot{\overrightarrow{x}} \\
+  (\nabla g)^T \dot{\overrightarrow{x}} \\
+  (\nabla h)^T \dot{\overrightarrow{x}}
+ \end{bmatrix}
+\]
+So its kinetic energy is:
+\[
+T = \frac{1}{2} m [\dot{\overrightarrow{x}}^T [(\nabla f)(\nabla f)^T + (\nabla g)(\nabla g)^T + (\nabla h)(\nabla h)^T] \dot{\overrightarrow{x}} ]
+\]
+Assume the potential energy is zero. Then \(L = T\).
+We will now derive the Lagrange equations for this system.
+\[
+\frac{\partial L}{\partial x_i} = \frac{1}{2} m \dot{\overrightarrow{x}}^T [ H(f)^i(\nabla f)^T + H(g)^i(\nabla g)^T + H(h)^i(\nabla h)^T + (\nabla f)H(f)_i + (\nabla g)H(g)_i + (\nabla h)H(h)_i ] \dot{\overrightarrow{x}}
+\]\[
+\frac{\partial L}{\partial \dot{x_i}} = m [ \frac{\partial f}{\partial x_i}(\nabla f)^T + \frac{\partial g}{\partial x_i}(\nabla g)^T +\frac{\partial h}{\partial x_i}(\nabla h)^T ] \dot{\overrightarrow{x}}
+\]\[
+\begin{array}{lcl}
+\frac{d}{dt} \frac{\partial L}{\partial \dot{x_i}} & = & m [ \frac{\partial f}{\partial x_i}(\nabla f)^T + \frac{\partial g}{\partial x_i}(\nabla g)^T +\frac{\partial h}{\partial x_i}(\nabla h)^T ] \ddot{\overrightarrow{x}} \\
+& + & m \dot{\overrightarrow{x}}^T [H(f)^i(\nabla f)^T + H(g)^i(\nabla g)^T + H(h)^i(\nabla h)^T] \dot{\overrightarrow{x}} \\
+& + & m \dot{\overrightarrow{x}}^T [\frac{\partial f}{\partial x_i}H(f) + \frac{\partial g}{\partial x_i}H(g) + \frac{\partial h}{\partial x_i}H(h)] \dot{\overrightarrow{x}}
+\end{array}
+\]
+The matrix form of the Lagrange equations is:
+\[
+\begin{array}{lcl}
+m[(\nabla f)(\nabla f)^T + (\nabla g)(\nabla g)^T + (\nabla h)(\nabla h)^T]\ddot{\overrightarrow{x}} + \\
+m[(\nabla f)\dot{\overrightarrow{x}}^TH(f) + (\nabla g)\dot{\overrightarrow{x}}^TH(g) + (\nabla h)\dot{\overrightarrow{x}}^TH(h)]\dot{\overrightarrow{x}} = Q
+\end{array}
+\]
+
+\subsection{Kinetic energy relating to the Euler angles}
+Let the system be composed of one object, whose center-of-mass does not move, and whose Euler angles as a function of the generalized coordinates are \(\alpha\), \(\beta\) and \(\gamma\).
+This means that to go from an orientation parallel to the world axes to the object's orientation, you must turn left (around the z-axis) by \(\alpha\), then tilt back (around the new model x-axis) by \(\beta\), then turn left around the model z-axis by \(\gamma\).
+Let the object have a moment of inertia tensor
+\[
+I = \begin{bmatrix}
+I_x & I_{xy} & I_{xz} \\
+I_{xy} & I_y & I_{yz} \\
+I_{xz} & I_{yz} & I_z
+\end{bmatrix}
+\]
+Also denote
+\[
+\alpha_1 = \alpha, \alpha_2 = \beta, \alpha_3 = \gamma
+\]\[
+G = \begin{bmatrix}
+\nabla \alpha & \nabla \beta & \nabla \gamma
+\end{bmatrix}
+\]
+\[
+E = \begin{bmatrix}
+I_x \sin^2 \beta \cos^2 \gamma & (I_y-I_x)\sin\beta\sin\gamma\cos\gamma & I_z\cos\beta \\
+(I_y-I_x)\sin\beta\sin\gamma\cos\gamma & I_x\sin^2\gamma+I_y\cos^2\gamma & 0 \\
+I_z\cos\beta & 0 & I_z
+\end{bmatrix}
+\]\[
+\nabla_0 L = \begin{bmatrix} \frac{\partial L}{\partial x_1} \\ \vdots \\ \frac{\partial L}{\partial x_n} \end{bmatrix}
+\]\[
+\nabla_1 L = \begin{bmatrix} \frac{\partial L}{\partial \dot{x_1}} \\ \vdots \\ \frac{\partial L}{\partial \dot{x_n}} \end{bmatrix}
+\]
+We will now derive the matrix form of the Lagrange equations for this system.
+Let \(T\) represent the kinetic energy, and assume the potential energy is zero.
+We can derive the following lemmas:
+\[
+\dot{\alpha_i} = \dot{\overrightarrow{x}}^T \nabla\alpha_i
+\]\[
+\dot{(\nabla\alpha_i)} = H(\alpha_i)\dot{\overrightarrow{x}}
+\]\[
+T = L
+\]
+\[
+T = \begin{bmatrix}\dot \alpha & \dot \beta & \dot \gamma \end{bmatrix}
+E \begin{bmatrix}\dot \alpha \\ \dot \beta \\ \dot \gamma \end{bmatrix}
+\]
+Therefore:
+\[
+L = \frac{1}{2} \dot{\overrightarrow{x}}^T G E G^T \dot{\overrightarrow{x}}
+\]\[
+\nabla_0 L = \sum_{i=1}^3 \frac{1}{2} \nabla \alpha_i \dot{\overrightarrow{x}}^T G \frac{\partial E}{\partial \alpha_i} G^T \dot{\overrightarrow{x}}
++ H(\alpha_i) \dot{\overrightarrow{x}} E_i G^T \dot{\overrightarrow{x}}
+\]\[
+\nabla_1 L = G E G^T \dot{\overrightarrow{x}}
+\]
+Anyway, after a while we find the final vector equation:
+\[
+G E G^T \ddot{\overrightarrow{x}} + \sum_{i=1}^{3} G E^i \dot{\overrightarrow{x}}^T H(\alpha_i) \dot{\overrightarrow{x}} +
+G \frac{\partial E}{\partial \alpha_i} G^T \dot{\overrightarrow{x}} \dot{\overrightarrow{x}}^T \nabla \alpha_i -
+\frac{1}{2} \nabla \alpha_i \dot{\overrightarrow{x}}^T G \frac{\partial E}{\partial \alpha_i} G^T \dot{\overrightarrow{x}}
+= \overrightarrow{Q}
+\]
+
+\subsection{Combining center-of-mass movement and rotation, and several objects}
+In the previous two sections we focused on center-mass movement, then on rotation, for only one object.
+What if we have several objects that have both rotation and moving centers-of-mass?
+Let the system have \(k\) objects, and \(n\) generalized coordinates. Let the position of object \(i\) be
+\[ position_i = \begin{bmatrix} f_i(\overrightarrow{x}) \\ g_i(\overrightarrow{x}) \\ h_i(\overrightarrow{x}) \end{bmatrix} \]
+and let the Euler angles of object \(i\) be
+\[ Euler_i = \begin{bmatrix} \alpha_i(\overrightarrow{x}) \\ \beta_i(\overrightarrow{x}) \\ \gamma_i(\overrightarrow{x}) \end{bmatrix} \]
+If we use the center-of-mass section above for object \(i\), we would get the equation
+\[ C_i \ddot{\overrightarrow{x}} = \overrightarrow{c_i} \]
+And if we use the rotation section above for object \(i\), we would get
+\[ R_i \ddot{\overrightarrow{x}} = \overrightarrow{r_i} \]
+Where \(C_i\), \(R_i\), \(\overrightarrow{c_i}\) and \(\overrightarrow{r_i}\) depend on \(\overrightarrow{x}\) and \(\dot{\overrightarrow{x}}\).
+For the combined system, the equation is simply
+\[ A \ddot{\overrightarrow{x}} = \overrightarrow{Q} - \overrightarrow{b} \]
+where
+\[ A = \sum_{i=1}^{n} (C_i + R_i) \]
+\[ b = \sum_{i=1}^{n} (\overrightarrow{c_i} + \overrightarrow{r_i}) \]
+and \(\overrightarrow{Q}\) is the generalized force on the system, which will be covered in the next sections.
+
+\subsection{Transforming forces and torques between model and world coordinate systems}
+This is just a preliminary section to clarify the transformations in the next sections.
+Say you apply a force or torque \(\overrightarrow{F_w}\) in world coordinates.
+There is a force/torque \(\overrightarrow{F_m}\) in model coordinates, which is equivalent to \(\overrightarrow{F_w}\) in world coordinates.
+Define the following matrices:
+\[ R_\alpha = \begin{bmatrix} \cos\alpha & -\sin\alpha & 0 \\ \sin\alpha & \cos\alpha & 0 \\ 0 & 0 & 1 \end{bmatrix} \]
+\[ R_\beta = \begin{bmatrix} 1 & 0 & 0 \\ 0 & \cos\beta & -\sin\beta \\ 0 & \sin\beta & \cos\beta \end{bmatrix} \]
+\[ R_\gamma = \begin{bmatrix} \cos\gamma & -\sin\gamma & 0 \\ \sin\gamma & \cos\gamma & 0 \\ 0 & 0 & 1 \end{bmatrix} \]
+
+\subsection{Generalized force from 3D force on center-of-mass}
+You are given a system consisting of one object, which may or may not rotate. Its position is as above,
+\[ position = \begin{bmatrix} f(\overrightarrow{x}) \\ g(\overrightarrow{x}) \\ h(\overrightarrow{x}) \end{bmatrix} \]
+You apply an external force \(\overrightarrow{F_w}\) (in 3D world coordinates) on the object at its center-of-mass.
+The generalized force on the coordinate \(x_i\) is
+\[ Q_{x_i} = \frac{\partial position}{\partial x_i}^T \overrightarrow{F_w} \]
+So the generalized force vector must be
+\[ Q = \begin{bmatrix} \nabla f & \nabla g & \nabla h \end{bmatrix} \overrightarrow{F_w} \]
+
+\subsection{Generalized force from 3D torque}
+Now instead of applying a force, you apply a torque \(\overrightarrow{T_w}\) about the center-of-mass, in world coordinates.
+Alternatively, apply a torque \(\overrightarrow{T_m}\) in model coordinates (i.e. rotated according to current Euler angles).
+\newpage
+
+
+
+\section{Lagrangian Models}
+The racer includes 2 objects.
+The bottom has position x,y,z, rotated by theta.
+The top is attached to a massless rigid rod, of which the other end is attached to the bottom.
+To get to the top: start with (x,y,z), rotate left by theta, tilt right by phi, go up by length.
+When you're gliding on the floor, z = f(x,y) where f describes the floor.
+When you're falling, z is an additional generalized coordinate.
+
+\newpage
+
+
+
+\section{Camera}
+TODO: write out this section to describe good camera movement around the lagrangian models
+
+\label{end}\end{document}

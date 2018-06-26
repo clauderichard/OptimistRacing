@@ -1,0 +1,13 @@
+\form#0:$ \overrightarrow{this} \cdot \overrightarrow{other} $
+\form#1:$ X \bigcap Y \neq \emptyset $
+\form#2:$ \ddot{\overrightarrow{x}} $
+\form#3:$ \overrightarrow{x} $
+\form#4:$ \dot{\overrightarrow{x}} $
+\form#5:$ \overrightarrow{Q} $
+\form#6:$A$
+\form#7:$\overrightarrow{b}$
+\form#8:$ A \ddot{\overrightarrow{x}} + \overrightarrow{b} = \overrightarrow{Q} $
+\form#9:$n$
+\form#10:$A(\overrightarrow{x},\dot{\overrightarrow{x}})$
+\form#11:$\overrightarrow{b}(\overrightarrow{x},\dot{\overrightarrow{x}})$
+\form#12:$\overrightarrow{Q}$

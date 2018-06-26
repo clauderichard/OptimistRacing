@@ -1,0 +1,131 @@
+\hypertarget{class_vector_n_d}{\section{Vector\-N\-D Class Reference}
+\label{class_vector_n_d}\index{Vector\-N\-D@{Vector\-N\-D}}
+}
+
+
+{\ttfamily \#include $<$Algebra.\-hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_vector_n_d_a04bf63cd09f861074f9f12cb8841fe9b}{Vector\-N\-D} (int n)
+\item 
+\hyperlink{class_vector_n_d_a3fb31d80df22f6c6fb0543b0400dadba}{Vector\-N\-D} (int n, const double $\ast$x)
+\item 
+\hyperlink{class_vector_n_d_ad34b1d325e217b1176b879e8567d7811}{Vector\-N\-D} (const \hyperlink{class_vector_n_d}{Vector\-N\-D} \&other)
+\item 
+\hyperlink{class_vector_n_d_a55968fd9a45e35a7fbed4c83cac9f0f3}{$\sim$\-Vector\-N\-D} ()
+\item 
+\hyperlink{class_vector_n_d}{Vector\-N\-D} \& \hyperlink{class_vector_n_d_af2942aee65afd936668105cb738fc0ad}{operator=} (const \hyperlink{class_vector_n_d}{Vector\-N\-D} \&other)
+\item 
+int \hyperlink{class_vector_n_d_abdbff005e6ab42f1c4dcfb43bd34f185}{get\-Num} () const 
+\item 
+double \& \hyperlink{class_vector_n_d_ad28f82215e7d1451dcb56313f29a80d5}{operator\mbox{[}$\,$\mbox{]}} (size\-\_\-t idx)
+\item 
+double \hyperlink{class_vector_n_d_abc39360878982a7a1f7d1836a28effd7}{operator\mbox{[}$\,$\mbox{]}} (size\-\_\-t idx) const 
+\item 
+double \hyperlink{class_vector_n_d_ab52f6d230cab5210b96d3e1017a6adea}{euclidean\-Norm2} () const 
+\item 
+double \hyperlink{class_vector_n_d_abf2d675f51c1265689c8781dd4631cb7}{euclidean\-Norm} () const 
+\item 
+double \hyperlink{class_vector_n_d_a23a9ef3d8c168a26a365fc1490ec04ef}{dot} (const \hyperlink{class_vector_n_d}{Vector\-N\-D} \&other) const 
+\item 
+bool \hyperlink{class_vector_n_d_a01b21f6af75960680cb3fb0117f4cb58}{normalize} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_vector_n_d_a04bf63cd09f861074f9f12cb8841fe9b}{\index{Vector\-N\-D@{Vector\-N\-D}!Vector\-N\-D@{Vector\-N\-D}}
+\index{Vector\-N\-D@{Vector\-N\-D}!VectorND@{Vector\-N\-D}}
+\subsubsection[{Vector\-N\-D}]{\setlength{\rightskip}{0pt plus 5cm}Vector\-N\-D\-::\-Vector\-N\-D (
+\begin{DoxyParamCaption}
+\item[{int}]{n}
+\end{DoxyParamCaption}
+)}}\label{class_vector_n_d_a04bf63cd09f861074f9f12cb8841fe9b}
+\hypertarget{class_vector_n_d_a3fb31d80df22f6c6fb0543b0400dadba}{\index{Vector\-N\-D@{Vector\-N\-D}!Vector\-N\-D@{Vector\-N\-D}}
+\index{Vector\-N\-D@{Vector\-N\-D}!VectorND@{Vector\-N\-D}}
+\subsubsection[{Vector\-N\-D}]{\setlength{\rightskip}{0pt plus 5cm}Vector\-N\-D\-::\-Vector\-N\-D (
+\begin{DoxyParamCaption}
+\item[{int}]{n, }
+\item[{const double $\ast$}]{x}
+\end{DoxyParamCaption}
+)}}\label{class_vector_n_d_a3fb31d80df22f6c6fb0543b0400dadba}
+\hypertarget{class_vector_n_d_ad34b1d325e217b1176b879e8567d7811}{\index{Vector\-N\-D@{Vector\-N\-D}!Vector\-N\-D@{Vector\-N\-D}}
+\index{Vector\-N\-D@{Vector\-N\-D}!VectorND@{Vector\-N\-D}}
+\subsubsection[{Vector\-N\-D}]{\setlength{\rightskip}{0pt plus 5cm}Vector\-N\-D\-::\-Vector\-N\-D (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vector\-N\-D} \&}]{other}
+\end{DoxyParamCaption}
+)}}\label{class_vector_n_d_ad34b1d325e217b1176b879e8567d7811}
+\hypertarget{class_vector_n_d_a55968fd9a45e35a7fbed4c83cac9f0f3}{\index{Vector\-N\-D@{Vector\-N\-D}!$\sim$\-Vector\-N\-D@{$\sim$\-Vector\-N\-D}}
+\index{$\sim$\-Vector\-N\-D@{$\sim$\-Vector\-N\-D}!VectorND@{Vector\-N\-D}}
+\subsubsection[{$\sim$\-Vector\-N\-D}]{\setlength{\rightskip}{0pt plus 5cm}Vector\-N\-D\-::$\sim$\-Vector\-N\-D (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_vector_n_d_a55968fd9a45e35a7fbed4c83cac9f0f3}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_vector_n_d_a23a9ef3d8c168a26a365fc1490ec04ef}{\index{Vector\-N\-D@{Vector\-N\-D}!dot@{dot}}
+\index{dot@{dot}!VectorND@{Vector\-N\-D}}
+\subsubsection[{dot}]{\setlength{\rightskip}{0pt plus 5cm}double Vector\-N\-D\-::dot (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vector\-N\-D} \&}]{other}
+\end{DoxyParamCaption}
+) const}}\label{class_vector_n_d_a23a9ef3d8c168a26a365fc1490ec04ef}
+\hypertarget{class_vector_n_d_abf2d675f51c1265689c8781dd4631cb7}{\index{Vector\-N\-D@{Vector\-N\-D}!euclidean\-Norm@{euclidean\-Norm}}
+\index{euclidean\-Norm@{euclidean\-Norm}!VectorND@{Vector\-N\-D}}
+\subsubsection[{euclidean\-Norm}]{\setlength{\rightskip}{0pt plus 5cm}double Vector\-N\-D\-::euclidean\-Norm (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_vector_n_d_abf2d675f51c1265689c8781dd4631cb7}
+\hypertarget{class_vector_n_d_ab52f6d230cab5210b96d3e1017a6adea}{\index{Vector\-N\-D@{Vector\-N\-D}!euclidean\-Norm2@{euclidean\-Norm2}}
+\index{euclidean\-Norm2@{euclidean\-Norm2}!VectorND@{Vector\-N\-D}}
+\subsubsection[{euclidean\-Norm2}]{\setlength{\rightskip}{0pt plus 5cm}double Vector\-N\-D\-::euclidean\-Norm2 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_vector_n_d_ab52f6d230cab5210b96d3e1017a6adea}
+\hypertarget{class_vector_n_d_abdbff005e6ab42f1c4dcfb43bd34f185}{\index{Vector\-N\-D@{Vector\-N\-D}!get\-Num@{get\-Num}}
+\index{get\-Num@{get\-Num}!VectorND@{Vector\-N\-D}}
+\subsubsection[{get\-Num}]{\setlength{\rightskip}{0pt plus 5cm}int Vector\-N\-D\-::get\-Num (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_vector_n_d_abdbff005e6ab42f1c4dcfb43bd34f185}
+\hypertarget{class_vector_n_d_a01b21f6af75960680cb3fb0117f4cb58}{\index{Vector\-N\-D@{Vector\-N\-D}!normalize@{normalize}}
+\index{normalize@{normalize}!VectorND@{Vector\-N\-D}}
+\subsubsection[{normalize}]{\setlength{\rightskip}{0pt plus 5cm}bool Vector\-N\-D\-::normalize (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_vector_n_d_a01b21f6af75960680cb3fb0117f4cb58}
+\hypertarget{class_vector_n_d_af2942aee65afd936668105cb738fc0ad}{\index{Vector\-N\-D@{Vector\-N\-D}!operator=@{operator=}}
+\index{operator=@{operator=}!VectorND@{Vector\-N\-D}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector\-N\-D} \& Vector\-N\-D\-::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vector\-N\-D} \&}]{other}
+\end{DoxyParamCaption}
+)}}\label{class_vector_n_d_af2942aee65afd936668105cb738fc0ad}
+\hypertarget{class_vector_n_d_ad28f82215e7d1451dcb56313f29a80d5}{\index{Vector\-N\-D@{Vector\-N\-D}!operator\mbox{[}$\,$\mbox{]}@{operator[]}}
+\index{operator\mbox{[}$\,$\mbox{]}@{operator[]}!VectorND@{Vector\-N\-D}}
+\subsubsection[{operator[]}]{\setlength{\rightskip}{0pt plus 5cm}double \& Vector\-N\-D\-::operator\mbox{[}$\,$\mbox{]} (
+\begin{DoxyParamCaption}
+\item[{size\-\_\-t}]{idx}
+\end{DoxyParamCaption}
+)}}\label{class_vector_n_d_ad28f82215e7d1451dcb56313f29a80d5}
+\hypertarget{class_vector_n_d_abc39360878982a7a1f7d1836a28effd7}{\index{Vector\-N\-D@{Vector\-N\-D}!operator\mbox{[}$\,$\mbox{]}@{operator[]}}
+\index{operator\mbox{[}$\,$\mbox{]}@{operator[]}!VectorND@{Vector\-N\-D}}
+\subsubsection[{operator[]}]{\setlength{\rightskip}{0pt plus 5cm}double Vector\-N\-D\-::operator\mbox{[}$\,$\mbox{]} (
+\begin{DoxyParamCaption}
+\item[{size\-\_\-t}]{idx}
+\end{DoxyParamCaption}
+) const}}\label{class_vector_n_d_abc39360878982a7a1f7d1836a28effd7}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/\-Owner/\-My Programming/\-Personal Projects/\-Video\-Games/\-Optimist Racing/src/\hyperlink{_algebra_8hpp}{Algebra.\-hpp}\item 
+C\-:/\-Users/\-Owner/\-My Programming/\-Personal Projects/\-Video\-Games/\-Optimist Racing/src/\hyperlink{_algebra_8cpp}{Algebra.\-cpp}\end{DoxyCompactItemize}

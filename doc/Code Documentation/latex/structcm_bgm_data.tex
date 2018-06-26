@@ -1,0 +1,98 @@
+\hypertarget{structcm_bgm_data}{\section{cm\-Bgm\-Data Struct Reference}
+\label{structcm_bgm_data}\index{cm\-Bgm\-Data@{cm\-Bgm\-Data}}
+}
+
+
+{\ttfamily \#include $<$cm\-Bgm\-Data.\-hpp$>$}
+
+Inheritance diagram for cm\-Bgm\-Data\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{structcm_bgm_data}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structcm_bgm_data_ac99aabc37df4108483a648d1830de941}{cm\-Bgm\-Data} (std\-::string filename)
+\item 
+\hyperlink{structcm_bgm_data_ada95990329aca702bc49fe7e05d6ee7b}{$\sim$cm\-Bgm\-Data} ()
+\item 
+virtual void \hyperlink{structcm_bgm_data_a1ae21b4514acc4e323ce48df82186665}{write} (std\-::ostream \&out) const 
+\item 
+virtual void \hyperlink{structcm_bgm_data_ad13cc535ceefff68c863039f2e7bcddc}{read} (std\-::istream \&in)
+\item 
+void \hyperlink{structcm_bgm_data_a19c7f617714efd926e309575b99559f7}{set\-\_\-loop} (\hyperlink{classcm_audio_stream}{cm\-Audio\-Stream} \&stream, int section\-\_\-index)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\-::string \hyperlink{structcm_bgm_data_a344c7b7b4460aaba2a1c8f485f3b22b9}{audio\-\_\-filename}
+\item 
+std\-::vector$<$ double $>$ \hyperlink{structcm_bgm_data_aeca3c28ceaf6655aa18ace1c030589c1}{interval\-\_\-separators}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{structcm_bgm_data_ac99aabc37df4108483a648d1830de941}{\index{cm\-Bgm\-Data@{cm\-Bgm\-Data}!cm\-Bgm\-Data@{cm\-Bgm\-Data}}
+\index{cm\-Bgm\-Data@{cm\-Bgm\-Data}!cmBgmData@{cm\-Bgm\-Data}}
+\subsubsection[{cm\-Bgm\-Data}]{\setlength{\rightskip}{0pt plus 5cm}cm\-Bgm\-Data\-::cm\-Bgm\-Data (
+\begin{DoxyParamCaption}
+\item[{std\-::string}]{filename}
+\end{DoxyParamCaption}
+)}}\label{structcm_bgm_data_ac99aabc37df4108483a648d1830de941}
+\hypertarget{structcm_bgm_data_ada95990329aca702bc49fe7e05d6ee7b}{\index{cm\-Bgm\-Data@{cm\-Bgm\-Data}!$\sim$cm\-Bgm\-Data@{$\sim$cm\-Bgm\-Data}}
+\index{$\sim$cm\-Bgm\-Data@{$\sim$cm\-Bgm\-Data}!cmBgmData@{cm\-Bgm\-Data}}
+\subsubsection[{$\sim$cm\-Bgm\-Data}]{\setlength{\rightskip}{0pt plus 5cm}cm\-Bgm\-Data\-::$\sim$cm\-Bgm\-Data (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{structcm_bgm_data_ada95990329aca702bc49fe7e05d6ee7b}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{structcm_bgm_data_ad13cc535ceefff68c863039f2e7bcddc}{\index{cm\-Bgm\-Data@{cm\-Bgm\-Data}!read@{read}}
+\index{read@{read}!cmBgmData@{cm\-Bgm\-Data}}
+\subsubsection[{read}]{\setlength{\rightskip}{0pt plus 5cm}void cm\-Bgm\-Data\-::read (
+\begin{DoxyParamCaption}
+\item[{std\-::istream \&}]{in}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{structcm_bgm_data_ad13cc535ceefff68c863039f2e7bcddc}
+
+
+Implements \hyperlink{structcm_generic_data_a82f404e89da9fbbee536e7aff03df6d1}{cm\-Generic\-Data}.
+
+\hypertarget{structcm_bgm_data_a19c7f617714efd926e309575b99559f7}{\index{cm\-Bgm\-Data@{cm\-Bgm\-Data}!set\-\_\-loop@{set\-\_\-loop}}
+\index{set\-\_\-loop@{set\-\_\-loop}!cmBgmData@{cm\-Bgm\-Data}}
+\subsubsection[{set\-\_\-loop}]{\setlength{\rightskip}{0pt plus 5cm}void cm\-Bgm\-Data\-::set\-\_\-loop (
+\begin{DoxyParamCaption}
+\item[{{\bf cm\-Audio\-Stream} \&}]{stream, }
+\item[{int}]{section\-\_\-index}
+\end{DoxyParamCaption}
+)}}\label{structcm_bgm_data_a19c7f617714efd926e309575b99559f7}
+\hypertarget{structcm_bgm_data_a1ae21b4514acc4e323ce48df82186665}{\index{cm\-Bgm\-Data@{cm\-Bgm\-Data}!write@{write}}
+\index{write@{write}!cmBgmData@{cm\-Bgm\-Data}}
+\subsubsection[{write}]{\setlength{\rightskip}{0pt plus 5cm}void cm\-Bgm\-Data\-::write (
+\begin{DoxyParamCaption}
+\item[{std\-::ostream \&}]{out}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{structcm_bgm_data_a1ae21b4514acc4e323ce48df82186665}
+
+
+Implements \hyperlink{structcm_generic_data_a19cdfe058e9a30b81351a7ecbebafd45}{cm\-Generic\-Data}.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{structcm_bgm_data_a344c7b7b4460aaba2a1c8f485f3b22b9}{\index{cm\-Bgm\-Data@{cm\-Bgm\-Data}!audio\-\_\-filename@{audio\-\_\-filename}}
+\index{audio\-\_\-filename@{audio\-\_\-filename}!cmBgmData@{cm\-Bgm\-Data}}
+\subsubsection[{audio\-\_\-filename}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string cm\-Bgm\-Data\-::audio\-\_\-filename}}\label{structcm_bgm_data_a344c7b7b4460aaba2a1c8f485f3b22b9}
+\hypertarget{structcm_bgm_data_aeca3c28ceaf6655aa18ace1c030589c1}{\index{cm\-Bgm\-Data@{cm\-Bgm\-Data}!interval\-\_\-separators@{interval\-\_\-separators}}
+\index{interval\-\_\-separators@{interval\-\_\-separators}!cmBgmData@{cm\-Bgm\-Data}}
+\subsubsection[{interval\-\_\-separators}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$double$>$ cm\-Bgm\-Data\-::interval\-\_\-separators}}\label{structcm_bgm_data_aeca3c28ceaf6655aa18ace1c030589c1}
+
+
+The documentation for this struct was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/\-Owner/\-My Programming/\-Personal Projects/\-Video\-Games/\-Optimist Racing/src/\hyperlink{cm_bgm_data_8hpp}{cm\-Bgm\-Data.\-hpp}\item 
+C\-:/\-Users/\-Owner/\-My Programming/\-Personal Projects/\-Video\-Games/\-Optimist Racing/src/\hyperlink{cm_bgm_data_8cpp}{cm\-Bgm\-Data.\-cpp}\end{DoxyCompactItemize}

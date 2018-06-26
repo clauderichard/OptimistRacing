@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Optimist Racing Installer", "Optimist Racing Installer\Optimist Racing Installer.vdproj", "{8BAEF8E6-6A5C-47AD-ADB8-A41B736367C4}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Optimist Racing", "Optimist Racing.vcxproj", "{546AC943-D5DD-44E5-81F2-3F4325166F84}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{DD0A2831-18A5-4472-8E38-E6C1D4B55333}"
+	ProjectSection(SolutionItems) = preProject
+		Optimist Racing.vsmdi = Optimist Racing.vsmdi
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SubversionScc) = preSolution
+		Svn-Managed = True
+		Manager = AnkhSVN - Subversion Support for Visual Studio
+	EndGlobalSection
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = Optimist Racing.vsmdi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8BAEF8E6-6A5C-47AD-ADB8-A41B736367C4}.Debug|Win32.ActiveCfg = Debug
+		{8BAEF8E6-6A5C-47AD-ADB8-A41B736367C4}.Release|Win32.ActiveCfg = Release
+		{546AC943-D5DD-44E5-81F2-3F4325166F84}.Debug|Win32.ActiveCfg = Debug|Win32
+		{546AC943-D5DD-44E5-81F2-3F4325166F84}.Debug|Win32.Build.0 = Debug|Win32
+		{546AC943-D5DD-44E5-81F2-3F4325166F84}.Release|Win32.ActiveCfg = Release|Win32
+		{546AC943-D5DD-44E5-81F2-3F4325166F84}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

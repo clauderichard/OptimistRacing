@@ -1,0 +1,255 @@
+\hypertarget{_main_8cpp}{\section{C\-:/\-Users/\-Owner/\-My Programming/\-Personal Projects/\-Video\-Games/\-Optimist Racing/src/\-Main.cpp File Reference}
+\label{_main_8cpp}\index{C\-:/\-Users/\-Owner/\-My Programming/\-Personal Projects/\-Video\-Games/\-Optimist Racing/src/\-Main.\-cpp@{C\-:/\-Users/\-Owner/\-My Programming/\-Personal Projects/\-Video\-Games/\-Optimist Racing/src/\-Main.\-cpp}}
+}
+{\ttfamily \#include $<$G\-L\textbackslash{}glew.\-h$>$}\\*
+{\ttfamily \#include $<$G\-L\textbackslash{}freeglut.\-h$>$}\\*
+{\ttfamily \#include \char`\"{}Lagrange.\-hpp\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Bezier.\-hpp\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Primitive.\-hpp\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Keyboard.\-hpp\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Material.\-hpp\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Grid.\-hpp\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Electric\-Colour.\-hpp\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Camera.\-hpp\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}World.\-hpp\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Data.\-hpp\char`\"{}}\\*
+{\ttfamily \#include $<$iostream$>$}\\*
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{_main_8cpp_ab01c733d09125c1a0a1f6847009a1d4a}{M\-I\-L\-L\-I\-S\-E\-C\-O\-N\-D\-S\-\_\-\-P\-E\-R\-\_\-\-F\-R\-A\-M\-E}~16
+\begin{DoxyCompactList}\small\item\em The number of milliseconds for each frame; frames-\/per-\/second = 1000 / this. \end{DoxyCompactList}\item 
+\#define \hyperlink{_main_8cpp_a5473cf64fa979b48335079c99532e243}{W\-I\-N\-D\-O\-W\-\_\-\-H\-E\-I\-G\-H\-T}~400
+\begin{DoxyCompactList}\small\item\em The height of the game window. \end{DoxyCompactList}\item 
+\#define \hyperlink{_main_8cpp_a498d9f026138406895e9a34b504ac6a6}{W\-I\-N\-D\-O\-W\-\_\-\-W\-I\-D\-T\-H}~400
+\begin{DoxyCompactList}\small\item\em The width of the game window. \end{DoxyCompactList}\item 
+\#define \hyperlink{_main_8cpp_a328a5ea7f87a9be8ffc2784f2243e272}{M\-I\-L\-L\-I\-S\-E\-C\-O\-N\-D\-S\-\_\-\-P\-E\-R\-\_\-\-F\-P\-S\-\_\-\-U\-P\-D\-A\-T\-E}~300
+\begin{DoxyCompactList}\small\item\em At every (this) milliseconds, the value of F\-P\-S stored in current\-\_\-fps is updated. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{_main_8cpp_a5d953fd9def7f59725d43854309b2c81}{main\-\_\-key\-\_\-down} (unsigned char key, int xx, int yy)
+\begin{DoxyCompactList}\small\item\em This function gets called when a normal key on the keyboard gets pressed. \end{DoxyCompactList}\item 
+void \hyperlink{_main_8cpp_a268c7c1058cfb6e35ec1675b3c5f7deb}{main\-\_\-special\-\_\-key\-\_\-down} (int key, int xx, int yy)
+\begin{DoxyCompactList}\small\item\em This function gets called when a special key on the keyboard gets pressed. \end{DoxyCompactList}\item 
+void \hyperlink{_main_8cpp_a6742d889b0471174a21a3dc5994d25f3}{main\-\_\-key\-\_\-up} (unsigned char key, int xx, int yy)
+\begin{DoxyCompactList}\small\item\em This function gets called when a normal key on the keyboard gets released. \end{DoxyCompactList}\item 
+void \hyperlink{_main_8cpp_a92d3d2be067e841ba1b6a16350f6377b}{main\-\_\-special\-\_\-key\-\_\-up} (int key, int xx, int yy)
+\begin{DoxyCompactList}\small\item\em This function gets called when a special key on the keyboard gets released. \end{DoxyCompactList}\item 
+void \hyperlink{_main_8cpp_ab9a8b64de56c690951ef4346562aef40}{main\-\_\-step\-\_\-and\-\_\-render} (int i)
+\begin{DoxyCompactList}\small\item\em This function gets called at each frame. \end{DoxyCompactList}\item 
+int \hyperlink{_main_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}{main} (int argc, char $\ast$$\ast$argv)
+\begin{DoxyCompactList}\small\item\em The main function of the program. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcm_key_manager}{cm\-Key\-Manager} $\ast$ \hyperlink{_main_8cpp_a45d79734d7cf8999548480e72f610d40}{kbm} = new \hyperlink{classcm_key_manager}{cm\-Key\-Manager}()
+\begin{DoxyCompactList}\small\item\em This stores which keys are pressed and whatnot. \end{DoxyCompactList}\item 
+\hyperlink{class_world}{World} $\ast$ \hyperlink{_main_8cpp_afdc9aca4da969365814ec79ec4e56281}{g\-World}
+\begin{DoxyCompactList}\small\item\em The physics world, which also handles rendering. \end{DoxyCompactList}\item 
+int \hyperlink{_main_8cpp_a4d4f553dce504b38a16b9164049195a6}{framecount}
+\begin{DoxyCompactList}\small\item\em Used for timing the main loop. Todo\-: some better algorithm. \end{DoxyCompactList}\item 
+int \hyperlink{_main_8cpp_ac9c51867d2eb1cc4ffa3e074a9ccc14a}{lastupdatemill}
+\begin{DoxyCompactList}\small\item\em Used for timing the main loop. Todo\-: some better algorithm. \end{DoxyCompactList}\item 
+int \hyperlink{_main_8cpp_ac89a670362c46d2b80d705782d862676}{lastframemill}
+\begin{DoxyCompactList}\small\item\em Used for timing the main loop. Todo\-: some better algorithm. \end{DoxyCompactList}\item 
+double \hyperlink{_main_8cpp_ae8d757346cd86633612877691e5aaca4}{current\-\_\-fps}
+\begin{DoxyCompactList}\small\item\em The value of frames-\/per-\/second that was last computed. \end{DoxyCompactList}\item 
+std\-::string $\ast$ \hyperlink{_main_8cpp_a6801cf474a7b2494c15057a5d43ca4a4}{levelnames}
+\begin{DoxyCompactList}\small\item\em The names of the levels in the game (match the names of files in the world/ directory). \end{DoxyCompactList}\item 
+int \hyperlink{_main_8cpp_aabd3fb9ce376aa38529cdee22199f4ed}{curlevel}
+\begin{DoxyCompactList}\small\item\em The current level that you're playing. \end{DoxyCompactList}\item 
+int \hyperlink{_main_8cpp_aac17f6a87984c497f6dd8c7fd13b8fca}{numlevels}
+\begin{DoxyCompactList}\small\item\em The number of levels in the game. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{_main_8cpp_a328a5ea7f87a9be8ffc2784f2243e272}{\index{Main.\-cpp@{Main.\-cpp}!M\-I\-L\-L\-I\-S\-E\-C\-O\-N\-D\-S\-\_\-\-P\-E\-R\-\_\-\-F\-P\-S\-\_\-\-U\-P\-D\-A\-T\-E@{M\-I\-L\-L\-I\-S\-E\-C\-O\-N\-D\-S\-\_\-\-P\-E\-R\-\_\-\-F\-P\-S\-\_\-\-U\-P\-D\-A\-T\-E}}
+\index{M\-I\-L\-L\-I\-S\-E\-C\-O\-N\-D\-S\-\_\-\-P\-E\-R\-\_\-\-F\-P\-S\-\_\-\-U\-P\-D\-A\-T\-E@{M\-I\-L\-L\-I\-S\-E\-C\-O\-N\-D\-S\-\_\-\-P\-E\-R\-\_\-\-F\-P\-S\-\_\-\-U\-P\-D\-A\-T\-E}!Main.cpp@{Main.\-cpp}}
+\subsubsection[{M\-I\-L\-L\-I\-S\-E\-C\-O\-N\-D\-S\-\_\-\-P\-E\-R\-\_\-\-F\-P\-S\-\_\-\-U\-P\-D\-A\-T\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define M\-I\-L\-L\-I\-S\-E\-C\-O\-N\-D\-S\-\_\-\-P\-E\-R\-\_\-\-F\-P\-S\-\_\-\-U\-P\-D\-A\-T\-E~300}}\label{_main_8cpp_a328a5ea7f87a9be8ffc2784f2243e272}
+
+
+At every (this) milliseconds, the value of F\-P\-S stored in current\-\_\-fps is updated. 
+
+\hypertarget{_main_8cpp_ab01c733d09125c1a0a1f6847009a1d4a}{\index{Main.\-cpp@{Main.\-cpp}!M\-I\-L\-L\-I\-S\-E\-C\-O\-N\-D\-S\-\_\-\-P\-E\-R\-\_\-\-F\-R\-A\-M\-E@{M\-I\-L\-L\-I\-S\-E\-C\-O\-N\-D\-S\-\_\-\-P\-E\-R\-\_\-\-F\-R\-A\-M\-E}}
+\index{M\-I\-L\-L\-I\-S\-E\-C\-O\-N\-D\-S\-\_\-\-P\-E\-R\-\_\-\-F\-R\-A\-M\-E@{M\-I\-L\-L\-I\-S\-E\-C\-O\-N\-D\-S\-\_\-\-P\-E\-R\-\_\-\-F\-R\-A\-M\-E}!Main.cpp@{Main.\-cpp}}
+\subsubsection[{M\-I\-L\-L\-I\-S\-E\-C\-O\-N\-D\-S\-\_\-\-P\-E\-R\-\_\-\-F\-R\-A\-M\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define M\-I\-L\-L\-I\-S\-E\-C\-O\-N\-D\-S\-\_\-\-P\-E\-R\-\_\-\-F\-R\-A\-M\-E~16}}\label{_main_8cpp_ab01c733d09125c1a0a1f6847009a1d4a}
+
+
+The number of milliseconds for each frame; frames-\/per-\/second = 1000 / this. 
+
+This is the main program. It has a loop that deals with the event queue, and updates and renders the game. Right now there are a lot of hardcoded things in here, which should be moved to different objects as the objects are developed, e.\-g. applying forces based on keyboard input. \hypertarget{_main_8cpp_a5473cf64fa979b48335079c99532e243}{\index{Main.\-cpp@{Main.\-cpp}!W\-I\-N\-D\-O\-W\-\_\-\-H\-E\-I\-G\-H\-T@{W\-I\-N\-D\-O\-W\-\_\-\-H\-E\-I\-G\-H\-T}}
+\index{W\-I\-N\-D\-O\-W\-\_\-\-H\-E\-I\-G\-H\-T@{W\-I\-N\-D\-O\-W\-\_\-\-H\-E\-I\-G\-H\-T}!Main.cpp@{Main.\-cpp}}
+\subsubsection[{W\-I\-N\-D\-O\-W\-\_\-\-H\-E\-I\-G\-H\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define W\-I\-N\-D\-O\-W\-\_\-\-H\-E\-I\-G\-H\-T~400}}\label{_main_8cpp_a5473cf64fa979b48335079c99532e243}
+
+
+The height of the game window. 
+
+\hypertarget{_main_8cpp_a498d9f026138406895e9a34b504ac6a6}{\index{Main.\-cpp@{Main.\-cpp}!W\-I\-N\-D\-O\-W\-\_\-\-W\-I\-D\-T\-H@{W\-I\-N\-D\-O\-W\-\_\-\-W\-I\-D\-T\-H}}
+\index{W\-I\-N\-D\-O\-W\-\_\-\-W\-I\-D\-T\-H@{W\-I\-N\-D\-O\-W\-\_\-\-W\-I\-D\-T\-H}!Main.cpp@{Main.\-cpp}}
+\subsubsection[{W\-I\-N\-D\-O\-W\-\_\-\-W\-I\-D\-T\-H}]{\setlength{\rightskip}{0pt plus 5cm}\#define W\-I\-N\-D\-O\-W\-\_\-\-W\-I\-D\-T\-H~400}}\label{_main_8cpp_a498d9f026138406895e9a34b504ac6a6}
+
+
+The width of the game window. 
+
+
+
+\subsection{Function Documentation}
+\hypertarget{_main_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}{\index{Main.\-cpp@{Main.\-cpp}!main@{main}}
+\index{main@{main}!Main.cpp@{Main.\-cpp}}
+\subsubsection[{main}]{\setlength{\rightskip}{0pt plus 5cm}int main (
+\begin{DoxyParamCaption}
+\item[{int}]{argc, }
+\item[{char $\ast$$\ast$}]{argv}
+\end{DoxyParamCaption}
+)}}\label{_main_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}
+
+
+The main function of the program. 
+
+This function opens up a window and starts running the game until you x out of it. 
+\begin{DoxyParams}{Parameters}
+{\em argc} & The number of arguments from the command line. \\
+\hline
+{\em argv} & The array of string argument from the command line, argv\mbox{[}0\mbox{]} = executablename. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if it runs and finishes well, something else otherwise. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em An} & error whenever something goes wrong. \\
+\hline
+\end{DoxyExceptions}
+Todo\-: Test out calculus somewhere else.
+
+Todo\-: test out fonts somewhere else. / Create a pixmap font from a True\-Type file. \hypertarget{_main_8cpp_a5d953fd9def7f59725d43854309b2c81}{\index{Main.\-cpp@{Main.\-cpp}!main\-\_\-key\-\_\-down@{main\-\_\-key\-\_\-down}}
+\index{main\-\_\-key\-\_\-down@{main\-\_\-key\-\_\-down}!Main.cpp@{Main.\-cpp}}
+\subsubsection[{main\-\_\-key\-\_\-down}]{\setlength{\rightskip}{0pt plus 5cm}void main\-\_\-key\-\_\-down (
+\begin{DoxyParamCaption}
+\item[{unsigned char}]{key, }
+\item[{int}]{xx, }
+\item[{int}]{yy}
+\end{DoxyParamCaption}
+)}}\label{_main_8cpp_a5d953fd9def7f59725d43854309b2c81}
+
+
+This function gets called when a normal key on the keyboard gets pressed. 
+
+\hypertarget{_main_8cpp_a6742d889b0471174a21a3dc5994d25f3}{\index{Main.\-cpp@{Main.\-cpp}!main\-\_\-key\-\_\-up@{main\-\_\-key\-\_\-up}}
+\index{main\-\_\-key\-\_\-up@{main\-\_\-key\-\_\-up}!Main.cpp@{Main.\-cpp}}
+\subsubsection[{main\-\_\-key\-\_\-up}]{\setlength{\rightskip}{0pt plus 5cm}void main\-\_\-key\-\_\-up (
+\begin{DoxyParamCaption}
+\item[{unsigned char}]{key, }
+\item[{int}]{xx, }
+\item[{int}]{yy}
+\end{DoxyParamCaption}
+)}}\label{_main_8cpp_a6742d889b0471174a21a3dc5994d25f3}
+
+
+This function gets called when a normal key on the keyboard gets released. 
+
+\hypertarget{_main_8cpp_a268c7c1058cfb6e35ec1675b3c5f7deb}{\index{Main.\-cpp@{Main.\-cpp}!main\-\_\-special\-\_\-key\-\_\-down@{main\-\_\-special\-\_\-key\-\_\-down}}
+\index{main\-\_\-special\-\_\-key\-\_\-down@{main\-\_\-special\-\_\-key\-\_\-down}!Main.cpp@{Main.\-cpp}}
+\subsubsection[{main\-\_\-special\-\_\-key\-\_\-down}]{\setlength{\rightskip}{0pt plus 5cm}void main\-\_\-special\-\_\-key\-\_\-down (
+\begin{DoxyParamCaption}
+\item[{int}]{key, }
+\item[{int}]{xx, }
+\item[{int}]{yy}
+\end{DoxyParamCaption}
+)}}\label{_main_8cpp_a268c7c1058cfb6e35ec1675b3c5f7deb}
+
+
+This function gets called when a special key on the keyboard gets pressed. 
+
+\hypertarget{_main_8cpp_a92d3d2be067e841ba1b6a16350f6377b}{\index{Main.\-cpp@{Main.\-cpp}!main\-\_\-special\-\_\-key\-\_\-up@{main\-\_\-special\-\_\-key\-\_\-up}}
+\index{main\-\_\-special\-\_\-key\-\_\-up@{main\-\_\-special\-\_\-key\-\_\-up}!Main.cpp@{Main.\-cpp}}
+\subsubsection[{main\-\_\-special\-\_\-key\-\_\-up}]{\setlength{\rightskip}{0pt plus 5cm}void main\-\_\-special\-\_\-key\-\_\-up (
+\begin{DoxyParamCaption}
+\item[{int}]{key, }
+\item[{int}]{xx, }
+\item[{int}]{yy}
+\end{DoxyParamCaption}
+)}}\label{_main_8cpp_a92d3d2be067e841ba1b6a16350f6377b}
+
+
+This function gets called when a special key on the keyboard gets released. 
+
+\hypertarget{_main_8cpp_ab9a8b64de56c690951ef4346562aef40}{\index{Main.\-cpp@{Main.\-cpp}!main\-\_\-step\-\_\-and\-\_\-render@{main\-\_\-step\-\_\-and\-\_\-render}}
+\index{main\-\_\-step\-\_\-and\-\_\-render@{main\-\_\-step\-\_\-and\-\_\-render}!Main.cpp@{Main.\-cpp}}
+\subsubsection[{main\-\_\-step\-\_\-and\-\_\-render}]{\setlength{\rightskip}{0pt plus 5cm}void main\-\_\-step\-\_\-and\-\_\-render (
+\begin{DoxyParamCaption}
+\item[{int}]{i}
+\end{DoxyParamCaption}
+)}}\label{_main_8cpp_ab9a8b64de56c690951ef4346562aef40}
+
+
+This function gets called at each frame. 
+
+
+
+\subsection{Variable Documentation}
+\hypertarget{_main_8cpp_aabd3fb9ce376aa38529cdee22199f4ed}{\index{Main.\-cpp@{Main.\-cpp}!curlevel@{curlevel}}
+\index{curlevel@{curlevel}!Main.cpp@{Main.\-cpp}}
+\subsubsection[{curlevel}]{\setlength{\rightskip}{0pt plus 5cm}int curlevel}}\label{_main_8cpp_aabd3fb9ce376aa38529cdee22199f4ed}
+
+
+The current level that you're playing. 
+
+\hypertarget{_main_8cpp_ae8d757346cd86633612877691e5aaca4}{\index{Main.\-cpp@{Main.\-cpp}!current\-\_\-fps@{current\-\_\-fps}}
+\index{current\-\_\-fps@{current\-\_\-fps}!Main.cpp@{Main.\-cpp}}
+\subsubsection[{current\-\_\-fps}]{\setlength{\rightskip}{0pt plus 5cm}double current\-\_\-fps}}\label{_main_8cpp_ae8d757346cd86633612877691e5aaca4}
+
+
+The value of frames-\/per-\/second that was last computed. 
+
+\hypertarget{_main_8cpp_a4d4f553dce504b38a16b9164049195a6}{\index{Main.\-cpp@{Main.\-cpp}!framecount@{framecount}}
+\index{framecount@{framecount}!Main.cpp@{Main.\-cpp}}
+\subsubsection[{framecount}]{\setlength{\rightskip}{0pt plus 5cm}int framecount}}\label{_main_8cpp_a4d4f553dce504b38a16b9164049195a6}
+
+
+Used for timing the main loop. Todo\-: some better algorithm. 
+
+\hypertarget{_main_8cpp_afdc9aca4da969365814ec79ec4e56281}{\index{Main.\-cpp@{Main.\-cpp}!g\-World@{g\-World}}
+\index{g\-World@{g\-World}!Main.cpp@{Main.\-cpp}}
+\subsubsection[{g\-World}]{\setlength{\rightskip}{0pt plus 5cm}{\bf World}$\ast$ g\-World}}\label{_main_8cpp_afdc9aca4da969365814ec79ec4e56281}
+
+
+The physics world, which also handles rendering. 
+
+\hypertarget{_main_8cpp_a45d79734d7cf8999548480e72f610d40}{\index{Main.\-cpp@{Main.\-cpp}!kbm@{kbm}}
+\index{kbm@{kbm}!Main.cpp@{Main.\-cpp}}
+\subsubsection[{kbm}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cm\-Key\-Manager}$\ast$ kbm = new {\bf cm\-Key\-Manager}()}}\label{_main_8cpp_a45d79734d7cf8999548480e72f610d40}
+
+
+This stores which keys are pressed and whatnot. 
+
+\hypertarget{_main_8cpp_ac89a670362c46d2b80d705782d862676}{\index{Main.\-cpp@{Main.\-cpp}!lastframemill@{lastframemill}}
+\index{lastframemill@{lastframemill}!Main.cpp@{Main.\-cpp}}
+\subsubsection[{lastframemill}]{\setlength{\rightskip}{0pt plus 5cm}int lastframemill}}\label{_main_8cpp_ac89a670362c46d2b80d705782d862676}
+
+
+Used for timing the main loop. Todo\-: some better algorithm. 
+
+\hypertarget{_main_8cpp_ac9c51867d2eb1cc4ffa3e074a9ccc14a}{\index{Main.\-cpp@{Main.\-cpp}!lastupdatemill@{lastupdatemill}}
+\index{lastupdatemill@{lastupdatemill}!Main.cpp@{Main.\-cpp}}
+\subsubsection[{lastupdatemill}]{\setlength{\rightskip}{0pt plus 5cm}int lastupdatemill}}\label{_main_8cpp_ac9c51867d2eb1cc4ffa3e074a9ccc14a}
+
+
+Used for timing the main loop. Todo\-: some better algorithm. 
+
+\hypertarget{_main_8cpp_a6801cf474a7b2494c15057a5d43ca4a4}{\index{Main.\-cpp@{Main.\-cpp}!levelnames@{levelnames}}
+\index{levelnames@{levelnames}!Main.cpp@{Main.\-cpp}}
+\subsubsection[{levelnames}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string$\ast$ levelnames}}\label{_main_8cpp_a6801cf474a7b2494c15057a5d43ca4a4}
+
+
+The names of the levels in the game (match the names of files in the world/ directory). 
+
+\hypertarget{_main_8cpp_aac17f6a87984c497f6dd8c7fd13b8fca}{\index{Main.\-cpp@{Main.\-cpp}!numlevels@{numlevels}}
+\index{numlevels@{numlevels}!Main.cpp@{Main.\-cpp}}
+\subsubsection[{numlevels}]{\setlength{\rightskip}{0pt plus 5cm}int numlevels}}\label{_main_8cpp_aac17f6a87984c497f6dd8c7fd13b8fca}
+
+
+The number of levels in the game. 
+

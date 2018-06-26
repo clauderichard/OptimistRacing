@@ -1,0 +1,77 @@
+\hypertarget{class_collision}{\section{Collision Class Reference}
+\label{class_collision}\index{Collision@{Collision}}
+}
+
+
+Contains functions for detecting collisions between shapes.  
+
+
+
+
+{\ttfamily \#include $<$Collision.\-hpp$>$}
+
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \hyperlink{class_collision_a126109ad2a3bdfca64972ec278980f66}{overlap\-Spheres} (double radius1, double radius2, const \hyperlink{class_vector3_d}{Vector3\-D} \&center1, const \hyperlink{class_vector3_d}{Vector3\-D} \&center2)
+\begin{DoxyCompactList}\small\item\em Determines whether 2 spheres overlap each other. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Contains functions for detecting collisions between shapes. 
+
+\begin{DoxyAuthor}{Author}
+Claude Richard 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2012 
+\end{DoxyDate}
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000001}{Todo}]Add more functions to this class. \end{DoxyRefDesc}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_collision_a126109ad2a3bdfca64972ec278980f66}{\index{Collision@{Collision}!overlap\-Spheres@{overlap\-Spheres}}
+\index{overlap\-Spheres@{overlap\-Spheres}!Collision@{Collision}}
+\subsubsection[{overlap\-Spheres}]{\setlength{\rightskip}{0pt plus 5cm}bool Collision\-::overlap\-Spheres (
+\begin{DoxyParamCaption}
+\item[{double}]{radius1, }
+\item[{double}]{radius2, }
+\item[{const {\bf Vector3\-D} \&}]{center1, }
+\item[{const {\bf Vector3\-D} \&}]{center2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_collision_a126109ad2a3bdfca64972ec278980f66}
+
+
+Determines whether 2 spheres overlap each other. 
+
+A sphere s1 has radius radius1 and is centered at center1. A sphere s2 has radius radius2 and is centered at center2. This function returns true if s1 and s2 overlap. I.\-e. it returns true if the distance between the two centers is smaller than the sum of the two radii. \begin{DoxyPrecond}{Precondition}
+{\itshape radius1} and {\itshape radius2} must be non-\/negative. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}{Parameters}
+{\em radius1} & The radius of the first sphere. \\
+\hline
+{\em radius2} & The radius of the second sphere. \\
+\hline
+{\em center1} & The center position of the first sphere. \\
+\hline
+{\em center2} & The center position of the second sphere. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if and only if the two spheres overlap. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em An} & error when one of the radius arguments is negative. \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000002}{Todo}]Make this function actually throw an error. \end{DoxyRefDesc}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/\-Owner/\-My Programming/\-Personal Projects/\-Video\-Games/\-Optimist Racing/src/\hyperlink{_collision_8hpp}{Collision.\-hpp}\item 
+C\-:/\-Users/\-Owner/\-My Programming/\-Personal Projects/\-Video\-Games/\-Optimist Racing/src/\hyperlink{_collision_8cpp}{Collision.\-cpp}\end{DoxyCompactItemize}
