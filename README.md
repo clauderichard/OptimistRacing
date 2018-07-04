@@ -8,7 +8,7 @@ If you try to run this you might get an error about a missing DLL or something.
 
 # The basic idea
 It's a video game where you try to balance a reverse pendulum in 3D while making it move on a coloured track.
-The colours matter: the pendulum's colour and the floor's colour must match according to a special formula, otherwise you just fall through!
+The colours matter: the pendulum's colour and the floor's colour must match according to a special formula (see "Electric Colours" in the documentation), otherwise you just fall through!
 If I remember correctly, there are objects you can touch that change the pendulum's colour, which helps you go on other floors.
 The object of the game is to reach the finish zone without letting the pendulum hit the floor.
 
